@@ -1,0 +1,44 @@
+﻿@model MyGardenWEB.Data.Photo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Редактиране</h1>
+
+<h4>Снимка</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ProductsId" class="control-label">Продукт</label>
+                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select>
+                <span asp-validation-for="ProductsId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label">Снимка</label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegisterOn" class="control-label">Регистрация</label>
+                <input asp-for="RegisterOn" class="form-control" />
+                <span asp-validation-for="RegisterOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Запазване" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Връщане назад</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

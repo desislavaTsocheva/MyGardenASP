@@ -1,0 +1,69 @@
+﻿@model MyGardenWEB.Data.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Редактиране</h1>
+
+<h4>Продукт</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="BulgarianName" class="control-label">Българско наименование</label>
+                <input asp-for="BulgarianName" class="form-control" />
+                <span asp-validation-for="BulgarianName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LatinName" class="control-label">Латинско наименование</label>
+                <input asp-for="LatinName" class="form-control" />
+                <span asp-validation-for="LatinName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label">Размер</label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label">Описание</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoURL" class="control-label">Снимка</label>
+                <input asp-for="PhotoURL" class="form-control" />
+                <span asp-validation-for="PhotoURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">Цена</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegisterOn" class="control-label">Регистрация</label>
+                <input asp-for="RegisterOn" class="form-control" />
+                <span asp-validation-for="RegisterOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoriesId" class="control-label">Категория</label>
+                <select asp-for="CategoriesId" class="form-control" asp-items="ViewBag.CategoriesId"></select>
+                <span asp-validation-for="CategoriesId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Запазване" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Връщане назад</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

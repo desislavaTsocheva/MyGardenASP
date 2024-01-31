@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+//Add DB
 builder.Services.AddDbContext<MyGardenDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -16,6 +17,14 @@ builder.Services.AddDefaultIdentity<Client>(options => options.SignIn.RequireCon
     .AddDefaultTokenProviders();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddControllersWithViews();
+
+
+
+builder.Services.AddControllers(
+    options =>
+    options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+
+
 
 var app = builder.Build();
 
@@ -43,6 +52,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();
