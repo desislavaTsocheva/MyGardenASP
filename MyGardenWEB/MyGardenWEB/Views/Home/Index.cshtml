@@ -1,8 +1,95 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="bc-ground">
+        <h1 class="display-4">Добре дошли!</h1>
+        <div class="content">
+            <div class="swiffy-slider">
+                <ul class="slider-container">
+                    <li>
+                        <img src="./snimka3.jpg" width="100%" height="650" class="main-img">
+                        <div class="overlay">
+                            <h1>Rазсадник за цветя- <br /> " Моята градина! "</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./snimka5.jpg" width="100%" height="650" class="main-img">
+                        <div class="overlay">
+                            <h1>Rазсадник за цветя- <br />" Моята градина! "</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./snimka1.jpg" width="100%" height="650" class="main-img">
+                        <div class="overlay">
+                            <h1>Rазсадник за цветя- <br />" Моята градина! "</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./snimka4.jpg" width="100%" height="650" class="main-img">
+                        <div class="overlay">
+                            <h1>Rазсадник за цветя- <br />" Моята градина! "</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./snimka2.jpg" width="100%" height="650" class="main-img">
+                        <div class="overlay">
+                            <h1>Rазсадник за цветя-<br /> " Моята градина! "</h1>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+
+                <div class="slider-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <p class="txt">При нас можете да откриете голямо разнообразие от цветя, разсади и луковици</p>
+        <div class="article">
+            <div id="article1">
+                <h1 class="title-art">Цветя</h1>
+                <a asp-area="" asp-controller="Home" asp-action="ForUs">
+                    <img src="./tsvete1.jpg" class="image">
+                </a>
+                <p class="description">
+                    Цветята са незаменим подарък за всеки повод и идеалният начин<br />
+                    да накараш някой да се почувства обичан и ценен.
+                </p>
+            </div>
+            <div id="article2">
+                <h1 class="title-art">Разсади</h1>
+                <a asp-area="" asp-controller="Home" asp-action="ForUs">
+
+                    <img src="./razsad.jpg" class="image">
+                </a>
+                <p class="description">
+                    Разсад са млади растения от зеленчукови и полски култури, <br />
+                    произведени в култивационни съоръжения или в градини
+
+                </p>
+            </div>
+            <div id="article3">
+                <h1 class="title-art">Луковици</h1>
+                <a asp-area="" asp-controller="Home" asp-action="ForUs">
+
+                    <img src="./lukovitsa.jpg" class="image">
+                </a>
+                <p class="description">
+                    Луковицата е видоизменено стъбло, подземен орган,<br />
+                    който се наблюдава при някои от растенията.
+                </p>
+
+            </div>
+        </div>
+
+
+    </div>
 </div>

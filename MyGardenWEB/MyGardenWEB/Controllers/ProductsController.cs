@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,42 +13,56 @@ namespace MyGardenWEB.Controllers
     public class ProductsController : Controller
     {
         private readonly MyGardenDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        private string wwwroot;
 
-        public ProductsController(MyGardenDbContext context)
+        public ProductsController(MyGardenDbContext context,IWebHostEnvironment hostEnvironment, string wwwroot)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
+            this.wwwroot = $"{this._hostEnvironment.WebRootPath}";
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            return View(await myGardenDbContext.ToListAsync());
+            List<Product> model = await _context.Products.Include(img => img.Photos).ToListAsync();
+            foreach (var item in model)
+            {
+                item.Photos = _context.Photos.Where(x => x.ProductsId == item.Id).ToList();
+
+            }
+            return View(model); 
+            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
+            //return View(await myGardenDbContext.ToListAsync());
         }
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Products == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products
-                .Include(p => p.Categories)
+            Product product = await _context.Products
+                .Include(img => img.Photos)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
+            var imagePath = Path.Combine(wwwroot, "Photos");
+
 
             return View(product);
         }
 
         // GET: Products/Create
+        [Authorize(Roles ="Admin")]
         public IActionResult Create()
         {
-            ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name");
+            //ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
@@ -60,18 +75,20 @@ namespace MyGardenWEB.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
+                product.RegisterOn=DateTime.Now;    
+                _context.Products.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
+            //ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
             return View(product);
         }
 
         // GET: Products/Edit/5
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null||_context.Products==null)
             {
                 return NotFound();
             }
@@ -81,7 +98,7 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
+            //ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
             return View(product);
         }
 
@@ -90,7 +107,7 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,RegisterOn,CategoriesId")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,BulgarianName,LatinName,Size,Description,PhotoURL,Price,RegisterOn,CategoriesId")] Product product)
         {
             if (id != product.Id)
             {
@@ -101,6 +118,7 @@ namespace MyGardenWEB.Controllers
             {
                 try
                 {
+                    product.RegisterOn=DateTime.Now;    
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
@@ -117,14 +135,15 @@ namespace MyGardenWEB.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
+            //ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
             return View(product);
         }
 
         // GET: Products/Delete/5
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null||_context.Products==null)
             {
                 return NotFound();
             }
@@ -145,6 +164,11 @@ namespace MyGardenWEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Products == null)
+            {
+                return Problem("Entity set 'MyGardenDbContext.Products' is null. ");
+            }
+
             var product = await _context.Products.FindAsync(id);
             if (product != null)
             {

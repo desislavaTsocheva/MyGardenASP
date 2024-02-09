@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\forus.jpg",
+      "PackagePath": "staticwebassets\\forus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\garden.jpg",
+      "PackagePath": "staticwebassets\\garden.jpg"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\kavichki.png",
+      "PackagePath": "staticwebassets\\kavichki.png"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -243,6 +255,46 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\lukovitsa.jpg",
+      "PackagePath": "staticwebassets\\lukovitsa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\razsad.jpg",
+      "PackagePath": "staticwebassets\\razsad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\snimka1.jpg",
+      "PackagePath": "staticwebassets\\snimka1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\snimka2.jpg",
+      "PackagePath": "staticwebassets\\snimka2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\snimka3.jpg",
+      "PackagePath": "staticwebassets\\snimka3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\snimka4.jpg",
+      "PackagePath": "staticwebassets\\snimka4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\snimka5.jpg",
+      "PackagePath": "staticwebassets\\snimka5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\tsvete1.jpg",
+      "PackagePath": "staticwebassets\\tsvete1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Моята.png",
+      "PackagePath": "staticwebassets\\Моята.png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Неозаглавен дизайн.mp4",
+      "PackagePath": "staticwebassets\\Неозаглавен дизайн.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssets.props",
