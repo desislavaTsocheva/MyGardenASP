@@ -4,62 +4,62 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Създаване</h1>
+<h1>Create</h1>
 
-<h4>Продукт</h4>
+<h4>Product</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="BulgarianName" class="control-label">Българско наименование</label>
+                <label asp-for="BulgarianName" class="control-label"></label>
                 <input asp-for="BulgarianName" class="form-control" />
                 <span asp-validation-for="BulgarianName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LatinName" class="control-label">Латинско наименование</label>
+                <label asp-for="LatinName" class="control-label"></label>
                 <input asp-for="LatinName" class="form-control" />
                 <span asp-validation-for="LatinName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Size" class="control-label">Размер</label>
+                <label asp-for="Size" class="control-label"></label>
                 <input asp-for="Size" class="form-control" />
                 <span asp-validation-for="Size" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label">Описание</label>
+                <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PhotoURL" class="control-label">Снимка</label>
+                <label asp-for="PhotoURL" class="control-label"></label>
                 <input asp-for="PhotoURL" class="form-control" />
                 <span asp-validation-for="PhotoURL" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label">Цена</label>
+                <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RegisterOn" class="control-label">Регистрация</label>
+                <label asp-for="RegisterOn" class="control-label"></label>
                 <input asp-for="RegisterOn" class="form-control" />
                 <span asp-validation-for="RegisterOn" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoriesId" class="control-label">Категория</label>
+                <label asp-for="CategoriesId" class="control-label"></label>
                 <select asp-for="CategoriesId" class ="form-control" asp-items="ViewBag.CategoriesId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Създай" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Връщане назад</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

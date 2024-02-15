@@ -57,8 +57,8 @@ body {
     font-style: italic;
     margin: 10px;
     padding: 5px;
-    text-align:center;
-    font-size:40px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .article .image {
@@ -151,7 +151,7 @@ legend, label {
     text-align: center;
 }
 
-input[type=text], input[type=email], input[type=submit] {
+.cont form_cont input[type=text], input[type=email], input[type=submit] {
     font-family: Vivaldi;
 }
 
@@ -185,37 +185,44 @@ input[type=text], input[type=email], input[type=submit] {
         float: right;
         font-family: Vivaldi;
         font-size: 20px;
-        text-align:justify;
+        text-align: justify;
     }
-.quote{
-    width:80%;
-    height:100px;
+
+.quote {
+    width: 80%;
+    height: 100px;
 }
-.quote p{
-    font-family:'Comic Sans MS';
-    font-size:25px;
+
+    .quote p {
+        font-family: 'Comic Sans MS';
+        font-size: 25px;
+    }
+
+.contactUs {
+    width: 60%;
+    height: 320px;
 }
-.contactUs{
-    width:60%;
-    height:320px;
-}
-.contactUs img{
-    float:left;
-    height:300px;
-    width:50%;
-}
-.contactUs p{
-    float:right;
-    font-family:Vivaldi;
-    font-size:20px;
-    font-style:italic;
-}
+
+    .contactUs img {
+        float: left;
+        height: 300px;
+        width: 50%;
+    }
+
+    .contactUs p {
+        float: right;
+        font-family: Vivaldi;
+        font-size: 20px;
+        font-style: italic;
+    }
+
     .contactUs button_cont {
         background-color: #fbeaea;
         border-radius: 5px 5px;
         width: 20%;
         height: 50px;
     }
+
         .contactUs button_cont p {
             font-family: Vivaldi;
             font-size: 20px;
@@ -223,3 +230,14 @@ input[type=text], input[type=email], input[type=submit] {
             margin: 10px;
             padding: 10px;
         }
+
+
+iframe {
+    margin: 10px;
+    padding: 10px;
+}
+
+.map {
+    float: left;
+}
+

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -21,7 +23,6 @@ namespace MyGardenWEB.Controllers
             _context = context;
             _userManager = userManager;
         }
-
         // GET: Orders
         [Authorize]
         public async Task<IActionResult> Index()
@@ -29,14 +30,16 @@ namespace MyGardenWEB.Controllers
             if (User.IsInRole("Admin"))
             {
                 var myGardenDbContext = _context.Orders.
-                    Include(o => o.Clients).
-                    Include(o => o.Products);
+                    Include(o => o.Products)
+                   .Include(o => o.Clients);
+                    
                 return View(await myGardenDbContext.ToListAsync());
             }
             else
             {
                 var currentUser = _userManager.GetUserId(User);
-                var myOrders = _context.Orders.Include(o => o.Products)
+                var myOrders = _context.Orders
+                    .Include(o => o.Products)
                     .Include(u => u.Clients)
                     .Where(x => x.ClientsId == currentUser.ToString()).ToListAsync();
                 return View(await myOrders);
@@ -68,7 +71,7 @@ namespace MyGardenWEB.Controllers
         [Authorize(Roles ="User,Admin")]
         public IActionResult Create()
         {
-            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName","LastName");
+            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
             return View();
         }
