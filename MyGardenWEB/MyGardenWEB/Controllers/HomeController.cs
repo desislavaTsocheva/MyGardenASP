@@ -17,6 +17,10 @@ namespace MyGardenWEB.Controllers
         {
             return View();
         }
+        public IActionResult IndexProduct()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

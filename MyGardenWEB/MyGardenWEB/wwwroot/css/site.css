@@ -20,6 +20,9 @@ html {
 body {
     margin-bottom: 60px;
 }
+footer{
+    position:static;
+}
 
 .overlay {
     position: absolute;
@@ -147,12 +150,12 @@ body {
 }
 
 legend, label {
-    font-family: Vivaldi;
+    font-family: 'Times New Roman';
     text-align: center;
 }
 
 .cont form_cont input[type=text], input[type=email], input[type=submit] {
-    font-family: Vivaldi;
+    font-family: 'Times New Roman';
 }
 
 /*h1 {
@@ -241,3 +244,15 @@ iframe {
     float: left;
 }
 
+.card{
+    display:inline-flex;
+    margin:20px;
+    padding:10px 10px;
+    height:400px;
+    width:10%;
+}
+.card-title{
+    font-family:Vivaldi;
+    font-size:18px;
+    text-align:center;
+}

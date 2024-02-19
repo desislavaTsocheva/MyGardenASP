@@ -22,7 +22,12 @@ namespace MyGardenWEB.Controllers
         public async Task<IActionResult> Index()
         {
             //var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            return View(await _context.Products.ToListAsync());
+            return View(await _context.Products.Where(x => x.CategoriesId == 1).ToListAsync());
+        }
+        public async Task<IActionResult> IndexProduct()
+        {
+            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
+            return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
         }
 
         // GET: Products/Details/5
@@ -40,7 +45,6 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-
             return View(product);
         }
 
@@ -92,7 +96,7 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId")] Product product)
         {
             if (id != product.Id)
             {
@@ -103,11 +107,10 @@ namespace MyGardenWEB.Controllers
             {
                 ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
                 return View(product);
-
             }
             try
             {
-                _context.Products.Update(product);
+                _context.Update(product);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
