@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyGardenWEB.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -62,12 +63,29 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Разсадник- "Моята градина" - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
 
+    <div class="footer_section">
+        <footer class="border-top footer text-muted">
+            <div class="medias">
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                </ul>
+
+            </div>
+           
+            <div class="relations">
+                <h3 style="font-family:Vivaldi; color:black; margin-left:10px;">Бързи връзки</h3>                
+                <a asp-area="" asp-controller="Home" asp-action="Index" style="text-decoration:none; font-family:Vivaldi; font-size:20px; padding:10px; color:#efc8e2;">Начало</a>
+                <a asp-area="" asp-controller="Home" asp-action="ForUs" style="text-decoration:none; font-family:Vivaldi; font-size:20px; padding:10px; color:#efc8e2;">За нас</a>
+                <a asp-area="" asp-controller="Home" asp-action="Contacts" style="text-decoration:none; font-family:Vivaldi; font-size:20px; padding:10px; color:#efc8e2;">Контакти</a>
+            </div> 
+            <div class="container" style="text-align:center;">
+                &copy; 2024 - Разсадник- "Моята градина" - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </div>
+        </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

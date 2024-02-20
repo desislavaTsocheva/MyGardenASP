@@ -2,48 +2,109 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand[b-z24shytivt] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 a[b-z24shytivt] {
-  color: #0077cc;
+    color: #0077cc;
 }
 
 .btn-primary[b-z24shytivt] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active[b-z24shytivt], .nav-pills .show > .nav-link[b-z24shytivt] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 
 .border-top[b-z24shytivt] {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom[b-z24shytivt] {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow[b-z24shytivt] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy[b-z24shytivt] {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 .footer[b-z24shytivt] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    height: auto;
+}
+
+.medias[b-z24shytivt] {
+    height: 200px;
+    width: 20%;
+    float: right;
+}
+
+    .medias ul li[b-z24shytivt] {
+        list-style-type: none;
+        text-decoration: none;
+        display: inline-flex;
+    }
+
+.fa[b-z24shytivt] {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:10px;
+}
+
+    /* Add a hover effect if you want */
+    .fa:hover[b-z24shytivt] {
+        opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook[b-z24shytivt] {
+    background: #3B5998;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Twitter */
+.fa-twitter[b-z24shytivt] {
+    background: #55ACEE;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fa-instagram[b-z24shytivt] {
+    background: #efc8e2;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.relations[b-z24shytivt] {
+    height:100px;
+    width:30%;
+    margin-left:65px;
+    margin-top:10px;
+    padding:5px;
 }
