@@ -24,39 +24,43 @@ namespace MyGardenWEB.Controllers
             _userManager = userManager;
         }
         // GET: Orders
-        [Authorize]
+
         public async Task<IActionResult> Index()
         {
             if (User.IsInRole("Admin"))
             {
-                var myGardenDbContext = _context.Orders.
-                    Include(o => o.Products)
-                   .Include(o => o.Clients);
-                    
+                var myGardenDbContext = _context.Orders
+                   .Include(o => o.Clients)
+                   .Include(o => o.Products);
                 return View(await myGardenDbContext.ToListAsync());
             }
             else
             {
-                var currentUser = _userManager.GetUserId(User);
-                var myOrders = _context.Orders
+                var myGardenDbContext = _context.Orders
+                    .Include(o => o.Clients)
                     .Include(o => o.Products)
-                    .Include(u => u.Clients)
-                    .Where(x => x.ClientsId == currentUser.ToString()).ToListAsync();
-                return View(await myOrders);
+                    .Where(x => x.ClientsId == _userManager.GetUserId(User));
+                return View(await myGardenDbContext.ToListAsync());
+                //var currentUser = _userManager.GetUserId(User);
+                //var myOrders = _context.Orders
+                //    .Include(o => o.Products)
+                //    .Include(u => u.Clients)
+                //    .Where(x => x.ClientsId == currentUser.ToString()).ToListAsync();
+                //return View(await myOrders);
             }
         }
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null||_context.Orders==null)
             {
                 return NotFound();
             }
 
             var order = await _context.Orders
-               .Include(o => o.Products)
                .Include(o => o.Clients)
+               .Include(o => o.Products)
                .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
             {
@@ -68,7 +72,7 @@ namespace MyGardenWEB.Controllers
 
 
         // GET: Orders/Create
-        [Authorize(Roles ="User,Admin")]
+        //[Authorize(Roles ="User,Admin")]
         public IActionResult Create()
         {
             ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
@@ -76,7 +80,16 @@ namespace MyGardenWEB.Controllers
             return View();
         }
 
-
+        public async Task<IActionResult>CreateViewWithProductId(int productId,int counter)
+        {
+            Order order = new Order();
+            order.ProductsId = productId;
+            order.Quantity = counter;
+            order.ClientsId = _userManager.GetUserId(User);
+            _context.Orders.Add(order); 
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
 
         // POST: Orders/Create
@@ -84,23 +97,25 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductsId,ClientsId,Quantity")] Order order)
+        public async Task<IActionResult> Create([Bind("ProductsId,ClientsId,Quantity")] Order order)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(order);
+                //order.RegisterOn = DateTime.Now;
+                order.ClientsId = _userManager.GetUserId(User);
+                _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
-            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "Id", order.ProductsId);
+           // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
+            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
             return View(order);
         }
 
         // GET: Orders/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            if (id == null||_context.Orders==null)
             {
                 return NotFound();
             }
@@ -110,8 +125,8 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
-            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "Id", order.ProductsId);
+            //ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
+            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
             return View(order);
         }
 
@@ -131,7 +146,8 @@ namespace MyGardenWEB.Controllers
             {
                 try
                 {
-                    _context.Update(order);
+                    order.ClientsId = _userManager.GetUserId(User);
+                    _context.Orders.Update(order);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -147,22 +163,22 @@ namespace MyGardenWEB.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
-            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "Id", order.ProductsId);
+            //ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
+            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
             return View(order);
         }
 
         // GET: Orders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null||_context.Orders==null)
             {
                 return NotFound();
             }
 
             var order = await _context.Orders
+                .Include(o => o.Clients) 
                 .Include(o => o.Products)
-                .Include(o => o.Clients)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
             {
@@ -177,18 +193,26 @@ namespace MyGardenWEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var order = await _context.Orders
-                .Include(u => u.Clients)
-                .FirstOrDefaultAsync(x => x.Id == id);
-                //FindAsync(id);
-            _context.Orders.Remove(order);
+            if (_context.Orders == null)
+            {
+                return Problem("Entity set 'MyGardenDbContext.Orders' is null");
+            }
+            var order = await _context.Orders.FindAsync(id);
+            //.Include(u => u.Clients)
+            //.FirstOrDefaultAsync(x => x.Id == id);
+            //FindAsync(id);
+            if (order != null)
+            {
+                _context.Orders.Remove(order);
+            }
+           // _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool OrderExists(int id)
         {
-            return _context.Orders.Any(e => e.Id == id);
+            return (_context.Orders?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

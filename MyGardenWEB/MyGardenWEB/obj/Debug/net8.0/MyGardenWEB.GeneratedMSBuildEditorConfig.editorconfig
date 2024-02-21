@@ -17,163 +17,163 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyGardenWEB
 build_property.RootNamespace = MyGardenWEB
-build_property.ProjectDir = C:\Users\viole\OneDrive\Работен плот\MyGardenWEB\MyGardenWEB\
+build_property.ProjectDir = C:\Users\STUDENTS-STEM1-8\Downloads\MyGardenASP-main\MyGardenWEB\MyGardenWEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\viole\OneDrive\Работен плот\MyGardenWEB\MyGardenWEB
+build_property.MSBuildProjectDirectory = C:\Users\STUDENTS-STEM1-8\Downloads\MyGardenASP-main\MyGardenWEB\MyGardenWEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Categories/Create.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Categories/Delete.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Categories/Details.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Categories/Edit.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Categories/Index.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Home/Contacts.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Home/ForUs.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Home/ForUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Home/Index.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Home/Privacy.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Orders/Create.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Orders/Delete.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Orders/Details.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Orders/Edit.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Orders/Index.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Photos/Create.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Photos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Photos/Delete.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Photos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Photos/Details.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Photos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Photos/Edit.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Photos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Photos/Index.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Photos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/Create.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/Delete.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/Details.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/Edit.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/Index.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Products/IndexProduct.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Products/IndexProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXhQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Shared/Error.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/_ViewImports.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/_ViewStart.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/viole/OneDrive/Работен плот/MyGardenWEB/MyGardenWEB/Views/Shared/_Layout.cshtml]
+[C:/Users/STUDENTS-STEM1-8/Downloads/MyGardenASP-main/MyGardenWEB/MyGardenWEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z24shytivt

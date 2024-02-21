@@ -8753,19 +8753,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\viole\\.nuget\\packages\\": {}
+    "C:\\Users\\STUDENTS-STEM1-8\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
+      "projectUniqueName": "C:\\Users\\STUDENTS-STEM1-8\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
       "projectName": "MyGardenWEB",
-      "projectPath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
-      "packagesPath": "C:\\Users\\viole\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\obj\\",
+      "projectPath": "C:\\Users\\STUDENTS-STEM1-8\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
+      "packagesPath": "C:\\Users\\STUDENTS-STEM1-8\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\STUDENTS-STEM1-8\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\viole\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\STUDENTS-STEM1-8\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
