@@ -61,7 +61,7 @@ namespace MyGardenWEB.Services
                 var result = await userManager.CreateAsync(defaultUser, "123!@#Qwe");
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(defaultUser, "Admin");    
+                    await userManager.AddToRoleAsync(defaultUser, "Admin");
                 }
             }
         }

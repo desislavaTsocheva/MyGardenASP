@@ -247,12 +247,12 @@ iframe {
 .card{
     display:inline-flex;
     margin:20px;
-    padding:10px 10px;
+    padding:5px 5px;
     height:400px;
     width:10%;
 }
 .card-title{
     font-family:Vivaldi;
-    font-size:18px;
+    font-size:20px;
     text-align:center;
 }

@@ -13,35 +13,50 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Products)
+                Продукт
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Clients)
+                Клиент
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
+                Количество
             </th>
+            <th>
+                Снимка
+            </th>
+            <th>
+               Обща цена
+            </th>
+
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Products.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Clients.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.BulgarianName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Clients.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
+                </td>
+                <td>
+                    @(item.Quantity * item.Products.Price) лв
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

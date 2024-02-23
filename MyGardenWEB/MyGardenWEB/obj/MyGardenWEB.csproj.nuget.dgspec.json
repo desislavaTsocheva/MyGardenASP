@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj": {}
+    "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj": {
+    "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
+        "projectUniqueName": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
         "projectName": "MyGardenWEB",
-        "projectPath": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
-        "packagesPath": "C:\\Users\\STUDENTS-1212-5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\obj\\",
+        "projectPath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
+        "packagesPath": "C:\\Users\\viole\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\STUDENTS-1212-5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\viole\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,29 +50,27 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -99,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

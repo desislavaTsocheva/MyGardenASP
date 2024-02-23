@@ -10,65 +10,80 @@
     <h4>Продукт</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Българско наименование</label>
-@*             @Html.DisplayNameFor(model => model.BulgarianName)
- *@        </dt>
-        <dd class = "col-sm-10">
+            @*             @Html.DisplayNameFor(model => model.BulgarianName)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.BulgarianName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Латиснко наименование</label>
-@*             @Html.DisplayNameFor(model => model.LatinName)
- *@        </dt>
-        <dd class = "col-sm-10">
+            @*             @Html.DisplayNameFor(model => model.LatinName)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LatinName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Размер</label>
-@*  @Html.DisplayNameFor(model => model.Size) *@
+            @*  @Html.DisplayNameFor(model => model.Size) *@
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Size)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Описание</label>
-@*             @Html.DisplayNameFor(model => model.Description)
- *@        </dt>
-        <dd class = "col-sm-10">
+            @*             @Html.DisplayNameFor(model => model.Description)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Снимка</label>
-@*             @Html.DisplayNameFor(model => model.PhotoURL)
- *@        </dt>
-        <dd class = "col-sm-10">
-            <img src="@Html.DisplayFor(model => model.PhotoURL)" height="200" width="300"/>
+            @*             @Html.DisplayNameFor(model => model.PhotoURL)
+            *@
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Html.DisplayFor(model => model.PhotoURL)" height="200" width="300" />
         </dd>
-        <dt class = "col-sm-2">
-                        <label>Цена</label>
-@*             @Html.DisplayNameFor(model => model.Price)
- *@        </dt>
-        <dd class = "col-sm-10">
+        <dt class="col-sm-2">
+            <label>Цена</label>
+            @*             @Html.DisplayNameFor(model => model.Price)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Price)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Регистрация</label>
-@*             @Html.DisplayNameFor(model => model.RegisterOn)
- *@        </dt>
-        <dd class = "col-sm-10">
+            @*             @Html.DisplayNameFor(model => model.RegisterOn)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.RegisterOn)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             <label>Категория</label>
-@*             @Html.DisplayNameFor(model => model.Categories)
- *@        </dt>
-        <dd class = "col-sm-10">
+            @*             @Html.DisplayNameFor(model => model.Categories)
+            *@
+        </dt>
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Categories.Id)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |
-    <a asp-action="Index">Връщане назад</a>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
+        <a asp-action="Index">Връщане назад</a>
+
+    }
+    else
+    {
+        <a asp-action="Index">Връщане назад</a>
+    }
 </div>

@@ -1,0 +1,24 @@
+.btn-primary {
+    background-color: #ffdede;
+    color: black;
+    margin: 5px;
+}
+.btn-outline-dark {
+    background-color: #ffdede;
+    margin:5px;
+}
+    .btn-outline-dark:hover {
+        background-color: #ffc6c6;
+        color: black;
+    }
+.btn-primary:hover {
+    background-color: #ffc6c6;
+    color: black;
+}
+.navbar {
+    background: linear-gradient(to right ,#ffffff,#fff1f1, #ffdede);
+}
+.navbar a:hover{
+    background-color:#ffdede;
+    border-radius:3px;
+}

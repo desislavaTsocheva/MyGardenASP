@@ -13,6 +13,7 @@ using MyGardenWEB.Data;
 
 namespace MyGardenWEB.Controllers
 {
+    [Authorize] 
     public class OrdersController : Controller
     {
         private readonly MyGardenDbContext _context;
@@ -24,7 +25,7 @@ namespace MyGardenWEB.Controllers
             _userManager = userManager;
         }
         // GET: Orders
-
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             if (User.IsInRole("Admin"))
@@ -53,7 +54,7 @@ namespace MyGardenWEB.Controllers
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null||_context.Orders==null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
@@ -75,18 +76,18 @@ namespace MyGardenWEB.Controllers
         //[Authorize(Roles ="User,Admin")]
         public IActionResult Create()
         {
-            ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
+           // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
             return View();
         }
 
-        public async Task<IActionResult>CreateViewWithProductId(int productId,int counter)
+        public async Task<IActionResult> CreateViewWithProductId(int productId, int counter)
         {
             Order order = new Order();
             order.ProductsId = productId;
             order.Quantity = counter;
             order.ClientsId = _userManager.GetUserId(User);
-            _context.Orders.Add(order); 
+            _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -97,17 +98,17 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductsId,ClientsId,Quantity")] Order order)
+        public async Task<IActionResult> Create([Bind("ProductsId,Quantity")] Order order)
         {
             if (ModelState.IsValid)
             {
-                //order.RegisterOn = DateTime.Now;
+               // order.RegisterOn = DateTime.Now;
                 order.ClientsId = _userManager.GetUserId(User);
                 _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-           // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
+            // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
             return View(order);
         }
@@ -115,7 +116,7 @@ namespace MyGardenWEB.Controllers
         // GET: Orders/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null||_context.Orders==null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
@@ -171,13 +172,13 @@ namespace MyGardenWEB.Controllers
         // GET: Orders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null||_context.Orders==null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
 
             var order = await _context.Orders
-                .Include(o => o.Clients) 
+                .Include(o => o.Clients)
                 .Include(o => o.Products)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
@@ -205,7 +206,7 @@ namespace MyGardenWEB.Controllers
             {
                 _context.Orders.Remove(order);
             }
-           // _context.Orders.Remove(order);
+            // _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
