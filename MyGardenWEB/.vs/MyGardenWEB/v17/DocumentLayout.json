@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|solutionrelative:mygardenweb\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|c:\\users\\students-1212-5\\downloads\\mygardenasp-main\\mygardenweb\\mygardenweb\\data\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|solutionrelative:mygardenweb\\data\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|c:\\users\\students-1212-5\\downloads\\mygardenasp-main\\mygardenweb\\mygardenweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|solutionrelative:mygardenweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|c:\\users\\students-1212-5\\downloads\\mygardenasp-main\\mygardenweb\\mygardenweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{500AD025-E8C0-4ACA-BFEA-0CD4EC8D36EA}|MyGardenWEB\\MyGardenWEB.csproj|solutionrelative:mygardenweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +21,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 261,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Data\\Client.cs",
-              "RelativeDocumentMoniker": "MyGardenWEB\\Data\\Client.cs",
-              "ToolTip": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Data\\Client.cs",
-              "RelativeToolTip": "MyGardenWEB\\Data\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAUwIoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T08:09:18.396Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-02-23T09:06:14.117Z",
               "EditorCaption": ""
             },
             {
@@ -42,9 +45,22 @@
               "RelativeDocumentMoniker": "MyGardenWEB\\Services\\ApplicationBuilderExtension.cs",
               "ToolTip": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Services\\ApplicationBuilderExtension.cs",
               "RelativeToolTip": "MyGardenWEB\\Services\\ApplicationBuilderExtension.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowEEAAAABAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowC4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-23T08:27:20.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\STUDENTS-1212-5\\Downloads\\MyGardenASP-main\\MyGardenWEB\\MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "MyGardenWEB\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-23T09:03:15.164Z",
               "EditorCaption": ""
             }
           ]

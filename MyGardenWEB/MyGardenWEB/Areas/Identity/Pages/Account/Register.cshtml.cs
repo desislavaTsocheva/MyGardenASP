@@ -103,6 +103,9 @@ namespace MyGardenWEB.Areas.Identity.Pages.Account
             [Display(Name = "Password")]
             public string Password { get; set; }
 
+            public string Description  { get; set; } = "User";
+            public DateTime RegisterOn { get; set; } = DateTime.Now;
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -132,6 +135,8 @@ namespace MyGardenWEB.Areas.Identity.Pages.Account
                     Email=Input.Email,
                     FirstName=Input.FirstName,
                     LastName=Input.LastName,
+                    Description= "User",
+                    RegisterOn= DateTime.Now
                 };
                 await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MyGardenWEB.Data;
+using MyGardenWEB.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,7 +41,7 @@ else
     app.UseHsts();
 }
 
-//app.PrepareDataBase().Wait();
+app.PrepareDataBase().Wait();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

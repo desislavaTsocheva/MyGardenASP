@@ -49,7 +49,10 @@ namespace MyGardenWEB.Services
                 LastName = "Belezireva",
                 PhoneNumber = "0899999999",
                 EmailConfirmed = true,
-                PhoneNumberConfirmed = true
+                PhoneNumberConfirmed = true,
+                Description = "Admin",
+                RegisterOn = DateTime.Now
+
             };
 
             var user = await userManager.FindByEmailAsync(defaultUser.Email);
