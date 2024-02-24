@@ -3,14 +3,6 @@
     color: black;
     margin: 5px;
 }
-.btn-outline-dark {
-    background-color: #ffdede;
-    margin:5px;
-}
-    .btn-outline-dark:hover {
-        background-color: #ffc6c6;
-        color: black;
-    }
 .btn-primary:hover {
     background-color: #ffc6c6;
     color: black;
