@@ -88,11 +88,12 @@ footer{
 
 
 .description {
-    text-align: center;
+    text-align:center;
     font-family: Vivaldi;
     font-size: 19px;
     color: #69324d;
     text-shadow: 2px 1px 1px white;
+    padding:10px;
 }
 
 #article3:hover {
@@ -282,25 +283,52 @@ h1{
 }
 
 .order_index{
-    height:250px;
-    width:50%;
-    display:inline-grid;
+    height:300px;
+    width:40%;
+    display:inline-flex;
     background-color:#f7e5e5;
     margin:20px;
     padding:20px;
 }
 .order img{
  float:left;
- height:200px;
- width:35%;
- margin:20px;
- padding:20px;
+ height:250px;
+ width:50%;
+ margin:5px;
+ padding:5px;
 }
 .info_order{
     float:right;
-    padding:50px;
-    margin:30px;
+    padding:10px;
+    margin:10px;
 }
-order_links {
-    float: right;
+.order_links{
+    margin-top:150px;
+}
+.order_links a img{
+    width:10px;
+    height:10px;
+    display:inline-flex;
+}
+
+.overlay_product {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 80px;
+    text-align: center;
+}
+.card:hover .overlay_product {
+    opacity: 0.9;
+}
+span{
+    width:20px;
+    height:20px;
 }

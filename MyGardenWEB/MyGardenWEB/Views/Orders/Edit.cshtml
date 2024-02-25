@@ -25,7 +25,7 @@
             </div> *@
             <div class="form-group">
                 <label asp-for="Quantity" class="control-label">Количество</label>
-                <input asp-for="Quantity" class="form-control" />
+                <input asp-for="Quantity" class="form-control" min="1"/>
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -3,9 +3,7 @@
 @{
     ViewData["Title"] = "Index";
 }
-
 <h1>Кошница</h1>
-
 <p>
     <a asp-action="Create">Поръчай</a>
 </p>
@@ -63,27 +61,35 @@
         </tbody>
     </table>
 }
-else{
-@foreach (var item in Model)
+else
 {
-    <div class="order_index">
-        <div class="order">
-            <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
-            <div class="info_order">
-              Продукт:  @Html.DisplayFor(modelItem => item.Products.BulgarianName) <br/>
-              Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
-              Обща цена:  @(item.Quantity * item.Products.Price) лв
+    @foreach (var item in Model)
+    {
+        <div class="order_index">
+            <div class="order">
+                <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
+                <div class="info_order">
+                    Продукт:  @Html.DisplayFor(modelItem => item.Products.BulgarianName) <br />
+                    Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
+                    Обща цена:  @(item.Quantity * item.Products.Price) лв
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="order_links">
+                    <a asp-action="Edit" asp-route-id="@item.Id">
+                        Редактиране
+                    </a>|
+                    <a asp-action="Details" asp-route-id="@item.Id">
+                       Детайли
+                    </a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">
+                        Изтриване
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="order_links">
-                <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
-        </div>
-
-        <br/>
-        <br/>
-    </div>
-}
+       
+    }
 }
 

@@ -2,6 +2,7 @@
     background-color: #ffdede;
     color: black;
     margin: 5px;
+    text-align:center;
 }
 .btn-primary:hover {
     background-color: #ffc6c6;

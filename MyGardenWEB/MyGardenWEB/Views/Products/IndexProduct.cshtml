@@ -23,32 +23,36 @@
                 <div class="card-img">
                     <img src="@Html.DisplayFor(modelItem=>item.PhotoURL)" width="350" height="230" />
                 </div>
-                <br/>
+                <br />
                 <h5 class="card-title">
-                  <b>@Html.DisplayFor(modelItem => item.BulgarianName)</b>  
+                    <b> @Html.DisplayFor(modelItem => item.BulgarianName)</b>
                 </h5>
                 <h5 class="card-title">
                     / @Html.DisplayFor(modelItem => item.LatinName)/
                 </h5>
-
-                <br />
                 <p class="card-subtitle">
-                    <b>   @Html.DisplayFor(modelItem => item.Price)лв</b>
+                    <b>  @Html.DisplayFor(modelItem => item.Price)лв</b>
                 </p>
-                @if (User.IsInRole("Admin"))
-                {
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Редактиране</a>
-                    <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
-                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                    <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
 
-                }
-                else
+
+                @if (!User.IsInRole("Admin"))
                 {
-                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                    <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
+                    <div class="overlay_product">
+                        <div class="buttons">
+                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+                            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
+                        </div>
+                    </div>
                 }
+
             </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Редактиране</a>
+                <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+                <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
+            }
         </div>
 
     }
