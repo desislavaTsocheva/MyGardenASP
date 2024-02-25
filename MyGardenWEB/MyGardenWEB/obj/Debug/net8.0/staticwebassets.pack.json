@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyGardenWEB.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\conversation.png",
+      "PackagePath": "staticwebassets\\conversation.png"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -273,8 +277,16 @@
       "PackagePath": "staticwebassets\\lukovitsa.jpg"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\plant.png",
+      "PackagePath": "staticwebassets\\plant.png"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\razsad.jpg",
       "PackagePath": "staticwebassets\\razsad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\shipped.png",
+      "PackagePath": "staticwebassets\\shipped.png"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\shopping-bag-32.png",

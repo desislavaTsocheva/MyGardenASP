@@ -264,3 +264,43 @@ h1{
     font-family:Vivaldi;
     font-size:40px;
 }
+.service{
+    width:100%;
+    height:100px;
+    display:inline-flex;
+    background-color:#fbeaea;
+    
+}
+.serv{
+    margin-top:20px;
+}
+.serv img{
+ margin:10px;
+ padding:10px;
+ width:50px;
+ height:50px;
+}
+
+.order_index{
+    height:250px;
+    width:50%;
+    display:inline-grid;
+    background-color:#f7e5e5;
+    margin:20px;
+    padding:20px;
+}
+.order img{
+ float:left;
+ height:200px;
+ width:35%;
+ margin:20px;
+ padding:20px;
+}
+.info_order{
+    float:right;
+    padding:50px;
+    margin:30px;
+}
+order_links {
+    float: right;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7o0rjLxLVazsUmhefWCCmhFi8GD++5sfHq87dHNfua0=",
+  "Hash": "FnyUdVdHZnaPRbbdMjBhntZbLMr5uPy1k4e3RUZAfG4=",
   "Source": "MyGardenWEB",
   "BasePath": "_content/MyGardenWEB",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyGardenWEB.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\conversation.png",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "conversation.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\conversation.png"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\css\\site.css",
@@ -2506,6 +2525,25 @@
       "OriginalItemSpec": "wwwroot\\lukovitsa.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\plant.png",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "plant.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plant.png"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\razsad.jpg",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -2523,6 +2561,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\razsad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\shipped.png",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "shipped.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\shipped.png"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\wwwroot\\shopping-bag-32.png",
