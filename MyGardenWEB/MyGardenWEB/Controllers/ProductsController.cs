@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MyGardenWEB.Data;
+using static NuGet.Packaging.PackagingConstants;
 
 namespace MyGardenWEB.Controllers
 {
@@ -21,16 +23,59 @@ namespace MyGardenWEB.Controllers
             _context = context;
         }
 
-        // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Filter(string searchString)
         {
-            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            return View(await _context.Products.Where(x => x.CategoriesId == 1).ToListAsync());
+            if (_context.Products == null)
+            {
+                return Problem("Context is empty");
+            }
+            var products = from m in _context.Products select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.BulgarianName!.Contains(searchString));
+            }
+            return View(await products.ToListAsync());
+
         }
-        public async Task<IActionResult> IndexProduct()
+
+        // GET: Products
+        public async Task<IActionResult> Index(string searchString)
         {
             //var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
+            //return View(await _context.Products.Where(x => x.CategoriesId == 1).ToListAsync());
+            if (searchString.IsNullOrEmpty())
+            {
+                return View(await _context.Products.Where(x => x.CategoriesId == 1).ToListAsync());
+            }
+            if (_context.Products == null)
+            {
+                return Problem("Context is empty");
+            }
+            var products = from m in _context.Products select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.BulgarianName.Contains(searchString)||s.LatinName.Contains(searchString));
+            }
+            return View(products.ToList()); //return View(await _context.Flowers.ToListAsync());
+        }
+        public async Task<IActionResult> IndexProduct(string searchString)
+        {
+            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
+            // return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
+            if (searchString.IsNullOrEmpty())
+            {
+              return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
+            }
+            if (_context.Products == null)
+            {
+                return Problem("Context is empty");
+            }
+            var products = from m in _context.Products select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.BulgarianName.Contains(searchString)||s.LatinName.Contains(searchString));
+            }
+            return View(products.ToList()); //return View(await _context.Flowers.ToListAsync());
         }
 
         // GET: Products/Details/5
