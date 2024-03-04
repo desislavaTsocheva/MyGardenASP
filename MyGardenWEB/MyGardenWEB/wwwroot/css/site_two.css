@@ -15,3 +15,22 @@
     background-color:#ffdede;
     border-radius:3px;
 }
+.login_acc{
+    background-color:#fee8e8;
+    height:500px;
+    width:100%;
+    margin:10px;
+    padding:20px;
+    border-radius:5px;
+}
+h2{
+    font-family:Vivaldi;
+}
+.register_acc {
+    background-color: #fee8e8;
+    height: 650px;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}

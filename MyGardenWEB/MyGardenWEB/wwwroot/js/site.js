@@ -17,3 +17,17 @@
 //        }
 //    ).then(message => alert(message));
 //}
+
+// Извличане на елементите от DOM-a
+//var selectProduct = document.getElementById("ProductsId"); // Променете "selectProduct" с ID-то на вашия селектор
+
+//// Добавяне на събитие за промяна на избрания продукт
+//selectProduct.addEventListener("change", function() {
+//    var selectedOption = selectProduct.options[selectProduct.selectedIndex];
+//    var selectedProductId = selectedOption.value; // Вземане на стойността на избрания продукт (например, ID на продукта)
+//    var selectedProductName = selectedOption.textContent; // Вземане на името на избрания продукт
+
+//    // Примерен код за обновяване на стойността на полето за избор на продукт
+//    document.getElementById("ProductsId").value = ProductsId; // Променете "selectedProductId" с ID-то на вашия елемент за показване на ID-то на избрания продукт
+//    document.getElementById("BulgarianName").textContent = BulgarianName; // Променете "selectedProductName" с ID-то на вашия елемент за показване на името на избрания продукт
+//});
