@@ -6,39 +6,15 @@
 
 <h1>Детайли за поръчката</h1>
 
-<div>
-    <h4>Поръчка</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @* @Html.DisplayNameFor(model => model.Products) *@
-            Продукт
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Products.Id)
-        </dd>
-        <dt class = "col-sm-2">
-           @*  @Html.DisplayNameFor(model => model.Clients) *@
-           Клиент
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Clients.UserName)
-        </dd>
-        <dt class = "col-sm-2">
-            @* @Html.DisplayNameFor(model => model.Quantity) *@
-            Количество
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @* @Html.DisplayNameFor(model => model.Quantity) *@
-             Единична цена
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model=>model.Products.Price)
-        </dd>
-    </dl>
+<div class="product">
+    <div class="product_info">
+        <label>Продукт: </label>@Html.DisplayFor(model => model.Products.BulgarianName)  /@Html.DisplayFor(model => model.Products.LatinName)/ <br />
+        <label>Размер: </label> @Html.DisplayFor(model => model.Products.Size) <br />
+        <label>Единична цена: </label> @Html.DisplayFor(model => model.Products.Price) лв.<br />
+        <label>Количество: </label>@Html.DisplayFor(model => model.Quantity)<br />
+        <label>Клиент: </label>@Html.DisplayFor(model => model.Clients.UserName)<br />
+
+    </div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |

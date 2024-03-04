@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J3NNWyPyZ1YqoVlV0gKT/3GE98dDlu6GkKK1B8ReuZTZfxjsCViG5p3V9389GzVRb2AuCaJ+sQ8YXukBhRS80w==",
+  "dgSpecHash": "1xtjBOwC92eKRzd3UCHdBGDN2p8sm2BQyQ6xGyzm2ZEbBQZA20iOlLbHnOaPbgYKN9nnjR1Z310laH+Mg7TQig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
+  "projectFilePath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\viole\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\viole\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

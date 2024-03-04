@@ -332,3 +332,20 @@ span{
     width:20px;
     height:20px;
 }
+.product{
+    height:350px;
+    width:80%;
+}
+.product_img img{
+    height:300px;
+    width:40%;
+    margin:20px;
+    padding:20px;
+    float:left;
+}
+.product_info{
+    font-size:28px;
+    font-family:Vivaldi;
+    margin:20px;
+    padding:30px;
+}

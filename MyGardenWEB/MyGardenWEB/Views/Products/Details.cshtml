@@ -2,88 +2,38 @@
 
 @{
     ViewData["Title"] = "Details";
+
 }
 
 <h1>Детайли за продукт</h1>
 
-<div>
-    <h4>Продукт</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            <label>Българско наименование</label>
-            @*             @Html.DisplayNameFor(model => model.BulgarianName)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.BulgarianName)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Латиснко наименование</label>
-            @*             @Html.DisplayNameFor(model => model.LatinName)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.LatinName)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Размер</label>
-            @*  @Html.DisplayNameFor(model => model.Size) *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Size)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Описание</label>
-            @*             @Html.DisplayNameFor(model => model.Description)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Снимка</label>
-            @*             @Html.DisplayNameFor(model => model.PhotoURL)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            <img src="@Html.DisplayFor(model => model.PhotoURL)" height="200" width="300" />
-        </dd>
-        <dt class="col-sm-2">
-            <label>Цена</label>
-            @*             @Html.DisplayNameFor(model => model.Price)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Регистрация</label>
-            @*             @Html.DisplayNameFor(model => model.RegisterOn)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.RegisterOn)
-        </dd>
-        <dt class="col-sm-2">
-            <label>Категория</label>
-            @*             @Html.DisplayNameFor(model => model.Categories)
-            *@
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Categories.Id)
-        </dd>
-    </dl>
+<div class="product">
+    <div class="product_img">
+        <img src="@Html.DisplayFor(model => model.PhotoURL)" />
+    </div>
+    <div class="product_info">
+        @Html.DisplayFor(model => model.BulgarianName)  /@Html.DisplayFor(model => model.LatinName)/ <br />
+        <label>Размер: </label> @Html.DisplayFor(model => model.Size);<br />
+        <label>Цена: </label> @Html.DisplayFor(model => model.Price);
+    </div>
+    <div class="buttons">
+        <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="Id">Поръчай</a>
+    </div>
 </div>
-<div>
-    @if (User.IsInRole("Admin"))
-    {
-        <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
-        <a asp-action="Index">Връщане назад</a>
+   
+<h4>Описание</h4>
+<hr />
+@Html.DisplayFor(model => model.Description)
+<br />
+<br />
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
+    <a asp-action="Index">Връщане назад</a>
 
-    }
-    else
-    {
-        <a asp-action="Index">Връщане назад</a>
-    }
-</div>
+}
+else
+{
+    <a asp-action="Index">Връщане назад</a>
+}
+
