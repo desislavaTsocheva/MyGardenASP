@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Products)
+                @Html.DisplayNameFor(model => model.Products.BulgarianName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Url)
@@ -25,23 +25,25 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Products.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Url)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RegisterOn)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.BulgarianName)
+                </td>
+                <td>
+                        <img src="@Html.DisplayFor(modelItem => item.Files)" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegisterOn)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                </td>
+            </tr>
+        }
+        
     </tbody>
 </table>

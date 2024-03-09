@@ -19,6 +19,9 @@ namespace MyGardenWEB.Data
         public Category Categories { get; set; }    //1:M
         public ICollection<Order> Orders { get; set; }
         public ICollection<Photo> Photos { get; set; }
+       // [NotMapped]
+        //public List<IFormFile> Files { get; set; } //////////
+
 
     }
 }

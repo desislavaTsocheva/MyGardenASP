@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
@@ -16,6 +24,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Files\" />
   </ItemGroup>
 
 </Project>

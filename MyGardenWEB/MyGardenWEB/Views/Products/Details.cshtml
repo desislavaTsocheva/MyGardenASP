@@ -1,8 +1,7 @@
-﻿@model MyGardenWEB.Data.Product
+﻿@model MyGardenWEB.ViewModel.ProductVM
 
 @{
     ViewData["Title"] = "Details";
-
 }
 
 <h1>Детайли за продукт</h1>
@@ -16,11 +15,22 @@
         <label>Размер: </label> @Html.DisplayFor(model => model.Size);<br />
         <label>Цена: </label> @Html.DisplayFor(model => model.Price);
     </div>
+   
+
     <div class="buttons">
         <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="Id">Поръчай</a>
     </div>
+    
+  
 </div>
-   
+<div class="multiple_img">
+    @foreach (var item in (IEnumerable<string>)Model.Files)
+    {
+        <div class="multiple_images">
+            <img src=@Url.Content(item) />
+        </div>
+    }
+</div>
 <h4>Описание</h4>
 <hr />
 @Html.DisplayFor(model => model.Description)

@@ -10,22 +10,22 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ProductsId" class="control-label">Продукт</label>
-                <select asp-for="ProductsId" class ="form-control" asp-items="ViewBag.ProductsId"></select>
+                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Url" class="control-label">Снимка</label>
-                <input asp-for="Url" class="form-control" />
-                <span asp-validation-for="Url" class="text-danger"></span>
+                <label asp-for="Files" class="control-label">Снимка</label>
+                <input asp-for="Files" class="form-control" required />
+                <span asp-validation-for="Files" class="text-danger"></span>
             </div>
-            <div class="form-group">
+           @*  <div class="form-group">
                 <label asp-for="RegisterOn" class="control-label">Регистрация</label>
                 <input asp-for="RegisterOn" class="form-control" />
                 <span asp-validation-for="RegisterOn" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <input type="submit" value="Добави" class="btn btn-primary" />
             </div>

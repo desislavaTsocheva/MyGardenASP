@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyGardenWEB.Data;
+using MyGardenWEB.ViewModel;
 
 namespace MyGardenWEB.Controllers
 {
     public class PhotosController : Controller
     {
         private readonly MyGardenDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public PhotosController(MyGardenDbContext context)
+        public PhotosController(MyGardenDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Photos
         public async Task<IActionResult> Index()
         {
-            var myGardenDbContext = _context.Photos.Include(p => p.Products);
-            return View(await myGardenDbContext.ToListAsync());
+            return View(await _context.Photos.ToListAsync());
         }
 
         // GET: Photos/Details/5
@@ -47,25 +50,64 @@ namespace MyGardenWEB.Controllers
         // GET: Photos/Create
         public IActionResult Create()
         {
+            Photo images = new Photo();
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
-            return View();
+            return View(images);
         }
-
         // POST: Photos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductsId,Url,RegisterOn")] Photo photo)
+        public async Task<IActionResult> Create([Bind("ProductsId,Url,Files")] Photo photo, Product product)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
+            //{
+            photo.RegisterOn = DateTime.Now;
+
+            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
+            
+            //_context.Photos.Add(photo);
+            //await _context.SaveChangesAsync();
+            //return RedirectToAction(nameof(Index)); 
+            //}
+            if (photo.ProductsId!= 0)
             {
-                _context.Add(photo);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                foreach (var item in photo.Files)
+                {
+                    string fileName = Upload(item);
+                    Photo productImage = new Photo()
+                    {
+                        Url = fileName,
+                        ProductsId = photo.ProductsId
+                    };
+                    _context.Photos.Add(productImage);
+                }
             }
-            ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", photo.ProductsId);
-            return View(photo);
+            else
+            {
+                return RedirectToAction("Create");
+            }
+            await _context.SaveChangesAsync();
+          
+            //ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "Id", photo.ProductsId);
+            return RedirectToAction("Index");
+        }
+
+        private string Upload(IFormFile file)
+        {
+            string fileName = "";
+            if (file != null)
+            {
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, file.Name);
+                fileName = Guid.NewGuid().ToString() + "-" + file.FileName;
+                string filePath = Path.Combine(uploadDir, fileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
+                }
+            }
+            return fileName;
         }
 
         // GET: Photos/Edit/5
@@ -75,7 +117,6 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-
             var photo = await _context.Photos.FindAsync(id);
             if (photo == null)
             {

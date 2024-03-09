@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,6 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 using MyGardenWEB.Data;
 using MyGardenWEB.Models;
 using MyGardenWEB.Services;
+using MyGardenWEB.ViewModel;
 using static NuGet.Packaging.PackagingConstants;
 
 namespace MyGardenWEB.Controllers
@@ -20,23 +23,17 @@ namespace MyGardenWEB.Controllers
     public class ProductsController : Controller
     {
         private readonly MyGardenDbContext _context;
-        private readonly IWebHostEnvironment _hostEnvironment;
-        private string wwwroot;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        ///private string wwwroot;
 
-        public ProductsController(MyGardenDbContext context)
+        public ProductsController(MyGardenDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;   
         }
         // GET: Products
         public async Task<IActionResult> Index(string searchString)
         {
-            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            //return View(await _context.Products.Where(x => x.CategoriesId == 1).ToListAsync());
-            //List<Product> model = await _context.Products.Include(img => img.Photos).ToListAsync();
-            //foreach(var item in model)
-            //{
-            //    item.Photos=_context.Photos.Where(x=>x.ProductsId==item.Id).ToList();
-            //}
 
             if (searchString.IsNullOrEmpty())
             {
@@ -55,15 +52,6 @@ namespace MyGardenWEB.Controllers
         }
         public async Task<IActionResult> IndexProduct(string searchString)
         {
-            //var myGardenDbContext = _context.Products.Include(p => p.Categories);
-            // return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
-           
-            //List<Product> model = await _context.Products.Include(img => img.Photos).ToListAsync();
-            //foreach (var item in model)
-            //{
-            //    item.Photos = _context.Photos.Where(x => x.ProductsId == item.Id).ToList();
-            //}
-
             if (searchString.IsNullOrEmpty())
             {
               return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
@@ -83,41 +71,43 @@ namespace MyGardenWEB.Controllers
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            //Product product = await _context.Products.Include(img => img.Photos).FirstOrDefaultAsync(m => m.Id == id);
-            //var imagePath = Path.Combine(wwwroot, "Photos");
-            //ProductDetails modelVM = new ProductDetails()
-            //{
-            //    BulgarianName=product.BulgarianName,
-            //    LatinName=product.LatinName,
-            //    Size=product.Size,  
-            //    Description=product.Description,    
-            //    Price=product.Price, 
-            //    Categories=product.Categories,
-            //    ImagesPaths = _context.Photos
-            //    .Where(img => img.ProductsId == product.Id)
-            //    .Select(x => $"/ProductImages/{x.Url}").ToList<string>()
-            //};
-
             if (id == null)
             {
                 return NotFound();
             }
+            //var photos=await _context.Photos.Include(p=>p.Files).ToListAsync();
 
             var products = await _context.Products
                 .Include(p => p.Categories)
+                .Include(h=>h.Photos)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (products == null)
             {
                 return NotFound();
             }
+            ProductVM prodVM = new ProductVM()
+            {
+                BulgarianName = products.BulgarianName,
+                LatinName = products.LatinName,
+                Size = products.Size,
+                Price = products.Price,
+                PhotoURL = products.PhotoURL,
+                Description = products.Description,
+                Files = _context.Photos
+                .Where(img => img.ProductsId == products.Id)
+                .Select(x => $"~/Files/{x.Url}").ToList<string>()
+            };
 
-            return View(products);
+
+            return View(prodVM);
         }
 
         // GET: Products/Create
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
+            //Photo images = new Photo();
             ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
@@ -127,7 +117,7 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId")] Product product)
+        public async Task<IActionResult> Create([Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId")] Product product,Photo photo)
         {
             product.RegisterOn = DateTime.Now;
             if (!ModelState.IsValid)
@@ -136,13 +126,28 @@ namespace MyGardenWEB.Controllers
                 return View(product);
 
             }
-            //ImagesBuilder imagesBuilder = new ImagesBuilder(_context, _hostEnvironment);
-            //await imagesBuilder.CreateImages(products);
+            
+           await _context.SaveChangesAsync();
+           
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        private string Upload(IFormFile file)
+        {
+            string fileName = "";
+            if (file != null)
+            {
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, file.Name);
+                fileName = Guid.NewGuid().ToString() + "-" + file.FileName;
+                string filePath = Path.Combine(uploadDir, fileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
+                }
+            }
+            return fileName;
+        }
         // GET: Products/Edit/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
@@ -158,20 +163,6 @@ namespace MyGardenWEB.Controllers
                 return NotFound();
             }
             ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoriesId);
-            //ProductDetails model = new ProductDetails
-            //{
-            //    Id = product.Id,
-            //    BulgarianName = product.BulgarianName,
-            //    LatinName = product.LatinName,  
-            //    Size = product.Size,
-            //    Price = product.Price,
-            //    Description = product.Description,
-            //    Categories = product.Categories,
-            //    ImagesPaths = _context.Photos
-            //   .Where(img => img.ProductsId == product.Id)
-            //   .Select(x => $"/ProductImages/{x.Url}").ToList<string>()
-            //};
-            //return View(model);
             return View(product);
         }
 
@@ -187,13 +178,6 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-            //product.RegisterOn = DateTime.Now;
-            //modelToDB.BulgarianName = product.BulgarianName;
-            //modelToDB.LatinName = product.LatinName;
-            //modelToDB.Size = product.Size;
-            //modelToDB.Price = product.Price;
-            //modelToDB.Description = product.Description;
-            //modelToDB.Categories = product.Categories;
 
             if (!ModelState.IsValid)
             {

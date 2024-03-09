@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1xtjBOwC92eKRzd3UCHdBGDN2p8sm2BQyQ6xGyzm2ZEbBQZA20iOlLbHnOaPbgYKN9nnjR1Z310laH+Mg7TQig==",
+  "dgSpecHash": "2+I/Eq3LMKXcR7wymzlibSFfwKeu6RdC9kSu8xmJU6AILUy8izgqnAzt6jwrje4thpOeR2pgLRvorhc60GuM2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\MyGardenWEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\viole\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\viole\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\viole\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
+    "C:\\Users\\viole\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
     "C:\\Users\\viole\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\viole\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\viole\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

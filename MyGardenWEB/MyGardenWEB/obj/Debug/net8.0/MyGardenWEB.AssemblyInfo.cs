@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyGardenWEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98322e5b2b21108bf3e151f3e1c2983dcb89329b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc2c07271bc6a93e75734b970057136e3a89ac17")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyGardenWEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyGardenWEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
