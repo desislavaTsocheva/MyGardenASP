@@ -12,19 +12,22 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Products)
+       @*      @Html.DisplayNameFor(model => model.Products) *@
+            <lable>Продукт</lable>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Products.Id)
         </dd>
+      @*   <dt class = "col-sm-2">
+           @*  @Html.DisplayNameFor(model => model.Url)
+            <lable>Снимка</lable>
+        </dt> *@
+     @*    <dd class = "col-sm-10">
+            <img src=" @Html.DisplayFor(model => model.Url)" width="200" height="150" />
+        </dd> *@
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Url)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Url)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RegisterOn)
+         @*    @Html.DisplayNameFor(model => model.RegisterOn) *@
+            <lable>Регистрация</lable>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.RegisterOn)

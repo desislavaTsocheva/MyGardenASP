@@ -11,32 +11,27 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Products)
+           @*  @Html.DisplayNameFor(model => model.Products) *@
+            <lable>Продукт</lable>
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Products.Id)
+            @Html.DisplayFor(model => model.ProductsId)
         </dd>
+    @*     <dt class="col-sm-2">
+            @* @Html.DisplayNameFor(model => model.Url) 
+            <lable>Снимка</lable>
+        </dt> *@
+@*         <dd class="col-sm-10">
+            <img src=" @Html.DisplayFor(model => model.Url)" width="200" height="150"/>
+        </dd> *@
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Url)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Url)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.RegisterOn)
+          @*   @Html.DisplayNameFor(model => model.RegisterOn) *@
+            <lable>Регистрация</lable>
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.RegisterOn)
         </dd>
     </dl>
-    <div class="img-fluid">
-        @foreach (var item in "~/Files/")
-        {
-            <div>
-                <img src="@Url.Content("~/Files/" + item)" width="200" height="auto" />
-            </div>
-        }
-    </div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |

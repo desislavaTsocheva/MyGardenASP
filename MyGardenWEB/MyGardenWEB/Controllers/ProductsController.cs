@@ -29,7 +29,7 @@ namespace MyGardenWEB.Controllers
         public ProductsController(MyGardenDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
-            _webHostEnvironment = webHostEnvironment;   
+            _webHostEnvironment = webHostEnvironment;
         }
         // GET: Products
         public async Task<IActionResult> Index(string searchString)
@@ -46,7 +46,7 @@ namespace MyGardenWEB.Controllers
             var products = from m in _context.Products select m;
             if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(s => s.BulgarianName.Contains(searchString)||s.LatinName.Contains(searchString));
+                products = products.Where(s => s.BulgarianName.Contains(searchString) || s.LatinName.Contains(searchString));
             }
             return View(products.ToList()); //return View(await _context.Flowers.ToListAsync());
         }
@@ -54,7 +54,7 @@ namespace MyGardenWEB.Controllers
         {
             if (searchString.IsNullOrEmpty())
             {
-              return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
+                return View(await _context.Products.Where(x => x.CategoriesId == 2 || x.CategoriesId == 3).ToListAsync());
             }
             if (_context.Products == null)
             {
@@ -63,7 +63,7 @@ namespace MyGardenWEB.Controllers
             var products = from m in _context.Products select m;
             if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(s => s.BulgarianName.Contains(searchString)||s.LatinName.Contains(searchString));
+                products = products.Where(s => s.BulgarianName.Contains(searchString) || s.LatinName.Contains(searchString));
             }
             return View(products.ToList()); //return View(await _context.Flowers.ToListAsync());
         }
@@ -79,7 +79,7 @@ namespace MyGardenWEB.Controllers
 
             var products = await _context.Products
                 .Include(p => p.Categories)
-                .Include(h=>h.Photos)
+                .Include(h => h.Photos)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
             if (products == null)
@@ -107,7 +107,7 @@ namespace MyGardenWEB.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            //Photo images = new Photo();
+           // Photo images = new Photo();
             ViewData["CategoriesId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
@@ -117,7 +117,7 @@ namespace MyGardenWEB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId")] Product product,Photo photo)
+        public async Task<IActionResult> Create([Bind("BulgarianName,LatinName,Size,Description,PhotoURL,Price,CategoriesId,Files")] Product product, Photo photo)
         {
             product.RegisterOn = DateTime.Now;
             if (!ModelState.IsValid)
@@ -126,9 +126,24 @@ namespace MyGardenWEB.Controllers
                 return View(product);
 
             }
-            
-           await _context.SaveChangesAsync();
-           
+            //if (photo.ProductsId != 0)
+            //{
+            //    foreach (var item in photo.Files)
+            //    {
+            //        string fileName = Upload(item);
+            //        Photo productImage = new Photo()
+            //        {
+            //            Url = fileName,
+            //            ProductsId = photo.ProductsId
+            //        };
+            //        _context.Photos.Add(productImage);
+            //    }
+            //}
+            //else
+            //{
+            //    return RedirectToAction("Create");
+            //}
+            await _context.SaveChangesAsync();
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

@@ -33,12 +33,16 @@ namespace MyGardenWEB.Controllers
         public IActionResult ForUs()
         {
             return View();
-        }  
+        }
         public IActionResult Categories()
         {
             return View();
         }
-     
+        public IActionResult Photos()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

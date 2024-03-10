@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyGardenWEB.Data
 {
     public class Product
     {
+        [Key]
         public int Id { get; set; } //P.K.
         public string BulgarianName { get; set; }
         public string LatinName { get; set; }
@@ -19,8 +21,8 @@ namespace MyGardenWEB.Data
         public Category Categories { get; set; }    //1:M
         public ICollection<Order> Orders { get; set; }
         public ICollection<Photo> Photos { get; set; }
-       // [NotMapped]
-        //public List<IFormFile> Files { get; set; } //////////
+        //[NotMapped]
+       // public List<IFormFile> Files { get; set; } //////////
 
 
     }

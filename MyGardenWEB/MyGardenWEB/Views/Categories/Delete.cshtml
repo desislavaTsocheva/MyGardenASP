@@ -12,20 +12,23 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+          @*   @Html.DisplayNameFor(model => model.Name) *@
+          <lable>Категория</lable>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+            <lable>Описание</lable>
+@*             @Html.DisplayNameFor(model => model.Description)
+ *@        </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RegisterOn)
-        </dt>
+            <lable>Регистрация</lable>
+@*             @Html.DisplayNameFor(model => model.RegisterOn)
+ *@        </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.RegisterOn)
         </dd>
