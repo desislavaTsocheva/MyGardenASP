@@ -42,12 +42,6 @@ namespace MyGardenWEB.Controllers
                     .Include(o => o.Products)
                     .Where(x => x.ClientsId == _userManager.GetUserId(User));
                 return View(await myGardenDbContext.ToListAsync());
-                //var currentUser = _userManager.GetUserId(User);
-                //var myOrders = _context.Orders
-                //    .Include(o => o.Products)
-                //    .Include(u => u.Clients)
-                //    .Where(x => x.ClientsId == currentUser.ToString()).ToListAsync();
-                //return View(await myOrders);
             }
         }
 
@@ -81,11 +75,14 @@ namespace MyGardenWEB.Controllers
             return View();
         }
 
-        public async Task<IActionResult> CreateViewWithProductId(int productId, int counter)
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
             Order order = new Order();
-            order.ProductsId = productId;
-            order.Quantity = counter;
+            //order.ProductsId = productId;
+            productId = order.ProductsId;
+            order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();

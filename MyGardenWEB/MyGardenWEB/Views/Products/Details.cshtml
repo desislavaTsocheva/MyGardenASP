@@ -15,13 +15,16 @@
         <label>Размер: </label> @Html.DisplayFor(model => model.Size);<br />
         <label>Цена: </label> @Html.DisplayFor(model => model.Price);
     </div>
-   
 
-    <div class="buttons">
-        <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="Id">Поръчай</a>
+    <div class="quantity">
+   @*      <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@ViewBag.ProductsId">
+            <input name="countP" id="ccount" type="number" width="1" value="1" style="font:bold"/> Броя
+            <input type="submit" value="order" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-id="@Model.Id"/>
+        </form> *@
+        <div class="buttons">
+            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@Model.Id">Добави в количката</a>
+        </div>
     </div>
-    
-  
 </div>
 <div class="multiple_img">
     @foreach (var item in (IEnumerable<string>)Model.Files)
@@ -33,7 +36,7 @@
 </div>
 <h4>Описание</h4>
 <hr />
-@Html.DisplayFor(model => model.Description)
+<p style="font-family:Vivaldi; font-size:24px; text-align:justify">@Html.DisplayFor(model => model.Description)</p>
 <br />
 <br />
 @if (User.IsInRole("Admin"))

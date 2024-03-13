@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using MyGardenWEB.Data;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyGardenWEB.ViewModel
 {
@@ -14,6 +15,7 @@ namespace MyGardenWEB.ViewModel
 
         public decimal Price { get; set; }
 
-        public List<string> Files { get; set; }     
+        public List<string> Files { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }
