@@ -48,8 +48,9 @@
                         <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
                     </td>
                     <td>
-                        @(item.Quantity * item.Products.Price) лв
-                    </td>
+                        <label asp-for="@item.Quantity" readonly></label>
+                        @*                         @(item.Quantity * item.Products.Price) лв
+ *@                    </td>
 
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |

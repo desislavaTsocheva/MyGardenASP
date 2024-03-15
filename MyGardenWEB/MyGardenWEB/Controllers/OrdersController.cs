@@ -79,11 +79,12 @@ namespace MyGardenWEB.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
+            var currentProduct=await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);  
             Order order = new Order();
-            //order.ProductsId = productId;
-            productId = order.ProductsId;
+            order.ProductsId = productId;
             order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
+            var price= countP*currentProduct.Price;
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
