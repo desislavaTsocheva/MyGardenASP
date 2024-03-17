@@ -290,6 +290,32 @@ namespace MyGardenWEB.Migrations
                     b.ToTable("Orders");
                 });
 
+            modelBuilder.Entity("MyGardenWEB.Data.OrderDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
+                });
+
             modelBuilder.Entity("MyGardenWEB.Data.Photo", b =>
                 {
                     b.Property<int>("Id")
@@ -426,6 +452,25 @@ namespace MyGardenWEB.Migrations
                     b.Navigation("Clients");
 
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("MyGardenWEB.Data.OrderDetail", b =>
+                {
+                    b.HasOne("MyGardenWEB.Data.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MyGardenWEB.Data.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("MyGardenWEB.Data.Photo", b =>

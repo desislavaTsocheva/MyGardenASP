@@ -11,7 +11,9 @@
         public Client Clients { get; set; } 
 
         public int Quantity {  get; set; }
-        public DateTime RegisterOn { get; } = DateTime.Now;    
-        
+        public DateTime RegisterOn { get; } = DateTime.Now;
+        //public ICollection<OrderDetail> OrderDetails { get; set; }
+
+
     }
 }

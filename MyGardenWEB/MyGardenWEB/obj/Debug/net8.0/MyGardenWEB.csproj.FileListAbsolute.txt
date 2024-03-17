@@ -596,3 +596,5 @@ C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGarden
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\runtimes\osx-x64\native\libgrpc_csharp_ext.x64.dylib
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\runtimes\win-x64\native\grpc_csharp_ext.x64.dll
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\runtimes\win-x86\native\grpc_csharp_ext.x86.dll
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
