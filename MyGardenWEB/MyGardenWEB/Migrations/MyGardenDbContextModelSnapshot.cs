@@ -17,7 +17,7 @@ namespace MyGardenWEB.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -298,22 +298,32 @@ namespace MyGardenWEB.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<string>("ClientsId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("ProductId")
+                    b.Property<bool>("Final")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("OrderedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductsId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18, 2)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("ClientsId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("ProductsId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("OrderDetail");
                 });
 
             modelBuilder.Entity("MyGardenWEB.Data.Photo", b =>
@@ -456,21 +466,21 @@ namespace MyGardenWEB.Migrations
 
             modelBuilder.Entity("MyGardenWEB.Data.OrderDetail", b =>
                 {
-                    b.HasOne("MyGardenWEB.Data.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
+                    b.HasOne("MyGardenWEB.Data.Client", "Clients")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ClientsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyGardenWEB.Data.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
+                    b.HasOne("MyGardenWEB.Data.Product", "Products")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Order");
+                    b.Navigation("Clients");
 
-                    b.Navigation("Product");
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("MyGardenWEB.Data.Photo", b =>
@@ -502,11 +512,15 @@ namespace MyGardenWEB.Migrations
 
             modelBuilder.Entity("MyGardenWEB.Data.Client", b =>
                 {
+                    b.Navigation("OrderDetails");
+
                     b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("MyGardenWEB.Data.Product", b =>
                 {
+                    b.Navigation("OrderDetails");
+
                     b.Navigation("Orders");
 
                     b.Navigation("Photos");

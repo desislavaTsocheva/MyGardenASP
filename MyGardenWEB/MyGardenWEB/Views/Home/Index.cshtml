@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MyGardenWEB.Data.Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
@@ -26,10 +27,11 @@
                         <div class="overlay">
                             <h1>
                                 При нас можете да откриете голямо разнообразие от <br />
-                                цветя, луковици и разсади</h1>
+                                цветя, луковици и разсади
+                            </h1>
                         </div>
                     </li>
-                  
+
                     <li>
                         <img src="./images/snimka4.jpg" width="100%" height="650" class="main-img">
                         <div class="overlay">
@@ -92,7 +94,5 @@
 
             </div>
         </div>
-
-
+        </div>
     </div>
-</div>

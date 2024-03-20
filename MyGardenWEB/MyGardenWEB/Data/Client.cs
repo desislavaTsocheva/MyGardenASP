@@ -9,6 +9,7 @@ namespace MyGardenWEB.Data
         public string Description { get; set; }
         public DateTime RegisterOn { get; set; } = DateTime.Now;
         public ICollection<Order> Orders { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O9F9WGFsLFsE2yVsXJOIpxNXgIJ6pcLTxV9TcHa3u4w=",
+  "Hash": "5mqNlSbfAqissbeYY6MP8+8Mc4OwLi95pZ87QKbnwaY=",
   "Source": "MyGardenWEB",
   "BasePath": "_content/MyGardenWEB",
   "Mode": "Default",
@@ -3228,6 +3228,25 @@
       "OriginalItemSpec": "wwwroot\\images\\lukovitsa.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\pencil.png",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "images/pencil.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pencil.png"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\plant.png",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -4651,25 +4670,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lukovitsa.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\pencil.png",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "pencil.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\pencil.png"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\plant.png",

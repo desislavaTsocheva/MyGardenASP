@@ -20,6 +20,7 @@ namespace MyGardenWEB.Data
         public int CategoriesId { get; set; }  //F.K
         public Category Categories { get; set; }    //1:M
         public ICollection<Order> Orders { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
         public ICollection<Photo> Photos { get; set; }
        // public List<string> Files { get; set; }
         // [NotMapped]

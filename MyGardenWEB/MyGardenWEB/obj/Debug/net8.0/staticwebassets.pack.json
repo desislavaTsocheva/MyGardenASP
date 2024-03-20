@@ -425,6 +425,10 @@
       "PackagePath": "staticwebassets\\images\\lukovitsa.jpg"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\pencil.png",
+      "PackagePath": "staticwebassets\\images\\pencil.png"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\plant.png",
       "PackagePath": "staticwebassets\\images\\plant.png"
     },
@@ -723,10 +727,6 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\lukovitsa.jpg",
       "PackagePath": "staticwebassets\\lukovitsa.jpg"
-    },
-    {
-      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\pencil.png",
-      "PackagePath": "staticwebassets\\pencil.png"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\plant.png",

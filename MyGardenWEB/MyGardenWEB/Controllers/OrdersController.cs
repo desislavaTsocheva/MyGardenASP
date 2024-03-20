@@ -82,7 +82,7 @@ namespace MyGardenWEB.Controllers
             var currentProduct=await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);  
             Order order = new Order();
             order.ProductsId = productId;
-            order.Quantity = countP;
+            order.Quantity = 1;
             order.ClientsId = _userManager.GetUserId(User);
             var price= countP*currentProduct.Price;
             _context.Orders.Add(order);
@@ -183,8 +183,22 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-
-            return View(order);
+            if (_context.Orders == null)
+            {
+                return Problem("Entity set 'MyGardenDbContext.Orders' is null");
+            }
+            var orders = await _context.Orders.FindAsync(id);
+            //.Include(u => u.Clients)
+            //.FirstOrDefaultAsync(x => x.Id == id);
+            //FindAsync(id);
+            if (orders != null)
+            {
+                _context.Orders.Remove(orders);
+            }
+            // _context.Orders.Remove(order);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+           // return View();
         }
 
         // POST: Orders/Delete/5

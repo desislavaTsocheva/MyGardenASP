@@ -12,17 +12,21 @@
     </div>
     <div class="product_info">
         @Html.DisplayFor(model => model.BulgarianName)  /@Html.DisplayFor(model => model.LatinName)/ <br />
-        <label>Размер: </label> @Html.DisplayFor(model => model.Size);<br />
-        <label>Цена: </label> @Html.DisplayFor(model => model.Price);
+        <label>Размер: </label> @Html.DisplayFor(model => model.Size)<br />
+        <label>Цена: </label> @Html.DisplayFor(model => model.Price)
     </div>
 
     <div class="quantity">
-   @*      <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@ViewBag.ProductsId">
-            <input name="countP" id="ccount" type="number" width="1" value="1" style="font:bold"/> Броя
-            <input type="submit" value="order" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-id="@Model.Id"/>
-        </form> *@
+        <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id">
+            <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
+            <input type="submit" value="Order" />
+            <a asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP=ViewBag.counter>К У П И</a>
+            &nbsp;
+        </form>
+    </div>
+
         <div class="buttons">
-            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@Model.Id">Добави в количката</a>
+            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@Model.Id" asp-route-countP="@Model.Orders.">Добави в количката</a>
         </div>
     </div>
 </div>
@@ -34,9 +38,11 @@
         </div>
     }
 </div>
-<h4>Описание</h4>
-<hr />
-<p style="font-family:Vivaldi; font-size:24px; text-align:justify">@Html.DisplayFor(model => model.Description)</p>
+<div class="description_prod">
+    <h4>Описание</h4>
+    <hr />
+    <p style="font-family:Vivaldi; font-size:24px; text-align:justify">@Html.DisplayFor(model => model.Description)</p>
+</div>
 <br />
 <br />
 @if (User.IsInRole("Admin"))
