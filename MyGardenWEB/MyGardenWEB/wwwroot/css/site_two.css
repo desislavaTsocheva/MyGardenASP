@@ -34,3 +34,13 @@ h2{
     padding: 20px;
     border-radius: 5px;
 }
+.calculate{
+    width:40%;
+    background-color:#fee8e8;
+    border-radius:15px;
+    height:auto;
+}
+.calculate p{
+    font-size:26px;
+    text-align:center;
+}

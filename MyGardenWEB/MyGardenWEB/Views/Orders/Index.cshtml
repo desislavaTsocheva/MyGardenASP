@@ -106,6 +106,12 @@ else
         }
     </div>
 }
+ 
+<div class="calculate">
+    <p>Вашата сметка е: @Model.Sum(i => i.Quantity * i.Products.Price) лева</p>
+</div>
+
+
 <form asp-action="EmptyCart" asp-controller="Orders" method="post">
     <div class="form-group">
         <input type="submit" value="Поръчай" class="btn btn-primary" onclick="showAlert()"/>

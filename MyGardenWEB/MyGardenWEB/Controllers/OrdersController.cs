@@ -91,12 +91,26 @@ namespace MyGardenWEB.Controllers
             order.ClientsId = _userManager.GetUserId(User);
             var price = countP * currentProduct.Price;
             _context.Orders.Add(order);
+
+            OrderDetail detail = new OrderDetail();
+            detail.ProductsId = order.ProductsId;
+            detail.OrderedOn = DateTime.Now;
+            detail.Quantity = order.Quantity;
+            detail.ClientsId = _userManager.GetUserId(User);
+            detail.Total = 0;
+            detail.Final = false;
+            _context.Add(detail);
+
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-            // GET: Orders/Create
-            //[Authorize(Roles ="User,Admin")]
-            public IActionResult Create()
+
+        
+   
+        // GET: Orders/Create
+        //[Authorize(Roles ="User,Admin")]
+        public IActionResult Create()
         {
            // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
