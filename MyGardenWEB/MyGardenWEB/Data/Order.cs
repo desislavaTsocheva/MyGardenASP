@@ -12,7 +12,9 @@
 
         public int Quantity {  get; set; }
         public DateTime RegisterOn { get; } = DateTime.Now;
-      
+       // public int OrderDetailsId { get; set; }
+       // public OrderDetail OrderDetails { get; set; }
+
 
 
     }

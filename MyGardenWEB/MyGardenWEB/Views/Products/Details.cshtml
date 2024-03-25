@@ -15,21 +15,18 @@
         <label>Размер: </label> @Html.DisplayFor(model => model.Size)<br />
         <label>Цена: </label> @Html.DisplayFor(model => model.Price)
     </div>
-
+@* 
     <div class="quantity">
         <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id">
             <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
-            <input type="submit" value="Order" />
-            <a asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP=ViewBag.counter>К У П И</a>
-            &nbsp;
+            <input type="submit" value="Приемам" />
         </form>
+    </div> *@
+    <div class="buttons">
+        <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-productId="ViewBag.Id" asp-route-countP="ViewBag.Quantity">Добави в количката</a>
     </div>
-
-        <div class="buttons">
-            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@Model.Id" asp-route-countP="@Model.Orders.">Добави в количката</a>
-        </div>
+       
     </div>
-</div>
 <div class="multiple_img">
     @foreach (var item in (IEnumerable<string>)Model.Files)
     {

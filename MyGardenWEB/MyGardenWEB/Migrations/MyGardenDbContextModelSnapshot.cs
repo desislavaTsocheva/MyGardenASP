@@ -275,6 +275,9 @@ namespace MyGardenWEB.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("OrderDetailsId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ProductsId")
                         .HasColumnType("int");
 
@@ -284,6 +287,8 @@ namespace MyGardenWEB.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ClientsId");
+
+                    b.HasIndex("OrderDetailsId");
 
                     b.HasIndex("ProductsId");
 
@@ -453,6 +458,12 @@ namespace MyGardenWEB.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("MyGardenWEB.Data.OrderDetail", "OrderDetails")
+                        .WithMany("Orders")
+                        .HasForeignKey("OrderDetailsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("MyGardenWEB.Data.Product", "Products")
                         .WithMany("Orders")
                         .HasForeignKey("ProductsId")
@@ -460,6 +471,8 @@ namespace MyGardenWEB.Migrations
                         .IsRequired();
 
                     b.Navigation("Clients");
+
+                    b.Navigation("OrderDetails");
 
                     b.Navigation("Products");
                 });
@@ -514,6 +527,11 @@ namespace MyGardenWEB.Migrations
                 {
                     b.Navigation("OrderDetails");
 
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("MyGardenWEB.Data.OrderDetail", b =>
+                {
                     b.Navigation("Orders");
                 });
 

@@ -26,6 +26,21 @@ namespace MyGardenWEB.Controllers
         }
         // GET: Orders
         [Authorize]
+
+        public IActionResult EmptyCart()
+        {
+            // Изтриване на данните от базата данни
+            var cartItems = _context.Orders;
+            _context.Orders.RemoveRange(cartItems);
+            _context.SaveChanges();
+
+            // Изчистване на сесията или друг механизъм, който използвате за съхранение на кошницата в паметта
+            HttpContext.Session.Remove("Order");
+            _context.Orders.RemoveRange(cartItems);
+
+            // Пренасочване към началната страница на кошницата или друга страница по ваш избор
+            return RedirectToAction("Index", "Home");
+        }
         public async Task<IActionResult> Index()
         {
             if (User.IsInRole("Admin"))
@@ -64,7 +79,17 @@ namespace MyGardenWEB.Controllers
 
             return View(order);
         }
-
+        [HttpPost]
+        public async Task<IActionResult> CreateWithProductId(int productId, int countP)
+        {
+            Order order = new Order();
+            order.ProductsId= productId;
+            order.Quantity = 1;
+            order.ClientsId = _userManager.GetUserId(User);
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();  
+            return View(nameof(Index));
+        }
 
         // GET: Orders/Create
         //[Authorize(Roles ="User,Admin")]
@@ -75,25 +100,11 @@ namespace MyGardenWEB.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
-        {
-            var currentProduct=await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);  
-            Order order = new Order();
-            order.ProductsId = productId;
-            order.Quantity = 1;
-            order.ClientsId = _userManager.GetUserId(User);
-            var price= countP*currentProduct.Price;
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-
+       
         // POST: Orders/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductsId,Quantity")] Order order)
@@ -103,6 +114,14 @@ namespace MyGardenWEB.Controllers
                // order.RegisterOn = DateTime.Now;
                 order.ClientsId = _userManager.GetUserId(User);
                 _context.Orders.Add(order);
+                OrderDetail detail=new OrderDetail();
+                detail.ProductsId=order.ProductsId;
+                detail.OrderedOn=DateTime.Now;
+                detail.Quantity=order.Quantity;
+                detail.ClientsId = _userManager.GetUserId(User);
+                detail.Total = 0;
+                detail.Final = false;
+                _context.Add(detail);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

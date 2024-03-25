@@ -27,7 +27,7 @@
                     Снимка
                 </th>
                 <th>
-                    Обща цена
+                    Цена
                 </th>
 
                 <th></th>
@@ -50,9 +50,7 @@
                         <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
                     </td>
                     <td>
-                        <label asp-for="@item.Quantity" readonly></label>
-                        @*                         @(item.Quantity * item.Products.Price) лв
-                *@
+                        @Html.DisplayFor(modelItem=>item.Products.Price) лв
                     </td>
 
                     <td>
@@ -82,12 +80,12 @@ else
                     </h5>
                     <h5 class="card-title">
                         / @Html.DisplayFor(modelItem => item.Products.LatinName)/
-                    </h5> 
+                    </h5>
                     <p class="card-subtitle">
                         Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
                     </p>
                     <p class="card-subtitle">
-                        Обща цена:  @(item.Quantity * item.Products.Price) лв
+                        Цена:  @Html.DisplayFor(modelItem => item.Products.Price)лв
                     </p>
 
 
@@ -107,10 +105,22 @@ else
             </div>
         }
     </div>
-    }
+}
+<form asp-action="EmptyCart" asp-controller="Orders" method="post">
     <div class="form-group">
-        <input type="submit" value="Добави" class="btn btn-primary" />
+        <input type="submit" value="Поръчай" class="btn btn-primary" onclick="showAlert()"/>
+       @*  <form>
+            <div class="alert alert-success">@TempData["Message"]</div>
+        </form> *@
     </div>
-            
+</form>
+<script>
+    // Функция, която се извиква при натискане на бутона за изпращане
+    function showAlert() {
+        // Показване на съобщението
+        alert('Благодарим за Вашата поръчка!');
+    }
+</script>
+
 
 

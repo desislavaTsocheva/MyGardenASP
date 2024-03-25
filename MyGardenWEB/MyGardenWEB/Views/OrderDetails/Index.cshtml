@@ -1,0 +1,168 @@
+﻿@model IEnumerable<MyGardenWEB.Data.OrderDetail>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Кошница</h1>
+<p>
+    <a asp-action="Create">
+        Поръчай
+    </a>
+</p>
+@if (User.IsInRole("Admin"))
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Продукт
+                </th>
+                <th>
+                    Клиент
+                </th>
+                <th>
+                    Количество
+                </th>
+                <th>
+                    Снимка
+                </th>
+                <th>
+                    Цена
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Products.BulgarianName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Clients.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Products.Price)
+
+                    </td>
+
+                  @*   <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                    </td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+else
+{
+    <div class="self-grid">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width:30%; height:25%; ">
+                <div class="card-body">
+                    <div class="card-img">
+                        <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="350" height="230" />
+                    </div>
+                    <br />
+                    <h5 class="card-title">
+                        <b> @Html.DisplayFor(modelItem => item.Products.BulgarianName)</b>
+                    </h5>
+                    <h5 class="card-title">
+                        / @Html.DisplayFor(modelItem => item.Products.LatinName)/
+                    </h5>
+                    <p class="card-subtitle">
+                        Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
+                    </p>
+                    <p class="card-subtitle">
+                        Обща цена:  @Html.DisplayFor(modelItem => item.Products.Price)лв
+                    </p>
+
+
+                   @*  @if (!User.IsInRole("Admin"))
+                    {
+                        <div class="overlay_product">
+                            <div class="buttons">
+                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Редакт.</a>
+                                <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                            </div>
+                        </div>
+
+                    } *@
+
+                </div>
+            </div>
+        }
+    </div>
+}
+@* <h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Clients)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Final)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clients.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Products.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Final)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table> *@
