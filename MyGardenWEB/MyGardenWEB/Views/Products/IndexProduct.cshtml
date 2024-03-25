@@ -39,8 +39,10 @@
                 {
                     <div class="overlay_product">
                         <div class="buttons">
-                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                            <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
+                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id">
+                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+                                <input type="submit" class="btn btn-primary" value="Поръчай"></input>
+                            </form>
                         </div>
                     </div>
                 }
@@ -51,7 +53,9 @@
                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Редактиране</a>
                 <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="@item.Id">Поръчай</a>
+                <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id" style="width:300">
+                    <center>  <input type="submit" class="btn btn-primary" value="Поръчай"></input></center>
+                </form>
             }
         </div>
 

@@ -31,15 +31,21 @@ namespace MyGardenWEB.Controllers
         // GET: OrderDetails
         public async Task<IActionResult> Index()
         {
-           // var orderId = GetOrdertId();
-            var currentUser = _userManager.GetUserId(User);
-
-            var myGardenDbContext = _context.OrderDetail
-            .Include(o => o.Products)
-            .Include(o => o.Products.Orders)
-            .Where(x=>x.ClientsId == currentUser);
-
-            return View(await myGardenDbContext.ToListAsync());
+            if (User.IsInRole("Admin"))
+            {
+                var myGardenDbContext = _context.OrderDetail
+                   .Include(o => o.Clients)
+                   .Include(o => o.Products);
+                return View(await myGardenDbContext.ToListAsync());
+            }
+            else
+            {
+                var myGardenDbContext = _context.OrderDetail
+                    .Include(o => o.Clients)
+                    .Include(o => o.Products)
+                    .Where(x => x.ClientsId == _userManager.GetUserId(User));
+                return View(await myGardenDbContext.ToListAsync());
+            }
         }
         [NonAction]
         public int? GetOrdertId()
