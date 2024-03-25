@@ -80,20 +80,23 @@ namespace MyGardenWEB.Controllers
             return View(order);
         }
         [HttpPost]
-        public async Task<IActionResult> CreateWithProductId(int productId, int countP)
+        public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
-            order.ProductsId= productId;
+            //order.ProductsId = productId;
+           // productId = order.ProductsId;
+            order.ProductsId = productId;
             order.Quantity = 1;
             order.ClientsId = _userManager.GetUserId(User);
+            var price = countP * currentProduct.Price;
             _context.Orders.Add(order);
-            await _context.SaveChangesAsync();  
-            return View(nameof(Index));
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
-
-        // GET: Orders/Create
-        //[Authorize(Roles ="User,Admin")]
-        public IActionResult Create()
+            // GET: Orders/Create
+            //[Authorize(Roles ="User,Admin")]
+            public IActionResult Create()
         {
            // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");

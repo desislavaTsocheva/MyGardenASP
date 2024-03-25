@@ -39,8 +39,11 @@
                 {
                     <div class="overlay_product">
                         <div class="buttons">
-                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                            <a class="btn btn-primary" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id">Поръчай</a>
+
+                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id">
+                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+                                <input type="submit" class="btn btn-primary" value="Поръчай"></input>
+                           </form>
                         </div>
                     </div>
 
