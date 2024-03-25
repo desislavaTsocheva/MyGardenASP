@@ -27,7 +27,7 @@
                     Снимка
                 </th>
                 <th>
-                    Цена
+                   Цена
                 </th>
 
                 <th></th>
@@ -50,9 +50,8 @@
                         <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem=>item.Products.Price) лв
+                       <b>@Html.DisplayFor(modelItem=>item.Products.Price)</b>
                     </td>
-
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
                         <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
@@ -85,7 +84,8 @@ else
                         Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
                     </p>
                     <p class="card-subtitle">
-                        Цена:  @Html.DisplayFor(modelItem => item.Products.Price)лв
+                        Цена: <b>@Html.DisplayFor(modelItem => item.Products.Price)</b>
+
                     </p>
 
 
@@ -108,7 +108,16 @@ else
 }
  
 <div class="calculate">
-    <p>Вашата сметка е: @Model.Sum(i => i.Quantity * i.Products.Price) лева</p>
+    @{
+        decimal sum = 0;
+    }
+    @foreach(var item in Model)
+    {
+        
+        sum = @Model.Sum(i => i.Quantity * i.Products.Price);
+        
+    }
+    <p>Вашата сметка е: @sum лева</p>
 </div>
 
 
