@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MyGardenWEB.Data;
 using NuGet.Protocol.Core.Types;
 
@@ -86,7 +87,23 @@ namespace MyGardenWEB.Controllers
 
         }
 
+        //public async Task<IActionResult> FilterByDate(DateTime date)
+        //{
+        //    var filteredOrders = await _context.OrderDetail
+        //               .Where(o => o.OrderedOn.Date == date.Date)
+        //               .ToListAsync();
 
+        //    return View(filteredOrders);
+        //}
+        public IActionResult FilterByDate(DateTime date)
+        {
+            var orders = _context.OrderDetail
+                .Include(o=>o.Products)
+                .Include(o=>o.Clients)
+                .Where(o => o.OrderedOn.Date == date.Date).ToList();
+            ViewData["Date"] = date.ToShortDateString(); // Показване на избраната дата в заглавието на изгледа
+            return View(nameof(Index),orders);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
