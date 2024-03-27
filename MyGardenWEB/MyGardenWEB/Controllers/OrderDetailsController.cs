@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Elfie.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MyGardenWEB.Data;
@@ -101,7 +102,10 @@ namespace MyGardenWEB.Controllers
                 .Include(o=>o.Products)
                 .Include(o=>o.Clients)
                 .Where(o => o.OrderedOn.Date == date.Date).ToList();
-            ViewData["Date"] = date.ToShortDateString(); // Показване на избраната дата в заглавието на изгледа
+           
+            //TempData["Date"] = date; 
+            //TempData.Keep();
+            ViewData["Date"] = date.ToLong(); // Показване на избраната дата в заглавието на изгледа
             return View(nameof(Index),orders);
         }
 

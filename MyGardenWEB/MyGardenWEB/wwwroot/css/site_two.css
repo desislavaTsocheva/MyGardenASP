@@ -15,6 +15,11 @@
     background-color:#ffdede;
     border-radius:3px;
 }
+.navbar a{
+    font-family:Vivaldi;
+    font-size:20px;
+    font-weight:100;
+}
 .login_acc{
     background-color:#fee8e8;
     height:500px;
