@@ -12,7 +12,7 @@
             <legend>Свържете се с нас</legend>
             <label>Име</label>
             <br />
-            <input type="text" placeholder="Въведете име">
+            <input type="text" placeholder="Въведете име" id="name" name="name">
             <br />
             <br />
             <label>Телефон за контакт</label>
@@ -27,18 +27,20 @@
             <br />
             <label>Съобщение</label>
             <br />
-            <textarea placeholder="Вашето съобщение ...">
+            <textarea placeholder="Вашето съобщение ..." id="text" name="text">
     </textarea>
             <br />
             <br />
-            <input type="submit" value="Изпрати" onclick="showAlert()" >
+            <input type="submit" value="Изпрати" onclick="showAlert(name,text)" >
         </fieldset>
     </form>
     <script>
         // Функция, която се извиква при натискане на бутона за изпращане
         function showAlert() {
             // Показване на съобщението
-            alert('Благодарим за обратната връзка! ');
+            var name = document.getElementById("name").value;
+            var text = document.getElementById("text").value;
+            alert('Благодарим за обратната връзка! Име: ' + name + ' Съобщение: ' + text);
         }
     </script>
     <div class="info_cont">
