@@ -2,14 +2,14 @@
 
 @{
     ViewData["Title"] = "Index";
-    var dateSave = ViewData["Date"];
+    //var dateSave = ViewData["Date"];
 }
 <h1>Кошница</h1>
 
 <form asp-action="ShowOrdersByDate" method="get">
     <div class="form-group">
         <label for="date">Изберете дата:</label>
-        <input type="date" id="date" name="date" class="form-control" width="30" value="@dateSave" />
+        <input type="date" id="date" name="date" class="form-control" width="30" />
     </div>
     
     <button type="submit" class="btn btn-primary" asp-action="FilterByDate" asp-route-date="ViewBag.date">Филтриране</button>

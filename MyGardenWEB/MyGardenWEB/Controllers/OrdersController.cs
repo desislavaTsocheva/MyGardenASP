@@ -97,8 +97,8 @@ namespace MyGardenWEB.Controllers
             detail.OrderedOn = DateTime.Now;
             detail.Quantity = order.Quantity;
             detail.ClientsId = _userManager.GetUserId(User);
-            detail.Total = 0;
-            detail.Final = false;
+            detail.Total = countP * currentProduct.Price;
+            detail.Final = true;
             _context.Add(detail);
 
 

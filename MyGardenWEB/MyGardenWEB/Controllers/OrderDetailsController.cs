@@ -98,15 +98,25 @@ namespace MyGardenWEB.Controllers
         //}
         public IActionResult FilterByDate(DateTime date)
         {
-            var orders = _context.OrderDetail
-                .Include(o=>o.Products)
-                .Include(o=>o.Clients)
-                .Where(o => o.OrderedOn.Date == date.Date).ToList();
-           
-            //TempData["Date"] = date; 
-            //TempData.Keep();
             ViewData["Date"] = date.ToLong(); // Показване на избраната дата в заглавието на изгледа
-            return View(nameof(Index),orders);
+            if (User.IsInRole("Admin"))
+            {
+                var orders = _context.OrderDetail
+                            .Include(o => o.Products)
+                            .Include(o => o.Clients)
+                            .Where(o => o.OrderedOn.Date == date.Date).ToList();
+                return View(nameof(Index), orders);
+            }
+            else
+            {
+                var orders = _context.OrderDetail
+                            .Include(o => o.Products)
+                            .Include(o => o.Clients)
+                            .Where(o => o.OrderedOn.Date == date.Date && o.ClientsId == _userManager.GetUserId(User)).ToList();
+                return View(nameof(Index), orders);
+
+            }
+
         }
 
         [HttpPost]
@@ -127,8 +137,8 @@ namespace MyGardenWEB.Controllers
                 {
                     ClientsId = _userManager.GetUserId(User),
                     Quantity = 1,
-                    ProductsId= product.Id
-                    
+                    ProductsId = product.Id
+
                 };
                 _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
