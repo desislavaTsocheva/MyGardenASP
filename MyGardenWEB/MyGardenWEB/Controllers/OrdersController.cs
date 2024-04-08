@@ -79,13 +79,45 @@ namespace MyGardenWEB.Controllers
 
             return View(order);
         }
+
+        //[HttpGet]
+        //public async Task<IActionResult> CreateWithProductsId([Bind("ProductsId,Quantity")] int productId, int countP)
+        //{
+        //    var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
+        //    var currentProducts = await _context.Orders.Include(o => o.Products).FirstOrDefaultAsync(m => m.Id == productId);
+        //    Product product = new Product();
+        //    Order order = new Order();
+        //    //order.ProductsId = productId;
+        //    // productId = order.ProductsId;
+        //    order.ProductsId = product.Id;
+        //    order.Quantity = countP;
+        //    order.ClientsId = _userManager.GetUserId(User);
+        //    var price = countP * currentProduct.Price;
+        //    _context.Orders.Add(order);
+
+        //    OrderDetail detail = new OrderDetail();
+        //    detail.ProductsId = order.ProductsId;
+        //    detail.OrderedOn = DateTime.Now;
+        //    detail.Quantity = order.Quantity;
+        //    detail.ClientsId = _userManager.GetUserId(User);
+        //    detail.Total = countP * currentProduct.Price;
+        //    detail.Final = true;
+        //    _context.Add(detail);
+
+
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction(nameof(Index));
+        //}
+
+
+
         [HttpPost]
         public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
             //order.ProductsId = productId;
-           // productId = order.ProductsId;
+            // productId = order.ProductsId;
             order.ProductsId = productId;
             order.Quantity = 1;
             order.ClientsId = _userManager.GetUserId(User);
@@ -106,8 +138,8 @@ namespace MyGardenWEB.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        
-   
+
+
         // GET: Orders/Create
         //[Authorize(Roles ="User,Admin")]
         public IActionResult Create()

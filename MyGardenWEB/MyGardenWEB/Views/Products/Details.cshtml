@@ -15,17 +15,33 @@
         <label>Размер: </label> @Html.DisplayFor(model => model.Size)<br />
         <label>Цена: </label> @Html.DisplayFor(model => model.Price)
     </div>
-@* 
-    <div class="quantity">
-        <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id">
-            <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
-            <input type="submit" value="Приемам" />
-        </form>
-    </div> *@
+
+
+   @*  <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@ViewBag.Id" asp-route-countP="1">
+        @* <form method="get" asp-controller="Orders" asp-action="CreateWithProductId"> *@
+       @*  <input name="productId" type="hidden" value="@ViewBag.Id" />
+        <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
+        <input type="submit" class="btn btn-info" value="Order It >>> " />
+    </form>
+    *@ 
+   @*  <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Предотвратява изпращането на стандартната POST заявка
+
+            var inputDataValue = document.getElementById("countP").value; // Взема стойността на текстовото поле
+
+            window.location.href = '@Url.Action("CreateWithProductsId", "Orders")?countP=' + inputDataValue
+                + '&productId=' + @ViewBag.Id;
+            // Пренасочва към контролера и действието с подадената стойност на текстовото поле като параметър
+        });
+    </script> *@
+ 
+
+
+
     <div class="buttons">
         <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-productId="ViewBag.Id" asp-route-countP="ViewBag.Quantity">Добави в количката</a>
-    </div>
-       
+    </div> 
     </div>
 <div class="multiple_img">
     @foreach (var item in (IEnumerable<string>)Model.Files)
