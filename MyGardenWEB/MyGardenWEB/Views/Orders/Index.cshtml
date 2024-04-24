@@ -54,10 +54,15 @@
                     <td>
                         <p>
                             <b>
-                              @price
+                                @if (ViewData["Price"] != null)
+                                {
+                                     @ViewData["Price"]
+                                }
+                               
                             </b>
                         </p>
                     </td>
+
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
                         <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |

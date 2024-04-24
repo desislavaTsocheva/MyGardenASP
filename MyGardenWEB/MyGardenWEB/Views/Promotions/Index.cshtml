@@ -36,14 +36,14 @@
                 <p class="card-subtitle">
                     <b>Нова цена: @(item.Products.Price - item.Products.Price / 100 * item.PromotionPercent) лв. </b>
                 </p>
-
+                <span class="Promotion">- @Html.DisplayFor(modelItem => item.PromotionPercent) %</span>
 
                 @if (!User.IsInRole("Admin"))
                 {
                     <div class="overlay_product">
                         <div class="buttons">
 
-                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@item.Id">
+                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@item.Id" asp-route-percent="@item.PromotionPercent">
                                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
                                 <input type="submit" class="btn btn-primary" value="Поръчай"/>
                             </form>

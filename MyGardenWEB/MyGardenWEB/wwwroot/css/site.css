@@ -401,3 +401,13 @@ span{
     text-align:center;
     vertical-align:central;
 }
+.Promotion{
+    background-color:red;
+    width:10%;
+    height:auto;
+    margin:5px;
+    padding:5px;
+    color:white;
+    font-family:Vivaldi;
+    font-size:20px;
+}

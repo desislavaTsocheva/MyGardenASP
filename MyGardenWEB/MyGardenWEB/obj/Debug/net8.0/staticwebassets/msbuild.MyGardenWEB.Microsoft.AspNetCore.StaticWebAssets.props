@@ -80,12 +80,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\05c05f93-042f-4fd2-b50f-bdc4141eb399-1000009646-02.jpeg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\00acb21c-862d-480f-bfe3-5ddc823fc356-cadd6c20b85b698216253221e630fe79-4c8765bee08060533af727dacf844e1b.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/05c05f93-042f-4fd2-b50f-bdc4141eb399-1000009646-02.jpeg</RelativePath>
+      <RelativePath>Files/00acb21c-862d-480f-bfe3-5ddc823fc356-cadd6c20b85b698216253221e630fe79-4c8765bee08060533af727dacf844e1b.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -94,14 +94,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\05c05f93-042f-4fd2-b50f-bdc4141eb399-1000009646-02.jpeg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\00acb21c-862d-480f-bfe3-5ddc823fc356-cadd6c20b85b698216253221e630fe79-4c8765bee08060533af727dacf844e1b.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\08d053cd-117f-446f-bae9-43be632df673-крр.webp))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\18c23325-5084-45ec-9676-d7df65e08834-download (3).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/08d053cd-117f-446f-bae9-43be632df673-крр.webp</RelativePath>
+      <RelativePath>Files/18c23325-5084-45ec-9676-d7df65e08834-download (3).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -110,14 +110,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\08d053cd-117f-446f-bae9-43be632df673-крр.webp))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\18c23325-5084-45ec-9676-d7df65e08834-download (3).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\09d2ff0b-c9ed-4aac-8f31-2486dcca2fd5-AirBrush_20230516143101.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1b72d036-5818-449f-82b4-88321ac8ba00-images.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/09d2ff0b-c9ed-4aac-8f31-2486dcca2fd5-AirBrush_20230516143101.jpg</RelativePath>
+      <RelativePath>Files/1b72d036-5818-449f-82b4-88321ac8ba00-images.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -126,14 +126,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\09d2ff0b-c9ed-4aac-8f31-2486dcca2fd5-AirBrush_20230516143101.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1b72d036-5818-449f-82b4-88321ac8ba00-images.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0a09720c-03af-4e12-af8e-383d41aaf559-66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\2fceff36-385a-4654-97b9-55bba794eee5-images (1).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/0a09720c-03af-4e12-af8e-383d41aaf559-66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg</RelativePath>
+      <RelativePath>Files/2fceff36-385a-4654-97b9-55bba794eee5-images (1).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -142,14 +142,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0a09720c-03af-4e12-af8e-383d41aaf559-66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\2fceff36-385a-4654-97b9-55bba794eee5-images (1).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4328b653-9e7e-4165-aaad-c9df150a9061-images.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg</RelativePath>
+      <RelativePath>Files/4328b653-9e7e-4165-aaad-c9df150a9061-images.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -158,14 +158,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4328b653-9e7e-4165-aaad-c9df150a9061-images.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0de916d3-fd4c-49ef-8a08-328317252c3b-IMG_1502.JPG))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\45251daa-32f1-4dc3-a764-04909129b5b7-aloe-vera-66.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/0de916d3-fd4c-49ef-8a08-328317252c3b-IMG_1502.JPG</RelativePath>
+      <RelativePath>Files/45251daa-32f1-4dc3-a764-04909129b5b7-aloe-vera-66.webp</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -174,14 +174,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\0de916d3-fd4c-49ef-8a08-328317252c3b-IMG_1502.JPG))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\45251daa-32f1-4dc3-a764-04909129b5b7-aloe-vera-66.webp))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\10f4d3df-3f4f-4b6f-bd92-85b5f1d48450-1000009646-02.jpeg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\45b6a908-9b56-43be-b403-a5f7e8fb767e-images (2).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/10f4d3df-3f4f-4b6f-bd92-85b5f1d48450-1000009646-02.jpeg</RelativePath>
+      <RelativePath>Files/45b6a908-9b56-43be-b403-a5f7e8fb767e-images (2).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -190,14 +190,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\10f4d3df-3f4f-4b6f-bd92-85b5f1d48450-1000009646-02.jpeg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\45b6a908-9b56-43be-b403-a5f7e8fb767e-images (2).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1351e5ae-bad8-450a-9a73-d98de4732226-34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4a893b08-3045-4385-ae7c-9db66fd51bf1-images (4).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/1351e5ae-bad8-450a-9a73-d98de4732226-34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg</RelativePath>
+      <RelativePath>Files/4a893b08-3045-4385-ae7c-9db66fd51bf1-images (4).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -206,14 +206,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1351e5ae-bad8-450a-9a73-d98de4732226-34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4a893b08-3045-4385-ae7c-9db66fd51bf1-images (4).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\539e1991-3b24-43f0-90a8-d0b475ce0d61-za-polzite-ot-aloe-i-otglezhdaneto-mu-u-doma-1623676761.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG</RelativePath>
+      <RelativePath>Files/539e1991-3b24-43f0-90a8-d0b475ce0d61-za-polzite-ot-aloe-i-otglezhdaneto-mu-u-doma-1623676761.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -222,14 +222,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\539e1991-3b24-43f0-90a8-d0b475ce0d61-za-polzite-ot-aloe-i-otglezhdaneto-mu-u-doma-1623676761.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\17f05582-b791-43ea-b0c1-2ad756f0e777-IMG_0096.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\6e285d99-5dec-4675-95ea-923b60809357-Aubrieta_Red.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/17f05582-b791-43ea-b0c1-2ad756f0e777-IMG_0096.jpg</RelativePath>
+      <RelativePath>Files/6e285d99-5dec-4675-95ea-923b60809357-Aubrieta_Red.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -238,14 +238,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\17f05582-b791-43ea-b0c1-2ad756f0e777-IMG_0096.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\6e285d99-5dec-4675-95ea-923b60809357-Aubrieta_Red.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\18dc1cd4-e4ba-49c9-8775-8102771d21e6-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\741bdc75-972c-42ee-b5c9-abc2707df1eb-download.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/18dc1cd4-e4ba-49c9-8775-8102771d21e6-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg</RelativePath>
+      <RelativePath>Files/741bdc75-972c-42ee-b5c9-abc2707df1eb-download.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -254,14 +254,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\18dc1cd4-e4ba-49c9-8775-8102771d21e6-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\741bdc75-972c-42ee-b5c9-abc2707df1eb-download.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7543710b-566a-407f-a9ca-de9e725006ef-780x440.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg</RelativePath>
+      <RelativePath>Files/7543710b-566a-407f-a9ca-de9e725006ef-780x440.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -270,14 +270,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7543710b-566a-407f-a9ca-de9e725006ef-780x440.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1c36af42-7ff6-473b-8312-75c329a9e9f1-e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7a56f3aa-95f7-46de-bc01-9691234ae27a-neven-calendula.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/1c36af42-7ff6-473b-8312-75c329a9e9f1-e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg</RelativePath>
+      <RelativePath>Files/7a56f3aa-95f7-46de-bc01-9691234ae27a-neven-calendula.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -286,14 +286,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1c36af42-7ff6-473b-8312-75c329a9e9f1-e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7a56f3aa-95f7-46de-bc01-9691234ae27a-neven-calendula.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1ce1ae1a-d766-438f-8037-c3294e8c313c-40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\95dd43ee-a822-4558-8938-09382a69cea1-phlox-pan--bright-eyes-floks-image_5d78dbd1cfac1_800x800.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/1ce1ae1a-d766-438f-8037-c3294e8c313c-40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg</RelativePath>
+      <RelativePath>Files/95dd43ee-a822-4558-8938-09382a69cea1-phlox-pan--bright-eyes-floks-image_5d78dbd1cfac1_800x800.jpeg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -302,14 +302,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\1ce1ae1a-d766-438f-8037-c3294e8c313c-40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\95dd43ee-a822-4558-8938-09382a69cea1-phlox-pan--bright-eyes-floks-image_5d78dbd1cfac1_800x800.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ad0a657b-4a88-42b2-b45a-543d4ed60c20-download (1).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg</RelativePath>
+      <RelativePath>Files/ad0a657b-4a88-42b2-b45a-543d4ed60c20-download (1).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -318,14 +318,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ad0a657b-4a88-42b2-b45a-543d4ed60c20-download (1).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\af7c3fca-40a4-40ef-9c73-2c8e7497862a-www 05-031 (1).png))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg</RelativePath>
+      <RelativePath>Files/af7c3fca-40a4-40ef-9c73-2c8e7497862a-www 05-031 (1).png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -334,14 +334,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\af7c3fca-40a4-40ef-9c73-2c8e7497862a-www 05-031 (1).png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\2e3fad70-d1b6-4d0c-ad31-76e6fbd3f006-IMG_0093.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\c8edf83f-491f-4fa8-a7cc-02d14a5f3021-images (6).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/2e3fad70-d1b6-4d0c-ad31-76e6fbd3f006-IMG_0093.jpg</RelativePath>
+      <RelativePath>Files/c8edf83f-491f-4fa8-a7cc-02d14a5f3021-images (6).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -350,14 +350,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\2e3fad70-d1b6-4d0c-ad31-76e6fbd3f006-IMG_0093.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\c8edf83f-491f-4fa8-a7cc-02d14a5f3021-images (6).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\daec4cfe-aa54-44a1-aba4-9573f4e6a5bf-images (6).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg</RelativePath>
+      <RelativePath>Files/daec4cfe-aa54-44a1-aba4-9573f4e6a5bf-images (6).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -366,14 +366,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\daec4cfe-aa54-44a1-aba4-9573f4e6a5bf-images (6).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\de980381-3664-443a-8fab-37ab53e08426-images (3).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg</RelativePath>
+      <RelativePath>Files/de980381-3664-443a-8fab-37ab53e08426-images (3).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -382,14 +382,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\de980381-3664-443a-8fab-37ab53e08426-images (3).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3726666f-8fd9-4206-b8b4-2b37daf383b8-08d053cd-117f-446f-bae9-43be632df673-крр.webp))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\edd10054-429a-41f3-a1f2-f0f87cbee75f-images (5).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/3726666f-8fd9-4206-b8b4-2b37daf383b8-08d053cd-117f-446f-bae9-43be632df673-крр.webp</RelativePath>
+      <RelativePath>Files/edd10054-429a-41f3-a1f2-f0f87cbee75f-images (5).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -398,14 +398,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3726666f-8fd9-4206-b8b4-2b37daf383b8-08d053cd-117f-446f-bae9-43be632df673-крр.webp))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\edd10054-429a-41f3-a1f2-f0f87cbee75f-images (5).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\39a04d19-dcfa-4f33-80bc-ed89e8b971d1-3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f47ccc96-2473-4b97-8763-010aa7c39004-червена-разцъфнала-роза-Обичам-те.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/39a04d19-dcfa-4f33-80bc-ed89e8b971d1-3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg</RelativePath>
+      <RelativePath>Files/f47ccc96-2473-4b97-8763-010aa7c39004-червена-разцъфнала-роза-Обичам-те.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -414,14 +414,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\39a04d19-dcfa-4f33-80bc-ed89e8b971d1-3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f47ccc96-2473-4b97-8763-010aa7c39004-червена-разцъфнала-роза-Обичам-те.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f7b95de4-534f-43d0-bac5-d84157ee931b-download (2).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg</RelativePath>
+      <RelativePath>Files/f7b95de4-534f-43d0-bac5-d84157ee931b-download (2).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -430,14 +430,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3accb293-e71d-41e1-bbb5-9a35f7fbb65c-алое.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f7b95de4-534f-43d0-bac5-d84157ee931b-download (2).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3b3e342f-e17d-414d-a402-f5719963a9f7-4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f8971bf6-dbcc-417c-b112-2b410acbb82d-0427332001686654280_big.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/3b3e342f-e17d-414d-a402-f5719963a9f7-4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg</RelativePath>
+      <RelativePath>Files/f8971bf6-dbcc-417c-b112-2b410acbb82d-0427332001686654280_big.webp</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -446,14 +446,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\3b3e342f-e17d-414d-a402-f5719963a9f7-4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f8971bf6-dbcc-417c-b112-2b410acbb82d-0427332001686654280_big.webp))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fb9c7253-b656-47f3-a7b6-b26b30c9477f-unnamed.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyGardenWEB</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg</RelativePath>
+      <RelativePath>Files/fb9c7253-b656-47f3-a7b6-b26b30c9477f-unnamed.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -462,1031 +462,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\40d2b0c4-39ab-4598-98c9-c1104d1747ac-ауб4.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\43d48d47-971e-4a90-b4c1-f76d36f0aadc-8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/43d48d47-971e-4a90-b4c1-f76d36f0aadc-8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\43d48d47-971e-4a90-b4c1-f76d36f0aadc-8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\4b10dc5b-bb4c-4a35-b721-eae45850f0d3-фл3.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5186502b-f7c9-44a3-97c6-a476b8c9f790-1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/5186502b-f7c9-44a3-97c6-a476b8c9f790-1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5186502b-f7c9-44a3-97c6-a476b8c9f790-1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\588d9543-71cf-4a99-8f07-99a9949b58a1-IMG_1501.JPG))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/588d9543-71cf-4a99-8f07-99a9949b58a1-IMG_1501.JPG</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\588d9543-71cf-4a99-8f07-99a9949b58a1-IMG_1501.JPG))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5df7b540-6303-45c6-a58c-d142c0b0c322-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/5df7b540-6303-45c6-a58c-d142c0b0c322-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5df7b540-6303-45c6-a58c-d142c0b0c322-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5e74ee65-dc89-4493-af35-02ddf11160b2-IMG_0093.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/5e74ee65-dc89-4493-af35-02ddf11160b2-IMG_0093.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\5e74ee65-dc89-4493-af35-02ddf11160b2-IMG_0093.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\61ce8ebf-d47d-4db0-82f4-deab624a6f25-IMG_0093.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/61ce8ebf-d47d-4db0-82f4-deab624a6f25-IMG_0093.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\61ce8ebf-d47d-4db0-82f4-deab624a6f25-IMG_0093.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\69102f85-acd0-4430-9ce7-653a682ff6d3-IMG_0055.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/69102f85-acd0-4430-9ce7-653a682ff6d3-IMG_0055.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\69102f85-acd0-4430-9ce7-653a682ff6d3-IMG_0055.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\695aee22-a0f7-469e-a58f-5d7305d5ae30-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/695aee22-a0f7-469e-a58f-5d7305d5ae30-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\695aee22-a0f7-469e-a58f-5d7305d5ae30-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\6fa1646d-83fb-41c7-b3ef-030bac59fa04-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/6fa1646d-83fb-41c7-b3ef-030bac59fa04-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\6fa1646d-83fb-41c7-b3ef-030bac59fa04-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\71aa82e1-5bcc-427c-afc4-4aa02b9d9125-85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/71aa82e1-5bcc-427c-afc4-4aa02b9d9125-85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\71aa82e1-5bcc-427c-afc4-4aa02b9d9125-85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\79d6cbe2-30a5-45b7-af53-7a995ef59d16-2023.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/79d6cbe2-30a5-45b7-af53-7a995ef59d16-2023.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\79d6cbe2-30a5-45b7-af53-7a995ef59d16-2023.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\79dfd51c-d455-4146-9add-56c34588f373-80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/79dfd51c-d455-4146-9add-56c34588f373-80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\79dfd51c-d455-4146-9add-56c34588f373-80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7b440c46-18af-4207-8f5e-b242706367cd-IMG_1501.JPG))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/7b440c46-18af-4207-8f5e-b242706367cd-IMG_1501.JPG</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7b440c46-18af-4207-8f5e-b242706367cd-IMG_1501.JPG))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7be69e74-ea96-4b6d-9011-66e2e8493eff-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/7be69e74-ea96-4b6d-9011-66e2e8493eff-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\7be69e74-ea96-4b6d-9011-66e2e8493eff-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\804b164a-7a39-40af-ad77-e7830193eb50-IMG_0094.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/804b164a-7a39-40af-ad77-e7830193eb50-IMG_0094.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\804b164a-7a39-40af-ad77-e7830193eb50-IMG_0094.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\80add026-b1ba-4335-9a2f-2ce0c8346bde-крок.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\81f84622-da5e-4144-829c-3fbf469e4de4-cvete.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/81f84622-da5e-4144-829c-3fbf469e4de4-cvete.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\81f84622-da5e-4144-829c-3fbf469e4de4-cvete.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\83835d32-5401-49ca-b965-aabb5130768e-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/83835d32-5401-49ca-b965-aabb5130768e-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\83835d32-5401-49ca-b965-aabb5130768e-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\856410fe-2380-492b-a18d-eec97ae3163d-bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/856410fe-2380-492b-a18d-eec97ae3163d-bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\856410fe-2380-492b-a18d-eec97ae3163d-bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\87d232c6-62f1-4d09-8290-68f5d854ae16-IMG_0056.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/87d232c6-62f1-4d09-8290-68f5d854ae16-IMG_0056.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\87d232c6-62f1-4d09-8290-68f5d854ae16-IMG_0056.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8a907f83-3d2f-4ed7-af6b-43ef00084636-IMG_0054.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/8a907f83-3d2f-4ed7-af6b-43ef00084636-IMG_0054.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8a907f83-3d2f-4ed7-af6b-43ef00084636-IMG_0054.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8b174880-4561-4c17-b29d-9bd91194fdb9-IMG_1502.JPG))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/8b174880-4561-4c17-b29d-9bd91194fdb9-IMG_1502.JPG</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8b174880-4561-4c17-b29d-9bd91194fdb9-IMG_1502.JPG))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8e49b12c-77d5-4801-93bb-824d27e458ae-IMG_0056.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/8e49b12c-77d5-4801-93bb-824d27e458ae-IMG_0056.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8e49b12c-77d5-4801-93bb-824d27e458ae-IMG_0056.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8e7c8921-0975-406c-a0ca-cd13adda92ce-1000009646-02.jpeg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/8e7c8921-0975-406c-a0ca-cd13adda92ce-1000009646-02.jpeg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8e7c8921-0975-406c-a0ca-cd13adda92ce-1000009646-02.jpeg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\8f0a19f3-93a4-4feb-9f1c-dd13190b67a3-алоее.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\95e03436-ef01-4261-8d5d-1fee0b8036e8-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/95e03436-ef01-4261-8d5d-1fee0b8036e8-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\95e03436-ef01-4261-8d5d-1fee0b8036e8-22f86d33-872a-4dba-8851-fa64b500638d-орх1.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\97c6c880-7e0b-4ec5-ba9d-66560c9d47bb-фл1.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/97c6c880-7e0b-4ec5-ba9d-66560c9d47bb-фл1.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\97c6c880-7e0b-4ec5-ba9d-66560c9d47bb-фл1.png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\99c04b1f-46c1-48e5-9467-f5a6526c9689-IMG_0056.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/99c04b1f-46c1-48e5-9467-f5a6526c9689-IMG_0056.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\99c04b1f-46c1-48e5-9467-f5a6526c9689-IMG_0056.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\9e9313d6-12bd-4c17-bc3d-7c13e0072970-e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/9e9313d6-12bd-4c17-bc3d-7c13e0072970-e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\9e9313d6-12bd-4c17-bc3d-7c13e0072970-e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a0ff671b-1062-4922-8d8b-450dbab87ffb-32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/a0ff671b-1062-4922-8d8b-450dbab87ffb-32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a0ff671b-1062-4922-8d8b-450dbab87ffb-32375c5c-7f0c-440d-85f1-296265372a80-кр.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a47f461c-1b1a-49de-b401-e90b2b7191d4-алоеее.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/a47f461c-1b1a-49de-b401-e90b2b7191d4-алоеее.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a47f461c-1b1a-49de-b401-e90b2b7191d4-алоеее.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a5d9ecc5-11f3-4cd8-8103-c875fb8ab197-IMG_0094.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/a5d9ecc5-11f3-4cd8-8103-c875fb8ab197-IMG_0094.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\a5d9ecc5-11f3-4cd8-8103-c875fb8ab197-IMG_0094.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\af3e5ec9-8910-4f39-9aab-7f1a40113412-88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/af3e5ec9-8910-4f39-9aab-7f1a40113412-88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\af3e5ec9-8910-4f39-9aab-7f1a40113412-88766915-832c-40ed-a035-eaf49f1b5d90-кррр.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b03eb6d2-d870-426c-b7de-69c0f1bdcd1b-IMG_0093.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b03eb6d2-d870-426c-b7de-69c0f1bdcd1b-IMG_0093.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b03eb6d2-d870-426c-b7de-69c0f1bdcd1b-IMG_0093.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b1805022-e64f-4894-8c2e-0c57e41b924c-лале2.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b1805022-e64f-4894-8c2e-0c57e41b924c-лале2.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b1805022-e64f-4894-8c2e-0c57e41b924c-лале2.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b1cc596d-09c4-4250-9abb-c79ed603f6e5-fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b1cc596d-09c4-4250-9abb-c79ed603f6e5-fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b1cc596d-09c4-4250-9abb-c79ed603f6e5-fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b3ea7fd8-8409-4322-89f2-fc5cb4bbd875-IMG_0053.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b3ea7fd8-8409-4322-89f2-fc5cb4bbd875-IMG_0053.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b3ea7fd8-8409-4322-89f2-fc5cb4bbd875-IMG_0053.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b8807e06-f0c3-48e6-844e-456878a09af8-IMG_0095.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/b8807e06-f0c3-48e6-844e-456878a09af8-IMG_0095.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\b8807e06-f0c3-48e6-844e-456878a09af8-IMG_0095.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\cd613c35-73df-49e1-87cc-e314642a13f5-cvete.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/cd613c35-73df-49e1-87cc-e314642a13f5-cvete.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\cd613c35-73df-49e1-87cc-e314642a13f5-cvete.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d485dd11-eed4-47c3-882a-d6e7a4585fc9-фл2.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/d485dd11-eed4-47c3-882a-d6e7a4585fc9-фл2.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d485dd11-eed4-47c3-882a-d6e7a4585fc9-фл2.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d541ac06-ec88-4d6c-870c-4c2d124f4473-2024 (1).png))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/d541ac06-ec88-4d6c-870c-4c2d124f4473-2024 (1).png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d541ac06-ec88-4d6c-870c-4c2d124f4473-2024 (1).png))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d646cba6-e6df-4f36-9c99-697c7ca13af1-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/d646cba6-e6df-4f36-9c99-697c7ca13af1-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d646cba6-e6df-4f36-9c99-697c7ca13af1-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d84a94ef-f10c-41f7-a149-3e950bd73bf3-IMG_0056.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/d84a94ef-f10c-41f7-a149-3e950bd73bf3-IMG_0056.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\d84a94ef-f10c-41f7-a149-3e950bd73bf3-IMG_0056.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e3792d89-3665-4cbb-8f11-c8a898545915-IMG_0056.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/e3792d89-3665-4cbb-8f11-c8a898545915-IMG_0056.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e3792d89-3665-4cbb-8f11-c8a898545915-IMG_0056.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e3da9ac9-d2ef-4288-b46f-c4031ea0345d-орх2.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ed3f6485-1129-4794-a4ea-38fb4319ea71-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/ed3f6485-1129-4794-a4ea-38fb4319ea71-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ed3f6485-1129-4794-a4ea-38fb4319ea71-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ee6ff11c-3cc9-493b-bf66-56d24d260afe-IMG_1501.JPG))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/ee6ff11c-3cc9-493b-bf66-56d24d260afe-IMG_1501.JPG</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\ee6ff11c-3cc9-493b-bf66-56d24d260afe-IMG_1501.JPG))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f17c23cc-0194-4c5a-83e5-9a03c7c7af86-AirBrush_20230516143101.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/f17c23cc-0194-4c5a-83e5-9a03c7c7af86-AirBrush_20230516143101.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f17c23cc-0194-4c5a-83e5-9a03c7c7af86-AirBrush_20230516143101.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f2003ca2-53be-4294-8bfe-dfff104d272d-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/f2003ca2-53be-4294-8bfe-dfff104d272d-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\f2003ca2-53be-4294-8bfe-dfff104d272d-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fcf3a12d-6038-4749-9ad6-8cd3e2509543-IMG_0095.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>MyGardenWEB</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MyGardenWEB</BasePath>
-      <RelativePath>Files/fcf3a12d-6038-4749-9ad6-8cd3e2509543-IMG_0095.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fcf3a12d-6038-4749-9ad6-8cd3e2509543-IMG_0095.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Files\fb9c7253-b656-47f3-a7b6-b26b30c9477f-unnamed.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\forus.jpg))">
       <SourceType>Package</SourceType>

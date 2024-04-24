@@ -44,7 +44,22 @@ namespace MyGardenWEB.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var price = ViewData["Price"];
+            //var price = ViewData["Price"];
+            //var price = TempData["Price"] as string;
+            if (TempData.ContainsKey("Price"))
+            {
+                // Convert the price back to decimal before storing it in ViewData
+                if (decimal.TryParse(TempData["Price"] as string, out decimal price))
+                {
+                    ViewData["Price"] = price;
+                }
+                else
+                {
+                    ViewData["Price"] = null;
+                }
+            }
+            // You can now use myVariable here
+            //return View();
             if (User.IsInRole("Admin"))
             {
                 var myGardenDbContext = _context.Orders
@@ -91,20 +106,27 @@ namespace MyGardenWEB.Controllers
             order.ProductsId = productId;
             order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
+            decimal price;
             if (percent == 100)
             {
-                var price = countP * currentProduct.Price;
-                ViewData["Price"] = price;
-                
+                price = countP * currentProduct.Price;
+                //TempData["Price"] = price.ToString(); 
+                //return RedirectToAction("Index");
+                //ViewData["Price"] = price;
+
                 // ViewBag.Price = price;  
             }
             else
             {
-                var price = currentProduct.Price - currentProduct.Price / 100 * percent;
-                ViewData["Price"] = price;
-        
+                price = currentProduct.Price - currentProduct.Price / 100 * percent;
+                //TempData["Price"] = price.ToString();
+                //return RedirectToAction("Index");
+                //ViewData["Price"] = price;
+
                 //ViewBag.Price = price;
             }
+            ViewData["Price"] = price;
+
             _context.Orders.Add(order);
             OrderDetail detail = new OrderDetail();
             detail.ProductsId = order.ProductsId;
@@ -115,7 +137,10 @@ namespace MyGardenWEB.Controllers
             detail.Final = true;
             _context.Add(detail);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            //return RedirectToAction(nameof(Index));
+            TempData["Price"] = price.ToString();
+            return RedirectToAction("Index");
+           
         }
         public async Task<IActionResult> CreateWithProductsId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
