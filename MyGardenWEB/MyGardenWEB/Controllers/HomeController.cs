@@ -42,6 +42,10 @@ namespace MyGardenWEB.Controllers
         {
             return View();
         }
+        public IActionResult Promotions()
+        {
+            return View();
+        }
 
 
 

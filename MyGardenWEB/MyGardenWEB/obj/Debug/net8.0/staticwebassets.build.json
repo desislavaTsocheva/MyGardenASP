@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "usUErIZjrGD1tOfNyQ5DfiEtAyHViTACtr+dRpuu+3s=",
+  "Hash": "S4XRbWgY3v1ppuhhGXDwQ69E+g7MHzJKmNN2Tp8lVvY=",
   "Source": "MyGardenWEB",
   "BasePath": "_content/MyGardenWEB",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.4\\staticwebassets\\QuickGrid.razor.js"
     },
     {
       "Identity": "C:\\Users\\viole\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.1\\staticwebassets\\V5\\css\\site.css",
@@ -1404,6 +1404,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\0a09720c-03af-4e12-af8e-383d41aaf559-66be403a-7cd9-4cd6-a8e6-ab39836c0df1-алое.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\0d852516-48d1-49d9-8d1a-79ce9ab3c984-FB_IMG_1698003750686.jpg"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\0de916d3-fd4c-49ef-8a08-328317252c3b-IMG_1502.JPG",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -1461,6 +1480,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\1351e5ae-bad8-450a-9a73-d98de4732226-34c6d3cd-193d-49a0-8819-3389e68911f7-ауб3.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\14e8579c-1173-4a44-a3b6-55fdad607d1e-IMG_1497.JPG"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\17f05582-b791-43ea-b0c1-2ad756f0e777-IMG_0096.jpg",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -1497,25 +1535,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\18dc1cd4-e4ba-49c9-8775-8102771d21e6-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\1b3b6ef1-d0c7-411c-8eef-fa7b154b617c-IMG_1499.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/1b3b6ef1-d0c7-411c-8eef-fa7b154b617c-IMG_1499.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\1b3b6ef1-d0c7-411c-8eef-fa7b154b617c-IMG_1499.JPG"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg",
@@ -1841,25 +1860,6 @@
       "OriginalItemSpec": "wwwroot\\Files\\5186502b-f7c9-44a3-97c6-a476b8c9f790-1bfc5d5e-03bb-415a-be9d-21b7f2f55743-кроккк.jpg"
     },
     {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\5800acd0-6dcd-4212-b71a-57cfb0762d31-IMG_1498.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/5800acd0-6dcd-4212-b71a-57cfb0762d31-IMG_1498.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\5800acd0-6dcd-4212-b71a-57cfb0762d31-IMG_1498.JPG"
-    },
-    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\588d9543-71cf-4a99-8f07-99a9949b58a1-IMG_1501.JPG",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -1877,6 +1877,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\588d9543-71cf-4a99-8f07-99a9949b58a1-IMG_1501.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\5c5d56d2-c824-4e1f-b1c4-59a682af9713-download (1).jpg"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\5df7b540-6303-45c6-a58c-d142c0b0c322-25c35c0e-79af-4cd4-9331-251af1fac416-невен.jpg",
@@ -2031,25 +2050,6 @@
       "OriginalItemSpec": "wwwroot\\Files\\71aa82e1-5bcc-427c-afc4-4aa02b9d9125-85f8ab7b-d27c-4574-b989-96af2ad24f35-ауб.jpg"
     },
     {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\748b58b7-aab2-4f60-8218-4bfdd51bebe1-IMG_1496.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/748b58b7-aab2-4f60-8218-4bfdd51bebe1-IMG_1496.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\748b58b7-aab2-4f60-8218-4bfdd51bebe1-IMG_1496.JPG"
-    },
-    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\79d6cbe2-30a5-45b7-af53-7a995ef59d16-2023.png",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -2124,25 +2124,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\7be69e74-ea96-4b6d-9011-66e2e8493eff-4333cb29-a959-4b2e-8f12-13a8580bbb47-орх.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\7d538c9c-bc66-4821-b1db-2bd95c43e91c-IMG_1522.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/7d538c9c-bc66-4821-b1db-2bd95c43e91c-IMG_1522.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\7d538c9c-bc66-4821-b1db-2bd95c43e91c-IMG_1522.JPG"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\804b164a-7a39-40af-ad77-e7830193eb50-IMG_0094.jpg",
@@ -2449,6 +2430,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\99c04b1f-46c1-48e5-9467-f5a6526c9689-IMG_0056.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\9a3ecf8e-e818-4fb6-86a1-30cb27ddc094-IMG_1496.JPG"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\9e9313d6-12bd-4c17-bc3d-7c13e0072970-e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -2620,6 +2620,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\b3ea7fd8-8409-4322-89f2-fc5cb4bbd875-IMG_0053.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\b7b4d35a-adfe-4648-ba40-3f16b138f9c5-download.jpg"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\b8807e06-f0c3-48e6-844e-456878a09af8-IMG_0095.jpg",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -2656,25 +2675,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\bc4a0160-75c3-4381-a096-b0c9c39cdfb7-лале3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\bebb23f7-ffde-4c6e-a092-f128a0148cbe-IMG_1497.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/bebb23f7-ffde-4c6e-a092-f128a0148cbe-IMG_1497.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\bebb23f7-ffde-4c6e-a092-f128a0148cbe-IMG_1497.JPG"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\cd613c35-73df-49e1-87cc-e314642a13f5-cvete.jpg",
@@ -2848,6 +2848,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\e7168af6-4a58-418d-bcd0-fb64d3524229-лале1.jpg"
     },
     {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "Files/ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\ecc5eb97-c3de-4e26-89d5-15c60285ad0e-download (2).jpg"
+    },
+    {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\ed3f6485-1129-4794-a4ea-38fb4319ea71-f1fd778d-a3ff-435a-951b-6732b0bdd4ef-невенн.jpg",
       "SourceId": "MyGardenWEB",
       "SourceType": "Discovered",
@@ -2884,25 +2903,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\ee6ff11c-3cc9-493b-bf66-56d24d260afe-IMG_1501.JPG"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\f1176f15-45b1-487c-8d8e-543b74ac31d6-IMG_1520.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/f1176f15-45b1-487c-8d8e-543b74ac31d6-IMG_1520.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\f1176f15-45b1-487c-8d8e-543b74ac31d6-IMG_1520.JPG"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\f17c23cc-0194-4c5a-83e5-9a03c7c7af86-AirBrush_20230516143101.jpg",
@@ -2960,25 +2960,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\f2003ca2-53be-4294-8bfe-dfff104d272d-e309c8fd-b3af-43b6-aac4-9ce87b820190-невеннн.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\f6602867-9c97-4b22-a5ac-f85925c9c6c4-IMG_1521.JPG",
-      "SourceId": "MyGardenWEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
-      "BasePath": "_content/MyGardenWEB",
-      "RelativePath": "Files/f6602867-9c97-4b22-a5ac-f85925c9c6c4-IMG_1521.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\f6602867-9c97-4b22-a5ac-f85925c9c6c4-IMG_1521.JPG"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\fcd92b0f-37cf-44d9-8506-1d9f33ce5f9e-крокккк.jpg",
@@ -5164,6 +5145,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lukovitsa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\pencil.png",
+      "SourceId": "MyGardenWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\",
+      "BasePath": "_content/MyGardenWEB",
+      "RelativePath": "pencil.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pencil.png"
     },
     {
       "Identity": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\plant.png",

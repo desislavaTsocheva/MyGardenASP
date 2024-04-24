@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Index";
+    var price=ViewData["Price"];
+
 }
 <h1>Кошница</h1>
 <p>
@@ -50,7 +52,11 @@
                         <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
                     </td>
                     <td>
-                       <b>@Html.DisplayFor(modelItem=>item.Products.Price)</b>
+                        <p>
+                            <b>
+                              @price
+                            </b>
+                        </p>
                     </td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |

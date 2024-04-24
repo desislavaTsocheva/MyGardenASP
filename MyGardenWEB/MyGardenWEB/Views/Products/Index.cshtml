@@ -15,6 +15,7 @@
         </svg>
     </a>
 }
+
 <div class="self-grid">
     @foreach (var item in Model)
     {
@@ -41,9 +42,9 @@
                     <div class="overlay_product">
                         <div class="buttons">
 
-                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id">
+                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@item.Id">
                                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                                <input type="submit" class="btn btn-primary" value="Поръчай"></input>
+                                <input type="submit" class="btn btn-primary" value="Поръчай"/>
                             </form>
                         </div>
                     </div>
@@ -56,8 +57,8 @@
                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Редактиране</a>
                 <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
-                <form method="post" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@item.Id">
-                    <center><input type="submit" class="btn btn-primary" value="Поръчай"></input></center>
+                <form method="post" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@item.Id">
+                    <center><input type="submit" class="btn btn-primary" value="Поръчай"/></center>
                 </form>
             }
         </div>

@@ -275,9 +275,6 @@ namespace MyGardenWEB.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("OrderDetailsId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProductsId")
                         .HasColumnType("int");
 
@@ -287,8 +284,6 @@ namespace MyGardenWEB.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ClientsId");
-
-                    b.HasIndex("OrderDetailsId");
 
                     b.HasIndex("ProductsId");
 
@@ -399,6 +394,27 @@ namespace MyGardenWEB.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("MyGardenWEB.Data.Promotion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PromotionPercent")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductsId");
+
+                    b.ToTable("Promotions");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -458,12 +474,6 @@ namespace MyGardenWEB.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyGardenWEB.Data.OrderDetail", "OrderDetails")
-                        .WithMany("Orders")
-                        .HasForeignKey("OrderDetailsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MyGardenWEB.Data.Product", "Products")
                         .WithMany("Orders")
                         .HasForeignKey("ProductsId")
@@ -471,8 +481,6 @@ namespace MyGardenWEB.Migrations
                         .IsRequired();
 
                     b.Navigation("Clients");
-
-                    b.Navigation("OrderDetails");
 
                     b.Navigation("Products");
                 });
@@ -518,6 +526,17 @@ namespace MyGardenWEB.Migrations
                     b.Navigation("Categories");
                 });
 
+            modelBuilder.Entity("MyGardenWEB.Data.Promotion", b =>
+                {
+                    b.HasOne("MyGardenWEB.Data.Product", "Products")
+                        .WithMany("Promotions")
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("MyGardenWEB.Data.Category", b =>
                 {
                     b.Navigation("Products");
@@ -530,11 +549,6 @@ namespace MyGardenWEB.Migrations
                     b.Navigation("Orders");
                 });
 
-            modelBuilder.Entity("MyGardenWEB.Data.OrderDetail", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
             modelBuilder.Entity("MyGardenWEB.Data.Product", b =>
                 {
                     b.Navigation("OrderDetails");
@@ -542,6 +556,8 @@ namespace MyGardenWEB.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Photos");
+
+                    b.Navigation("Promotions");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -13,7 +14,7 @@ using MyGardenWEB.Data;
 
 namespace MyGardenWEB.Controllers
 {
-    [Authorize] 
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly MyGardenDbContext _context;
@@ -43,6 +44,7 @@ namespace MyGardenWEB.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            var price = ViewData["Price"];
             if (User.IsInRole("Admin"))
             {
                 var myGardenDbContext = _context.Orders
@@ -80,39 +82,42 @@ namespace MyGardenWEB.Controllers
             return View(order);
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> CreateWithProductsId([Bind("ProductsId,Quantity")] int productId, int countP)
-        //{
-        //    var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
-        //    var currentProducts = await _context.Orders.Include(o => o.Products).FirstOrDefaultAsync(m => m.Id == productId);
-        //    Product product = new Product();
-        //    Order order = new Order();
-        //    //order.ProductsId = productId;
-        //    // productId = order.ProductsId;
-        //    order.ProductsId = product.Id;
-        //    order.Quantity = countP;
-        //    order.ClientsId = _userManager.GetUserId(User);
-        //    var price = countP * currentProduct.Price;
-        //    _context.Orders.Add(order);
-
-        //    OrderDetail detail = new OrderDetail();
-        //    detail.ProductsId = order.ProductsId;
-        //    detail.OrderedOn = DateTime.Now;
-        //    detail.Quantity = order.Quantity;
-        //    detail.ClientsId = _userManager.GetUserId(User);
-        //    detail.Total = countP * currentProduct.Price;
-        //    detail.Final = true;
-        //    _context.Add(detail);
-
-
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction(nameof(Index));
-        //}
-
-
-
-        [HttpPost]
-        public async Task<IActionResult> CreateWithProductId([Bind("ProductsId,Quantity")] int productId, int countP)
+        public async Task<IActionResult> CreateWithProductId(int productId, int countP, int percent)
+        {
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
+            Order order = new Order();
+            //order.ProductsId = productId;
+            // productId = order.ProductsId;
+            order.ProductsId = productId;
+            order.Quantity = countP;
+            order.ClientsId = _userManager.GetUserId(User);
+            if (percent == 100)
+            {
+                var price = countP * currentProduct.Price;
+                ViewData["Price"] = price;
+                
+                // ViewBag.Price = price;  
+            }
+            else
+            {
+                var price = currentProduct.Price - currentProduct.Price / 100 * percent;
+                ViewData["Price"] = price;
+        
+                //ViewBag.Price = price;
+            }
+            _context.Orders.Add(order);
+            OrderDetail detail = new OrderDetail();
+            detail.ProductsId = order.ProductsId;
+            detail.OrderedOn = DateTime.Now;
+            detail.Quantity = order.Quantity;
+            detail.ClientsId = _userManager.GetUserId(User);
+            detail.Total = countP * currentProduct.Price;
+            detail.Final = true;
+            _context.Add(detail);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> CreateWithProductsId([Bind("ProductsId,Quantity")] int productId, int countP)
         {
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
@@ -137,19 +142,16 @@ namespace MyGardenWEB.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-
-
         // GET: Orders/Create
         //[Authorize(Roles ="User,Admin")]
         public IActionResult Create()
         {
-           // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
+            // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "FirstName", "LastName");
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
             return View();
         }
 
-       
+
         // POST: Orders/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -158,15 +160,17 @@ namespace MyGardenWEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductsId,Quantity")] Order order)
         {
+
+
             if (ModelState.IsValid)
             {
-               // order.RegisterOn = DateTime.Now;
+                // order.RegisterOn = DateTime.Now;
                 order.ClientsId = _userManager.GetUserId(User);
                 _context.Orders.Add(order);
-                OrderDetail detail=new OrderDetail();
-                detail.ProductsId=order.ProductsId;
-                detail.OrderedOn=DateTime.Now;
-                detail.Quantity=order.Quantity;
+                OrderDetail detail = new OrderDetail();
+                detail.ProductsId = order.ProductsId;
+                detail.OrderedOn = DateTime.Now;
+                detail.Quantity = order.Quantity;
                 detail.ClientsId = _userManager.GetUserId(User);
                 detail.Total = 0;
                 detail.Final = false;
@@ -177,6 +181,31 @@ namespace MyGardenWEB.Controllers
             // ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
             return View(order);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> OrderPromotion([Bind("ProductsId,Quantity")] int productId, Order order, Product product, Promotion prom)
+        {
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
+            // var prodPrice = await _context.Products.FindAsync(productId);
+            // prodPrice.Price=product.Price - product.Price / 100 * prom.PromotionPercent;
+            order.ProductsId = productId;
+            // order.RegisterOn=DateTime.Now;
+            order.Quantity = 1;
+            order.ClientsId = _userManager.GetUserId(User);
+            // order.Products.Price = prod;
+            _context.Orders.Add(order);
+            OrderDetail detail = new OrderDetail();
+            detail.ProductsId = order.ProductsId;
+            detail.OrderedOn = DateTime.Now;
+            detail.Quantity = order.Quantity;
+            detail.ClientsId = _userManager.GetUserId(User);
+            detail.Total = 0;
+            detail.Final = false;
+            _context.Add(detail);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Orders/Edit/5
@@ -266,7 +295,7 @@ namespace MyGardenWEB.Controllers
             // _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-           // return View();
+            // return View();
         }
 
         // POST: Orders/Delete/5

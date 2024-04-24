@@ -41,7 +41,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Цветя</a>
-                        </li>
+                        </li>                 
+                        
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts">Контакти</a>
@@ -50,11 +51,17 @@
                         @if (!User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Promotions" asp-action="Index">Промоции</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="OrderDetails" asp-action="Index">Вашите поръчки</a>
                             </li>
                         }
                         @if (User.IsInRole("Admin"))
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Promotions" asp-action="Index">Промоции</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="OrderDetails" asp-action="Index">Всички поръчки</a>
                             </li>

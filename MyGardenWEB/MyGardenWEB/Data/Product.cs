@@ -22,9 +22,7 @@ namespace MyGardenWEB.Data
         public ICollection<Order> Orders { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
         public ICollection<Photo> Photos { get; set; }
-       // public List<string> Files { get; set; }
-        // [NotMapped]
-        //public List<IFormFile> Files { get; set; } //////////
+        public ICollection<Promotion> Promotions { get; set; }
 
 
     }

@@ -88,6 +88,7 @@ namespace MyGardenWEB.Controllers
             }
             ProductVM prodVM = new ProductVM()
             {
+                Id=products.Id,
                 BulgarianName = products.BulgarianName,
                 LatinName = products.LatinName,
                 Size = products.Size,

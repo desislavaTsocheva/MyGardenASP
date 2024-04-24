@@ -1,0 +1,39 @@
+﻿@model MyGardenWEB.Data.Promotion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Детайли за промоционален продукт</h1>
+
+<div class="product">
+    <div class="product_info">
+        @Html.DisplayFor(model => model.Products.BulgarianName)  /@Html.DisplayFor(model => model.Products.LatinName)/ <br />
+        <label>Размер: </label> @Html.DisplayFor(model => model.Products.Size)<br />
+        <label>Цена: </label> @Html.DisplayFor(model => model.Products.Price)
+    </div>
+    <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP="1" asp-route-percent="100">
+        <form method="get" asp-controller="Orders" asp-action="CreateWithProductId">
+            <input name="productId" type="hidden" value="@Model.Id" />
+            <input name="percent" type="hidden" value="@Model.PromotionPercent" />
+            <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
+            <input type="submit" class="btn btn-primary" value="Добави в количката" />
+        </form>
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Предотвратява изпращането на стандартната POST заявка
+
+            var inputDataValue = document.getElementById("countP").value; // Взема стойността на текстовото поле
+
+            window.location.href = '@Url.Action("CreateWithProductId", "Orders")?countP=' + inputDataValue
+                + '&productId=' + @Model.Id + '&percent=100';
+            // Пренасочва към контролера и действието с подадената стойност на текстовото поле като параметър
+        });
+    </script>
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |
+    <a asp-action="Index">Връщане назад</a>
+</div>
