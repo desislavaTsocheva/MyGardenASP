@@ -87,6 +87,7 @@ namespace MyGardenWEB.Controllers
 
         public async Task<IActionResult> CreateWithProductId(int productId, int countP, int percent)
         {
+           // var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == productId );
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
             //order.ProductsId = productId;
@@ -95,8 +96,8 @@ namespace MyGardenWEB.Controllers
             order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
             decimal price=0;
-            if (currentProduct.Id == productId)
-            {
+           // if (currentProduct.Id == productId)
+            //{
                 if (percent == 100)
                 {
                     price = Math.Round(order.Quantity * currentProduct.Price, 2);
@@ -105,7 +106,7 @@ namespace MyGardenWEB.Controllers
                 {
                     price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
                 }
-            }
+           // }
             order.Price = price; // Запишете цената в поръчката
             _context.Orders.Add(order);
             OrderDetail detail = new OrderDetail();

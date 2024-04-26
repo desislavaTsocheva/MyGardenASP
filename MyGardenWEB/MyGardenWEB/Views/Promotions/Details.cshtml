@@ -7,10 +7,13 @@
 <h1>Детайли за промоционален продукт</h1>
 
 <div class="product">
+    <div class="product_img">
+        <img src="@Html.DisplayFor(model => model.Products.PhotoURL)" />
+    </div>
     <div class="product_info">
         @Html.DisplayFor(model => model.Products.BulgarianName)  /@Html.DisplayFor(model => model.Products.LatinName)/ <br />
         <label>Размер: </label> @Html.DisplayFor(model => model.Products.Size)<br />
-        <label>Цена: </label> @Html.DisplayFor(model => model.Products.Price)
+        <label>Намалена цена: </label> @(Model.Products.Price - Model.Products.Price / 100 * Model.PromotionPercent) лв.
     </div>
     <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP="1" asp-route-percent="100">
         <form method="get" asp-controller="Orders" asp-action="CreateWithProductId">
@@ -20,6 +23,9 @@
             <input type="submit" class="btn btn-primary" value="Добави в количката" />
         </form>
     </form>
+    <br />
+    <br />
+    <br />
     <script>
         document.querySelector("form").addEventListener("submit", function (e) {
             e.preventDefault(); // Предотвратява изпращането на стандартната POST заявка
@@ -31,9 +37,18 @@
             // Пренасочва към контролера и действието с подадената стойност на текстовото поле като параметър
         });
     </script>
-
-
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |
-    <a asp-action="Index">Връщане назад</a>
+    @*  <div class="description_prod">
+    <h4>Описание</h4>
+    <hr />
+    <p style="font-family:Vivaldi; font-size:24px; text-align:justify">@Html.DisplayFor(model => model.Products.Description)</p>
+    </div> *@
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
+            <a asp-action="Index">Връщане назад</a>
+        }
+        else
+        {
+            <a asp-action="Index" style="float:left">Връщане назад</a>
+        }
 </div>

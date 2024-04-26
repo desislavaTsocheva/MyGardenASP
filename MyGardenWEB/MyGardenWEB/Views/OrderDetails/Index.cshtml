@@ -82,14 +82,17 @@ else
                     </h5>
                     <h5 class="card-title">
                         / @Html.DisplayFor(modelItem => item.Products.LatinName)/
+                    </h5> 
+                    <h5 class="card-title">
+                        / @Html.DisplayFor(modelItem => item.OrderedOn)/
                     </h5>
-                    <p class="card-subtitle">
+@*                     <p class="card-subtitle">
                         Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
                     </p>
                     <p class="card-subtitle">
                         Цена: <b>@Html.DisplayFor(modelItem => item.Products.Price)</b>
 
-                    </p>
+                    </p> *@
                 </div>
             </div>
         }

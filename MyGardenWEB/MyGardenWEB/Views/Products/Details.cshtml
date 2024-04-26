@@ -7,7 +7,7 @@
 
 <div class="product">
     <div class="product_img">
-        <img src="@Html.DisplayFor(model => model.PhotoURL)" />
+        <img id="mainImage" class="main-image" src="@Html.DisplayFor(model => model.PhotoURL)" />
     </div>
     <div class="product_info">
         @Html.DisplayFor(model => model.BulgarianName)  /@Html.DisplayFor(model => model.LatinName)/ <br />
@@ -35,6 +35,17 @@
         });
     </script>
 
+
+
+    <script>
+        function changeMainImage(thumbnail) {
+            var mainImage = document.getElementById('mainImage');
+            var mainImageContainer = document.getElementById('mainImageContainer');
+            mainImage.src = thumbnail.src;
+            mainImageContainer.scrollIntoView(); // Scroll to the main image
+        }
+    </script>
+
   @*   <div class="buttons">
         <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-productId="ViewBag.Id" asp-route-countP="ViewBag.Quantity">Добави в количката</a>
     </div> *@
@@ -44,7 +55,7 @@
     @foreach (var item in (IEnumerable<string>)Model.Files)
     {
         <div class="multiple_images">
-            <img src=@Url.Content(item) />
+            <img src=@Url.Content(item) onclick="changeMainImage(this)" />
         </div>
     }
 </div>

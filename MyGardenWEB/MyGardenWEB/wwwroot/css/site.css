@@ -388,8 +388,13 @@ span{
     height: 200px;
     border-radius:20px;
 }
-.description_prod h4,p{
-    font-family:Vivaldi;
+
+.multiple_images:hover {
+    transform: scale(1.1);
+}
+
+.description_prod h4, p {
+    font-family: Vivaldi;
 }
 .description_prod {
     width:70%;
@@ -410,4 +415,8 @@ span{
     color:white;
     font-family:Vivaldi;
     font-size:20px;
+}
+#old_price {
+    text-decoration-line: line-through;
+    text-decoration-color:red;
 }
