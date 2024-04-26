@@ -43,7 +43,7 @@
                     <div class="overlay_product">
                         <div class="buttons">
 
-                            <form method="post" asp-controller="Orders" asp-action="CreateWithProductsId" asp-route-productId="@item.Id" asp-route-percent="@item.PromotionPercent">
+                            <form method="post" asp-controller="Orders" asp-action="CreateWithPromotionsId" asp-route-promotionId="@item.Id" asp-route-percent="@item.PromotionPercent">
                                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Детайли</a>
                                 <input type="submit" class="btn btn-primary" value="Поръчай"/>
                             </form>

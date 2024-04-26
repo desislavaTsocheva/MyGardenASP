@@ -85,7 +85,7 @@ namespace MyGardenWEB.Controllers
             return View(order);
         }
 
-        public async Task<IActionResult> CreateWithProductId(int productId, int countP, int percent)
+        public async Task<IActionResult> CreateWithProductId(int productId, int countP, decimal percent)
         {
            // var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == productId );
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
@@ -122,7 +122,60 @@ namespace MyGardenWEB.Controllers
             TempData["Price"] = price.ToString();
             return RedirectToAction("Index");
            
+        } 
+        public async Task<IActionResult>CreateProm(int productId, int countP, decimal percent)
+        {
+            Order order = new Order();
+            order.ProductsId = productId;
+            order.Quantity = countP;
+            order.ClientsId = _userManager.GetUserId(User);
+            order.Price = percent;
+            //order.RegisterOn = DateTime.Now;
+            _context.Orders.Add(order);
+            OrderDetail detail = new OrderDetail();
+            detail.ProductsId = order.ProductsId;
+            detail.OrderedOn = DateTime.Now;
+            detail.Quantity = order.Quantity;
+            detail.ClientsId = _userManager.GetUserId(User);
+            detail.Total = 0;
+            detail.Final = true;
+            _context.Add(detail);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
+        public async Task<IActionResult> CreateWithPromotionId(int promotionId, int countP, decimal percent)
+        {
+            var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == promotionId);
+
+            if (currentPromotion == null)
+            {
+                // Обработка на грешка, ако промоцията не е намерена
+                return NotFound();
+            }
+
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == currentPromotion.ProductsId);
+
+            if (currentProduct == null)
+            {
+                // Обработка на грешка, ако продуктът не е намерен
+                return NotFound();
+            }
+
+            decimal price = 0;
+
+            if (percent == 100)
+            {
+                price = Math.Round(countP * currentProduct.Price, 2);
+            }
+            else
+            {
+                price = Math.Round(countP * currentProduct.Price - countP * currentProduct.Price / 100 * percent, 2);
+            }
+            
+            return await CreateProm(currentPromotion.ProductsId, countP, price);
+        }
+
+
         public async Task<IActionResult> CreateWithProductsId(int productId, int countP, int percent)
         {
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
@@ -160,6 +213,37 @@ namespace MyGardenWEB.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }  
+        public async Task<IActionResult> CreateWithPromotionsId(int promotionId, int countP, int percent)
+        {
+            var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == promotionId);
+            countP = 1;
+            if (currentPromotion == null)
+            {
+                // Обработка на грешка, ако промоцията не е намерена
+                return NotFound();
+            }
+
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == currentPromotion.ProductsId);
+
+            if (currentProduct == null)
+            {
+                // Обработка на грешка, ако продуктът не е намерен
+                return NotFound();
+            }
+
+            decimal price = 0;
+
+            if (percent == 100)
+            {
+                price = Math.Round(countP * currentProduct.Price, 2);
+            }
+            else
+            {
+                price = Math.Round(countP * currentProduct.Price - countP * currentProduct.Price / 100 * percent, 2);
+            }
+
+            return await CreateProm(currentPromotion.ProductsId, countP, price);
         }
         // GET: Orders/Create
         //[Authorize(Roles ="User,Admin")]

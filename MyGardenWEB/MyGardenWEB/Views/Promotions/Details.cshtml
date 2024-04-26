@@ -15,9 +15,9 @@
         <label>Размер: </label> @Html.DisplayFor(model => model.Products.Size)<br />
         <label>Намалена цена: </label> @(Model.Products.Price - Model.Products.Price / 100 * Model.PromotionPercent) лв.
     </div>
-    <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP="1" asp-route-percent="100">
-        <form method="get" asp-controller="Orders" asp-action="CreateWithProductId">
-            <input name="productId" type="hidden" value="@Model.Id" />
+    <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithPromotionId" asp-route-promotionId="@Model.Id" asp-route-countP="1" asp-route-percent="100">
+        <form method="get" asp-controller="Orders" asp-action="CreateWithPromotionId">
+            <input name="promotionId" type="hidden" value="@Model.Id" />
             <input name="percent" type="hidden" value="@Model.PromotionPercent" />
             <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
             <input type="submit" class="btn btn-primary" value="Добави в количката" />
@@ -32,8 +32,8 @@
 
             var inputDataValue = document.getElementById("countP").value; // Взема стойността на текстовото поле
 
-            window.location.href = '@Url.Action("CreateWithProductId", "Orders")?countP=' + inputDataValue
-                + '&productId=' + @Model.Id + '&percent=100';
+            window.location.href = '@Url.Action("CreateWithPromotionId", "Orders")?countP=' + inputDataValue
+                + '&promotionId=' + @Model.Id + '&percent=100';
             // Пренасочва към контролера и действието с подадената стойност на текстовото поле като параметър
         });
     </script>
