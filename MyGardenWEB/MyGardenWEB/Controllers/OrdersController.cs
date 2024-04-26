@@ -44,27 +44,11 @@ namespace MyGardenWEB.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            //var price = ViewData["Price"];
-            //var price = TempData["Price"] as string;
-            if (TempData.ContainsKey("Price"))
-            {
-                // Convert the price back to decimal before storing it in ViewData
-                if (decimal.TryParse(TempData["Price"] as string, out decimal price))
-                {
-                    ViewData["Price"] = price;
-                }
-                else
-                {
-                    ViewData["Price"] = null;
-                }
-            }
-            // You can now use myVariable here
-            //return View();
             if (User.IsInRole("Admin"))
             {
                 var myGardenDbContext = _context.Orders
-                   .Include(o => o.Clients)
-                   .Include(o => o.Products);
+                    .Include(o => o.Clients)
+                    .Include(o => o.Products);
                 return View(await myGardenDbContext.ToListAsync());
             }
             else
@@ -73,6 +57,10 @@ namespace MyGardenWEB.Controllers
                     .Include(o => o.Clients)
                     .Include(o => o.Products)
                     .Where(x => x.ClientsId == _userManager.GetUserId(User));
+
+                // Заменете цената във ViewData с цената от всяка поръчка
+                ViewData["Price"] = await myGardenDbContext.SumAsync(o => o.Price * o.Quantity);
+
                 return View(await myGardenDbContext.ToListAsync());
             }
         }
@@ -106,27 +94,19 @@ namespace MyGardenWEB.Controllers
             order.ProductsId = productId;
             order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
-            decimal price;
-            if (percent == 100)
+            decimal price=0;
+            if (currentProduct.Id == productId)
             {
-                price = countP * currentProduct.Price;
-                //TempData["Price"] = price.ToString(); 
-                //return RedirectToAction("Index");
-                //ViewData["Price"] = price;
-
-                // ViewBag.Price = price;  
+                if (percent == 100)
+                {
+                    price = Math.Round(order.Quantity * currentProduct.Price, 2);
+                }
+                else
+                {
+                    price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
+                }
             }
-            else
-            {
-                price = currentProduct.Price - currentProduct.Price / 100 * percent;
-                //TempData["Price"] = price.ToString();
-                //return RedirectToAction("Index");
-                //ViewData["Price"] = price;
-
-                //ViewBag.Price = price;
-            }
-            ViewData["Price"] = price;
-
+            order.Price = price; // Запишете цената в поръчката
             _context.Orders.Add(order);
             OrderDetail detail = new OrderDetail();
             detail.ProductsId = order.ProductsId;
@@ -142,16 +122,30 @@ namespace MyGardenWEB.Controllers
             return RedirectToAction("Index");
            
         }
-        public async Task<IActionResult> CreateWithProductsId([Bind("ProductsId,Quantity")] int productId, int countP)
+        public async Task<IActionResult> CreateWithProductsId(int productId, int countP, int percent)
         {
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
-            //order.ProductsId = productId;
-            // productId = order.ProductsId;
             order.ProductsId = productId;
             order.Quantity = 1;
             order.ClientsId = _userManager.GetUserId(User);
-            var price = countP * currentProduct.Price;
+
+            //decimal price = 0;
+
+            //if (currentProduct.Id == productId)
+            //{
+            //    if (percent == 100)
+            //    {
+            //        price = Math.Round(order.Quantity * currentProduct.Price, 2);
+            //    }
+            //    else
+            //    {
+            //        price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
+            //    }
+            //}
+
+            order.Price = currentProduct.Price; // Запишете цената в поръчката
+
             _context.Orders.Add(order);
 
             OrderDetail detail = new OrderDetail();
@@ -162,7 +156,6 @@ namespace MyGardenWEB.Controllers
             detail.Total = countP * currentProduct.Price;
             detail.Final = true;
             _context.Add(detail);
-
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

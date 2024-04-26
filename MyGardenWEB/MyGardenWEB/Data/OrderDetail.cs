@@ -17,6 +17,7 @@ namespace MyGardenWEB.Data
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Total { get; set; }
       //  public ICollection<Order> Orders { get; set; }
+      public decimal Prices { get; set; }   
 
 
     }

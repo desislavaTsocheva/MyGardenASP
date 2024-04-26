@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
-    var price=ViewData["Price"];
+    var price = ViewData["Price"];
 
 }
 <h1>Кошница</h1>
@@ -29,7 +29,7 @@
                     Снимка
                 </th>
                 <th>
-                   Цена
+                    Цена
                 </th>
 
                 <th></th>
@@ -54,11 +54,8 @@
                     <td>
                         <p>
                             <b>
-                                @if (ViewData["Price"] != null)
-                                {
-                                     @ViewData["Price"]
-                                }
-                               
+                                @Html.DisplayFor(modelItem => item.Price)
+
                             </b>
                         </p>
                     </td>
@@ -95,7 +92,7 @@ else
                         Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
                     </p>
                     <p class="card-subtitle">
-                        Цена: <b>@Html.DisplayFor(modelItem => item.Products.Price)</b>
+                        Цена: <b> @Html.DisplayFor(modelItem => item.Price)</b>
 
                     </p>
 
@@ -117,16 +114,16 @@ else
         }
     </div>
 }
- 
+
 <div class="calculate">
     @{
         decimal sum = 0;
     }
-    @foreach(var item in Model)
+    @foreach (var item in Model)
     {
-        
+
         sum = @Model.Sum(i => i.Quantity * i.Products.Price);
-        
+
     }
     <p>Вашата сметка е: @sum лева</p>
 </div>
@@ -134,9 +131,9 @@ else
 
 <form asp-action="EmptyCart" asp-controller="Orders" method="post">
     <div class="form-group">
-        <input type="submit" value="Поръчай" class="btn btn-primary" onclick="showAlert()"/>
-       @*  <form>
-            <div class="alert alert-success">@TempData["Message"]</div>
+        <input type="submit" value="Поръчай" class="btn btn-primary" onclick="showAlert()" />
+        @*  <form>
+        <div class="alert alert-success">@TempData["Message"]</div>
         </form> *@
     </div>
 </form>
