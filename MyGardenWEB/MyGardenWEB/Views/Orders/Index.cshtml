@@ -29,7 +29,7 @@
                     Снимка
                 </th>
                 <th>
-                    Цена
+                    Обща цена
                 </th>
 
                 <th></th>
@@ -92,7 +92,7 @@ else
                         Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
                     </p>
                     <p class="card-subtitle">
-                        Цена: <b> @Html.DisplayFor(modelItem => item.Price)</b>
+                        Обща цена: <b> @Html.DisplayFor(modelItem => item.Price)</b>
 
                     </p>
 
@@ -122,7 +122,7 @@ else
     @foreach (var item in Model)
     {
 
-        sum = @Model.Sum(i => i.Quantity * i.Price);
+        sum = @Model.Sum(i => i.Quantity * i.Products.Price);
 
     }
     <p>Вашата сметка е: @sum лева</p>

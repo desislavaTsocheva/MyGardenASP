@@ -183,21 +183,6 @@ namespace MyGardenWEB.Controllers
             order.ProductsId = productId;
             order.Quantity = 1;
             order.ClientsId = _userManager.GetUserId(User);
-
-            //decimal price = 0;
-
-            //if (currentProduct.Id == productId)
-            //{
-            //    if (percent == 100)
-            //    {
-            //        price = Math.Round(order.Quantity * currentProduct.Price, 2);
-            //    }
-            //    else
-            //    {
-            //        price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
-            //    }
-            //}
-
             order.Price = currentProduct.Price; // Запишете цената в поръчката
 
             _context.Orders.Add(order);
