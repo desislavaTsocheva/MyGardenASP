@@ -20,8 +20,9 @@ html {
 body {
     margin-bottom: 60px;
 }
-footer{
-    position:static;
+
+footer {
+    position: static;
 }
 
 .overlay {
@@ -88,12 +89,12 @@ footer{
 
 
 .description {
-    text-align:center;
+    text-align: center;
     font-family: Vivaldi;
     font-size: 19px;
     color: #69324d;
     text-shadow: 2px 1px 1px white;
-    padding:10px;
+    padding: 10px;
 }
 
 #article3:hover {
@@ -183,6 +184,7 @@ legend, label {
     .forus img {
         width: 40%;
         height: 340px;
+        float:left;
     }
 
     .forus p {
@@ -245,57 +247,63 @@ iframe {
     float: left;
 }
 
-.card{
-    display:inline-flex;
-    margin:20px;
-    padding:5px 5px;
-    height:400px;
-    width:10%;
-}
-.card-title{
-    font-family:Vivaldi;
-    font-size:20px;
-    text-align:center;
-}
-.card-subtitle{
-    text-align:center;
-}
-.card img{
-    width:100%;
-    height:230px;
+.card {
+    display: inline-flex;
+    margin: 20px;
+    padding: 5px 5px;
+    height: 400px;
+    width: 10%;
 }
 
-h1{
-    font-family:Vivaldi;
-    font-size:40px;
-}
-.service{
-    width:100%;
-    height:100px;
-    display:inline-flex;
-    background-color:#fbeaea;
-    
-}
-.serv{
-    margin-top:20px;
-}
-.serv img{
- margin:10px;
- padding:10px;
- width:50px;
- height:50px;
+.card-title {
+    font-family: Vivaldi;
+    font-size: 20px;
+    text-align: center;
 }
 
-.order_index{
-    height:300px;
-    width:45%;
-    display:inline-flex;
-    background-color:#f7e5e5;
-    margin:20px;
-    padding:20px;
-    border-radius:15px;
+.card-subtitle {
+    text-align: center;
 }
-.overlay_order{
+
+.card img {
+    width: 100%;
+    height: 230px;
+}
+
+h1 {
+    font-family: Vivaldi;
+    font-size: 40px;
+}
+
+.service {
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    background-color: #fbeaea;
+}
+
+.serv {
+    margin-top: 20px;
+}
+
+    .serv img {
+        margin: 10px;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+.order_index {
+    height: 300px;
+    width: 45%;
+    display: inline-flex;
+    background-color: #f7e5e5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.overlay_order {
     position: absolute;
     background-color: white;
     width: 100%;
@@ -309,27 +317,30 @@ h1{
     font-size: 80px;
     text-align: center;
 }
+
 .card:hover .overlay_order {
-    opacity:0.9;
+    opacity: 0.9;
 }
 
-.order img{
- float:left;
- height:250px;
- width:50%;
- margin:5px;
- padding:5px;
-border-radius:10px;
+.order img {
+    float: left;
+    height: 250px;
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
 }
-.info_order{
-    float:right;
-    padding:5px;
-    margin:5px;
-    font-family:Vivaldi;
-    font-size:17px;
+
+.info_order {
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    font-family: Vivaldi;
+    font-size: 17px;
 }
-.order_links{
-    margin-top:150px;
+
+.order_links {
+    margin-top: 150px;
 }
 /*.order_links a img{
     width:10px;
@@ -351,42 +362,49 @@ border-radius:10px;
     font-size: 80px;
     text-align: center;
 }
+
 .card:hover .overlay_product {
     opacity: 0.9;
 }
-span{
-    width:20px;
-    height:20px;
+
+span {
+    width: 20px;
+    height: 20px;
 }
-.product{
-    height:350px;
-    width:80%;
+
+.product {
+    height: 350px;
+    width: 80%;
 }
-.product_img img{
-    height:300px;
-    width:40%;
-    margin:20px;
-    padding:20px;
-    float:left;
+
+.product_img img {
+    height: 300px;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    float: left;
 }
-.product_info{
-    font-size:28px;
-    font-family:Vivaldi;
-    margin:20px;
-    padding:30px;
+
+.product_info {
+    font-size: 28px;
+    font-family: Vivaldi;
+    margin: 20px;
+    padding: 30px;
 }
-.multiple_img{
-    height:300px;
-    width:100%;
-    display:inline-flex;
-    flex-flow:wrap;
+
+.multiple_img {
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: wrap;
 }
+
 .multiple_images img {
     margin: 10px;
     padding: 10px;
     width: 100%;
     height: 200px;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 .multiple_images:hover {
@@ -396,27 +414,144 @@ span{
 .description_prod h4, p {
     font-family: Vivaldi;
 }
+
 .description_prod {
-    width:70%;
-    height:auto;
-    background-color:#fbeaea;
-    border-radius:15px;
-    margin:10px;
-    padding:10px;
-    text-align:center;
-    vertical-align:central;
+    width: 70%;
+    height: auto;
+    background-color: #fbeaea;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: central;
 }
-.Promotion{
-    background-color:red;
-    width:10%;
-    height:auto;
-    margin:5px;
-    padding:5px;
-    color:white;
-    font-family:Vivaldi;
-    font-size:20px;
+
+.Promotion {
+    background-color: red;
+    width: 10%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-family: Vivaldi;
+    font-size: 20px;
 }
+
 #old_price {
     text-decoration-line: line-through;
-    text-decoration-color:red;
+    text-decoration-color: red;
 }
+
+.back_img {
+    opacity: 0.9;
+    width: 100%;
+    height: 300px;
+}
+
+.img_text {
+    position: absolute;
+    font-family: Vivaldi;
+    font-size: 80px;
+    font-style: italic;
+    margin: 7%;
+    margin-left: 550px;
+}
+
+.img_text h1 {
+    font-size: 60px;
+}
+.img_text_2 {
+    position: absolute;
+    font-family: Vivaldi;
+    font-size: 80px;
+    font-style: italic;
+    margin: 7%;
+    margin-left: 400px;
+}
+
+.img_text_2 h1 {
+    font-size: 60px;
+}
+.img_text_3 {
+    position: absolute;
+    font-family: Vivaldi;
+    font-size: 80px;
+    font-style: italic;
+    margin: 7%;
+    margin-left: 320px;
+}
+
+.img_text_3 h1 {
+    font-size: 60px;
+}
+.sale {
+    position: absolute;
+    width:100px;
+    height:auto;
+    top: 0%;
+    right: 0%;
+    left: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px black;
+    border: 4px solid red;
+    background-color: yellow;
+    transform: rotate(19.5deg);
+}
+.message{
+    width:50%;
+    height:80px;
+    background-color:#f7e5e5;
+    position:absolute;
+    border-radius:10px;
+    left:25%;
+}
+.message p{
+    text-align:center;
+    font-family:Vivaldi;
+    font-size:24px;
+}
+
+/*
+.forus_info_overlay {
+    position: relative;
+    width: 80%;
+    float:left;
+    height:300px;
+}
+
+    .forus_info_overlay img {
+        box-shadow: 2px 2px 2px black;
+        position: relative;
+        width: 80%;
+        float: left;
+        height: 300px;
+    }
+
+.forus_overlay {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 300px;
+    right: 0;
+    height: 400px;
+    width: 60%;
+    opacity: 0;
+    transition: .5s;
+    background-color: #f2d6fe;
+}*/
+
+.forus_info_overlay:hover .overlay {
+    opacity: 0.9;
+}
+
+.text_forus {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+/*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y) font-family: 'Comic Sans MS';
+*/}

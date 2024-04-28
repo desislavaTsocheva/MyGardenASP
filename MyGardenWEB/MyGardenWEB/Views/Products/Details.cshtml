@@ -3,8 +3,8 @@
 @{
     ViewData["Title"] = "Details";
 }
-<h1>Детайли за продукт</h1>
-
+@* <h1>Детайли за продукт</h1> *@
+<h1> @Html.DisplayFor(model => model.BulgarianName)</h1>
 <div class="product">
     <div class="product_img">
         <img id="mainImage" class="main-image" src="@Html.DisplayFor(model => model.PhotoURL)" />
@@ -18,7 +18,7 @@
         <form method="get" asp-controller="Orders" asp-action="CreateWithProductId">
             <input name="productId" type="hidden" value="@Model.Id" />
             <input name="percent" type="hidden" value="100" />
-            <input name="countP" id="ccount" type="number" width="3" value="1" style="color:red; font:bold" /> Броя
+            <input name="countP" id="ccount" type="number" value="1" style="color:black;width:50px; font:bold" min="1" /> Броя
             <input type="submit" class="btn btn-primary" value="Добави в количката" />
 
         </form>

@@ -4,6 +4,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 <h1 class="title-art">Контакти</h1>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+</script>
 
 <div class="cont">
     <form class="form_cont">
@@ -31,17 +33,19 @@
     </textarea>
             <br />
             <br />
-            <input type="submit" value="Изпрати" onclick="showAlert(name,text)" >
+            <input type="submit" class="btn btn-primary" value="Изпрати" onclick="showAlert(name,text)">
         </fieldset>
     </form>
     <script>
-        // Функция, която се извиква при натискане на бутона за изпращане
+        //Функция, която се извиква при натискане на бутона за изпращане
         function showAlert() {
             // Показване на съобщението
             var name = document.getElementById("name").value;
             var text = document.getElementById("text").value;
-            alert('Благодарим за обратната връзка! Име: ' + name + ' Съобщение: ' + text);
+           
+            alert('Благодарим за обратната връзка!\n\Име: ' + name + '\n\Съобщение: ' + text);
         }
+        
     </script>
     <div class="info_cont">
         <p><b>Адрес:град Сопот, улица Иван Вазов 12 </b></p>

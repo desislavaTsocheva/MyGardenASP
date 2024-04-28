@@ -3,8 +3,20 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="product_present_3">
+    <img class="back_img" src="~/images/Неозаглавен дизайн (2).png" />
+    <div class="img_text_3">
+        <h1>Промоциoнални продукти</h1>
+    </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="message">
+    <p>СКЪПИ КЛИЕНТИ, ПРОМОЦИЯТА ВАЖИ САМО ПРИ ПОРЪЧВАНЕ НА ПОВЕЧЕ ОТ ЕДИН БРОЙ ОТ ДАДЕН АРТИКУЛ!</p>
+</div>
 
-<h1>Промоции</h1>
+<br /><br /><br /><br />
+
+
 
 @if (User.IsInRole("Admin"))
 {
@@ -15,11 +27,14 @@
         </svg>
     </a>
 }
+
 <div class="self-grid">
     @foreach (var item in Model)
     {
+        
         <div class="card" style="width:30%; height:25%; ">
             <div class="card-body">
+                <p class="sale">Разпродажба</p>
                 <div class="card-img">
                     <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="350" height="230" />
                 </div>

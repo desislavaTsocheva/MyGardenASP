@@ -365,6 +365,10 @@
       "PackagePath": "staticwebassets\\images\\ae2e39a2-cc85-40a7-bd3e-771be9519c94-2023.png"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\back_gr.jpg",
+      "PackagePath": "staticwebassets\\images\\back_gr.jpg"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\bc83e6e9-ef97-4c35-99d1-458f6fa10701-2023.png",
       "PackagePath": "staticwebassets\\images\\bc83e6e9-ef97-4c35-99d1-458f6fa10701-2023.png"
     },
@@ -461,6 +465,10 @@
       "PackagePath": "staticwebassets\\images\\snimka5.jpg"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\snimkaa.jpg",
+      "PackagePath": "staticwebassets\\images\\snimkaa.jpg"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\social.jpg",
       "PackagePath": "staticwebassets\\images\\social.jpg"
     },
@@ -475,6 +483,14 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\Моята.png",
       "PackagePath": "staticwebassets\\images\\Моята.png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\Неозаглавен дизайн (1).png",
+      "PackagePath": "staticwebassets\\images\\Неозаглавен дизайн (1).png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\Неозаглавен дизайн (2).png",
+      "PackagePath": "staticwebassets\\images\\Неозаглавен дизайн (2).png"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\insta.png",
