@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 @* <h1>Детайли за продукт</h1> *@
-<h1> @Html.DisplayFor(model => model.BulgarianName)</h1>
+<h1><b><i>@Html.DisplayFor(model => model.BulgarianName) </i></b></h1>
 <div class="product">
     <div class="product_img">
         <img id="mainImage" class="main-image" src="@Html.DisplayFor(model => model.PhotoURL)" />
