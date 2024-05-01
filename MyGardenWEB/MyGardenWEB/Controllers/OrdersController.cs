@@ -202,7 +202,7 @@ namespace MyGardenWEB.Controllers
         public async Task<IActionResult> CreateWithPromotionsId(int promotionId, int countP, int percent)
         {
             var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == promotionId);
-            countP = 1;
+            countP = 2;
             if (currentPromotion == null)
             {
                 // Обработка на грешка, ако промоцията не е намерена
