@@ -453,6 +453,14 @@
       "PackagePath": "staticwebassets\\images\\edit.png"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\email-address-icon.png",
+      "PackagePath": "staticwebassets\\images\\email-address-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\envelope-icon.png",
+      "PackagePath": "staticwebassets\\images\\envelope-icon.png"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\facebook.png",
       "PackagePath": "staticwebassets\\images\\facebook.png"
     },
@@ -479,6 +487,10 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\kavichki.png",
       "PackagePath": "staticwebassets\\images\\kavichki.png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\location-icon.png",
+      "PackagePath": "staticwebassets\\images\\location-icon.png"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\lukovitsa.jpg",
