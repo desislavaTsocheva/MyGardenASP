@@ -321,6 +321,7 @@ namespace MyGardenWEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ProductsId,ClientsId,Quantity")] Order order)
         {
+            var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == order.ProductsId);
             if (id != order.Id)
             {
                 return NotFound();
@@ -331,6 +332,7 @@ namespace MyGardenWEB.Controllers
                 try
                 {
                     order.ClientsId = _userManager.GetUserId(User);
+                    order.Price = currentProduct.Price * order.Quantity;
                     _context.Orders.Update(order);
                     await _context.SaveChangesAsync();
                 }
