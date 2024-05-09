@@ -19,7 +19,7 @@
         <form method="get" asp-controller="Orders" asp-action="CreateWithPromotionId">
             <input name="promotionId" type="hidden" value="@Model.Id" />
             <input name="percent" type="hidden" value="@Model.PromotionPercent" />
-            <input name="countP" id="ccount" type="number" width="3" value="1" style="color:black;width:50px; font:bold" min="1" /> Броя
+            <input name="countP" id="ccount" type="number" width="3" value="2"  style="color:black;width:50px; font:bold" min="2" /> Броя
             <input type="submit" class="btn btn-primary" value="Добави в количката" />
         </form>
     </form>

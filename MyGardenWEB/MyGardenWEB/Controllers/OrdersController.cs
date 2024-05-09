@@ -87,7 +87,7 @@ namespace MyGardenWEB.Controllers
 
         public async Task<IActionResult> CreateWithProductId(int productId, int countP, decimal percent)
         {
-           // var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == productId );
+            // var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == productId );
             var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == productId);
             Order order = new Order();
             //order.ProductsId = productId;
@@ -95,18 +95,19 @@ namespace MyGardenWEB.Controllers
             order.ProductsId = productId;
             order.Quantity = countP;
             order.ClientsId = _userManager.GetUserId(User);
-            decimal price=0;
-           // if (currentProduct.Id == productId)
-            //{
-                if (percent == 100)
-                {
-                    price = Math.Round(order.Quantity * currentProduct.Price, 2);
-                }
-                else
-                {
-                    price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
-                }
-           // }
+            decimal price = 0;
+            
+            
+
+            if (percent == 100)
+            {
+                price = Math.Round(order.Quantity * currentProduct.Price, 2);
+            }
+            else
+            {
+                price = Math.Round(currentProduct.Price - currentProduct.Price / 100 * percent, 2);
+            }
+            // }
             order.Price = price; // Запишете цената в поръчката
             _context.Orders.Add(order);
             OrderDetail detail = new OrderDetail();
@@ -121,9 +122,9 @@ namespace MyGardenWEB.Controllers
             //return RedirectToAction(nameof(Index));
             TempData["Price"] = price.ToString();
             return RedirectToAction("Index");
-           
-        } 
-        public async Task<IActionResult>CreateProm(int productId, int countP, decimal percent)
+
+        }
+        public async Task<IActionResult> CreateProm(int productId, int countP, decimal percent)
         {
             Order order = new Order();
             order.ProductsId = productId;
@@ -171,7 +172,7 @@ namespace MyGardenWEB.Controllers
             {
                 price = Math.Round(countP * currentProduct.Price - countP * currentProduct.Price / 100 * percent, 2);
             }
-            
+
             return await CreateProm(currentPromotion.ProductsId, countP, price);
         }
 
@@ -198,7 +199,7 @@ namespace MyGardenWEB.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }  
+        }
         public async Task<IActionResult> CreateWithPromotionsId(int promotionId, int countP, int percent)
         {
             var currentPromotion = await _context.Promotions.FirstOrDefaultAsync(p => p.Id == promotionId);
@@ -248,12 +249,12 @@ namespace MyGardenWEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductsId,Quantity")] Order order)
         {
-
-
             if (ModelState.IsValid)
             {
                 // order.RegisterOn = DateTime.Now;
+                var currentProduct = await _context.Products.FirstOrDefaultAsync(z => z.Id == order.ProductsId);
                 order.ClientsId = _userManager.GetUserId(User);
+                order.Price = order.Quantity * currentProduct.Price;
                 _context.Orders.Add(order);
                 OrderDetail detail = new OrderDetail();
                 detail.ProductsId = order.ProductsId;
@@ -309,8 +310,8 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
-            //ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName", order.ProductsId);
+            //ViewData["ClientsId"] = new SelectList(_context.Users, "Id", "Id", order.ClientsId);
             return View(order);
         }
 
@@ -326,13 +327,24 @@ namespace MyGardenWEB.Controllers
             {
                 return NotFound();
             }
+            var promotion = await _context.Promotions.FirstOrDefaultAsync(p => p.ProductsId == order.ProductsId);
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    order.ClientsId = _userManager.GetUserId(User);
-                    order.Price = currentProduct.Price * order.Quantity;
+                    if (promotion == null)
+                    {
+                        order.ClientsId = _userManager.GetUserId(User);
+                        order.Price = currentProduct.Price * order.Quantity;
+                    }
+                    else
+                    {
+                        order.ClientsId = _userManager.GetUserId(User);
+                        order.Price = Math.Round(order.Quantity * currentProduct.Price - order.Quantity * currentProduct.Price / 100 * promotion.PromotionPercent, 2);
+                    }
+                    //order.ClientsId = _userManager.GetUserId(User);
+                    //order.Price = currentProduct.Price * order.Quantity;
                     _context.Orders.Update(order);
                     await _context.SaveChangesAsync();
                 }
