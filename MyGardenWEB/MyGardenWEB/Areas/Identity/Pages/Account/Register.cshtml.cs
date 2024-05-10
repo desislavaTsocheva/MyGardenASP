@@ -126,8 +126,6 @@ namespace MyGardenWEB.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                //var user = CreateUser();
-
                 Client user = new Client
                 {
                     UserName = Input.UserName,
