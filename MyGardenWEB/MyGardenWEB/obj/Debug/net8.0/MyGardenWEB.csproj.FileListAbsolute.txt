@@ -583,7 +583,6 @@ C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGarden
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\bundle\MyGardenWEB.styles.css
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\projectbundle\MyGardenWEB.bundle.scp.css
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.csproj.CopyComplete
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.dll
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\refint\MyGardenWEB.dll
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.pdb
@@ -1208,3 +1207,8 @@ C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\M
 C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.pdb
 C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.genruntimeconfig.cache
 C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\ref\MyGardenWEB.dll
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\MyGardenWEB.staticwebassets.endpoints.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGarden.87837663.Up2Date

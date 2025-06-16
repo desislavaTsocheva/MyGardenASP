@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyGardenWEB.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MyGardenWEB.bundle.scp.css"
+      "PackagePath": "staticwebassets\\MyGardenWEB.cvdhsaahxi.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\00acb21c-862d-480f-bfe3-5ddc823fc356-cadd6c20b85b698216253221e630fe79-4c8765bee08060533af727dacf844e1b.jpg",
@@ -15,6 +15,10 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\06b4cbd6-91c1-4d2e-bc67-5e3000ff0de5-www 05-031 (1).png",
       "PackagePath": "staticwebassets\\Files\\06b4cbd6-91c1-4d2e-bc67-5e3000ff0de5-www 05-031 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\07c0894e-bde4-4fbe-b90b-290f1659081f-20230424_144548.jpg",
+      "PackagePath": "staticwebassets\\Files\\07c0894e-bde4-4fbe-b90b-290f1659081f-20230424_144548.jpg"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\10ddbfc1-b4c1-40e5-a2f3-f54fc5ac8cc7-ббб.jpg",
@@ -233,6 +237,10 @@
       "PackagePath": "staticwebassets\\Files\\815601ab-c128-4d80-bbe9-7774b3a47682-д.jpg"
     },
     {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\819c8628-6266-47c8-ac33-38b23e4a4dbb-20230424_144553.jpg",
+      "PackagePath": "staticwebassets\\Files\\819c8628-6266-47c8-ac33-38b23e4a4dbb-20230424_144553.jpg"
+    },
+    {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\863b9411-f6db-45f4-b310-7d6531bbfd4c-download (2).jpg",
       "PackagePath": "staticwebassets\\Files\\863b9411-f6db-45f4-b310-7d6531bbfd4c-download (2).jpg"
     },
@@ -247,6 +255,10 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\91f3d2be-8076-4ec8-8a7b-0ec626427708-ккал.jpg",
       "PackagePath": "staticwebassets\\Files\\91f3d2be-8076-4ec8-8a7b-0ec626427708-ккал.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\946c5efd-4d94-444f-8384-18253013b04a-20230423_125009.jpg",
+      "PackagePath": "staticwebassets\\Files\\946c5efd-4d94-444f-8384-18253013b04a-20230423_125009.jpg"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Files\\95dd43ee-a822-4558-8938-09382a69cea1-phlox-pan--bright-eyes-floks-image_5d78dbd1cfac1_800x800.jpeg",
@@ -599,6 +611,14 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\forus.jpg",
       "PackagePath": "staticwebassets\\images\\forus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\forus_1.jpg",
+      "PackagePath": "staticwebassets\\images\\forus_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\forus_2.jpg",
+      "PackagePath": "staticwebassets\\images\\forus_2.jpg"
     },
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\images\\garden.jpg",
@@ -1003,6 +1023,10 @@
     {
       "Id": "C:\\Users\\viole\\OneDrive\\Работен плот\\MyGardenASP\\MyGardenWEB\\MyGardenWEB\\wwwroot\\Неозаглавен дизайн.mp4",
       "PackagePath": "staticwebassets\\Неозаглавен дизайн.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssets.props",

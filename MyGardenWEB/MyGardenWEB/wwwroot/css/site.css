@@ -184,7 +184,7 @@ legend, label {
     .forus img {
         width: 40%;
         height: 340px;
-        float:left;
+        float: left;
     }
 
     .forus p {
@@ -193,6 +193,85 @@ legend, label {
         font-size: 20px;
         text-align: justify;
     }
+
+/*.about-section {
+    width: 100%;
+    background-image: url('../images/forus_1.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;*/ /* ключът към ефекта */
+/*background-repeat: no-repeat;
+    padding: 80px 20px;
+    font-family: Vivaldi;
+    color: #222;
+}*/
+
+
+.about-section, .about-section-1 {
+    background-color: white;
+    padding: 60px 20px;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: Vivaldi;
+    width: 100%;
+    background-blend-mode:luminosity;
+}
+
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 55%;
+    padding-right: 40px;
+    font-size: 18px;
+}
+
+    .about-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #222;
+    }
+
+    .about-text hr {
+        width: 60px;
+        height: 2px;
+        background-color: #888;
+        border: none;
+        margin: 20px 0;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+.about-image {
+    flex: 1 1 45%;
+    text-align: right;
+}
+
+    .about-image img {
+        max-width: 100%;
+        border-top-left-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+        object-fit: cover;
+    }
+
+
+
+
+
 
 .quote {
     width: 80%;
@@ -457,9 +536,10 @@ span {
     margin-left: 550px;
 }
 
-.img_text h1 {
-    font-size: 60px;
-}
+    .img_text h1 {
+        font-size: 60px;
+    }
+
 .img_text_2 {
     position: absolute;
     font-family: Vivaldi;
@@ -469,9 +549,10 @@ span {
     margin-left: 400px;
 }
 
-.img_text_2 h1 {
-    font-size: 60px;
-}
+    .img_text_2 h1 {
+        font-size: 60px;
+    }
+
 .img_text_3 {
     position: absolute;
     font-family: Vivaldi;
@@ -481,13 +562,14 @@ span {
     margin-left: 320px;
 }
 
-.img_text_3 h1 {
-    font-size: 60px;
-}
+    .img_text_3 h1 {
+        font-size: 60px;
+    }
+
 .sale {
     position: absolute;
-    width:100px;
-    height:auto;
+    width: 100px;
+    height: auto;
     top: 0%;
     right: 0%;
     left: 80%;
@@ -498,19 +580,21 @@ span {
     background-color: yellow;
     transform: rotate(19.5deg);
 }
-.message{
-    width:50%;
-    height:80px;
-    background-color:#f7e5e5;
-    position:absolute;
-    border-radius:10px;
-    left:25%;
+
+.message {
+    width: 50%;
+    height: 80px;
+    background-color: #f7e5e5;
+    position: absolute;
+    border-radius: 10px;
+    left: 25%;
 }
-.message p{
-    text-align:center;
-    font-family:Vivaldi;
-    font-size:24px;
-}
+
+    .message p {
+        text-align: center;
+        font-family: Vivaldi;
+        font-size: 24px;
+    }
 
 /*
 .forus_info_overlay {
@@ -553,5 +637,6 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-/*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y) font-family: 'Comic Sans MS';
-*/}
+    /*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y) font-family: 'Comic Sans MS';
+*/
+}
