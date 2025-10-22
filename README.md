@@ -1,20 +1,32 @@
-# 🌱 MyGardenASP
+# 🌱 MyGardenASP  
 
-A full-featured ASP.NET Core MVC web application for managing a flower nursery — "My Garden". Built as a diploma project, this app supports user authentication, admin features, and CRUD operations on a plant database.
+A full-featured **ASP.NET Core MVC** web application for managing a flower nursery — **“My Garden”**.  
+Developed as a **diploma project**, this system allows users to browse, add, edit, and manage plants, featuring secure authentication and an intuitive admin interface.
 
-## 🚀 Features
+---
 
-- 🔐 User authentication (Registration, Login, Logout)
-- 🧑‍🌾 Admin panel with extended privileges
-- 🌼 CRUD operations on plant entries
-- 🧾 MySQL database integration
-- 🧱 Clean and structured ASP.NET Core MVC architecture
-- 🎨 Responsive UI using Bootstrap
+## 🚀 Features  
 
-## 🛠️ Tech Stack
+- 🔐 **User Authentication** — Registration, Login, Logout (ASP.NET Identity)  
+- 🧑‍🌾 **Admin Dashboard** — Manage all plants and users with extended privileges  
+- 🌼 **CRUD Operations** — Create, Read, Update, Delete plants easily  
+- 🧾 **Database Integration** — MySQL backend for reliable data storage  
+- 🧱 **Clean MVC Architecture** — Organized layers for scalability and maintenance  
+- 🎨 **Responsive UI** — Built with modern Bootstrap components  
 
-- **Backend:** ASP.NET Core MVC
-- **Frontend:** HTML5, CSS3, Bootstrap
-- **Database:** MySQL
-- **Authentication:** ASP.NET Identity
-- **Version Control:** Git & GitHub
+---
+
+## 🛠️ Tech Stack  
+
+| Layer | Technologies |
+|-------|---------------|
+| **Backend** | ASP.NET Core MVC, C# |
+| **Frontend** | HTML5, CSS3, Bootstrap |
+| **Database** | MySQL |
+| **Authentication** | ASP.NET Identity |
+| **Version Control** | Git & GitHub |
+
+---
+
+
+
