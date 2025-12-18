@@ -1,79 +1,244 @@
 ﻿@model MyGardenWEB.ViewModel.ProductVM
-
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.BulgarianName;
 }
-@* <h1>Детайли за продукт</h1> *@
-<h1><b><i>@Html.DisplayFor(model => model.BulgarianName) </i></b></h1>
-<div class="product">
-    <div class="product_img">
-        <img id="mainImage" class="main-image" src="@Html.DisplayFor(model => model.PhotoURL)" />
-    </div>
-    <div class="product_info">
-        @Html.DisplayFor(model => model.BulgarianName)  /@Html.DisplayFor(model => model.LatinName)/ <br />
-        <label>Размер: </label> @Html.DisplayFor(model => model.Size)<br />
-        <label>Цена: </label> @Html.DisplayFor(model => model.Price)
-    </div>
-    <form name="f" method="get" asp-controller="Orders" asp-action="CreateWithProductId" asp-route-productId="@Model.Id" asp-route-countP="1" asp-route-percent="100">
-        <form method="get" asp-controller="Orders" asp-action="CreateWithProductId">
-            <input name="productId" type="hidden" value="@Model.Id" />
-            <input name="percent" type="hidden" value="100" />
-            <input name="countP" id="ccount" type="number" value="1" style="color:black;width:50px; font:bold" min="1" /> Броя
-            <input type="submit" class="btn btn-primary" value="Добави в количката" />
 
-        </form>
-    </form>
-    <script>
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault(); // Предотвратява изпращането на стандартната POST заявка
+<div class="product-details container py-5">
+    <div class="row g-5 align-items-start">
+        <div class="col-lg-6">
+            <div class="gallery-layout">
+                <div class="thumbnail-column">
+                    @foreach (var item in (IEnumerable<string>)Model.Files)
+                    {
+                        <div class="thumb-wrapper">
+                            <img src="@Url.Content(item)"
+                                 class="clickable-thumb"
+                                 onclick="updateMainImage(this)"
+                                 alt="thumbnail" />
+                        </div>
+                    }
+                </div>
 
-            var inputDataValue = document.getElementById("countP").value; // Взема стойността на текстовото поле
-
-            window.location.href = '@Url.Action("CreateWithProductId", "Orders")?countP=' + inputDataValue
-                + '&productId=' + @Model.Id + '&percent=100';
-            // Пренасочва към контролера и действието с подадената стойност на текстовото поле като параметър
-        });
-    </script>
-
-
-
-    <script>
-        function changeMainImage(thumbnail) {
-            var mainImage = document.getElementById('mainImage');
-            var mainImageContainer = document.getElementById('mainImageContainer');
-            mainImage.src = thumbnail.src;
-            mainImageContainer.scrollIntoView(); // Scroll to the main image
-        }
-    </script>
-
-  @*   <div class="buttons">
-        <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-productId="ViewBag.Id" asp-route-countP="ViewBag.Quantity">Добави в количката</a>
-    </div> *@
-</div>
-
-<div class="multiple_img">
-    @foreach (var item in (IEnumerable<string>)Model.Files)
-    {
-        <div class="multiple_images">
-            <img src=@Url.Content(item) onclick="changeMainImage(this)" />
+                <div class="main-display">
+                    <img id="mainImage"
+                         src="@Model.PhotoURL"
+                         alt="@Model.BulgarianName"
+                         class="active-main-img" />
+                </div>
+            </div>
         </div>
+
+        <div class="col-lg-6">
+            <h1 class="product-title">@Model.BulgarianName</h1>
+            <p class="latin-name">/ @Model.LatinName /</p>
+
+            <p class="price_size">
+                @Model.Price лв
+            </p>
+            <p class="price_size">
+                Размер: @Model.Size
+            </p>
+
+            <div class="buy-box">
+                <form asp-controller="Orders"
+                      asp-action="CreateWithProductId"
+                      method="get"
+                      class="buy-form">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <input type="hidden" name="percent" value="100" />
+
+                    <label>Количество</label>
+                    <input type="number"
+                           name="countP"
+                           value="1"
+                           min="1" />
+
+                    <button type="submit" class="btn-buy">
+                        Добави в количката
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-section mt-5">
+        <h3>Описание</h3>
+        <p class="description-text">@Model.Description</p>
+    </div>
+
+    <div class="mt-4">
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-admin">Редактиране</a>
+        }
+        <a asp-action="Index" class="btn-back">← Назад</a>
+    </div>
+</div>
+
+<script>
+    function updateMainImage(thumbElement) {
+        const mainImg = document.getElementById('mainImage');
+
+        if (mainImg && thumbElement) {
+            mainImg.style.opacity = '0.3';
+
+            setTimeout(() => {
+                mainImg.src = thumbElement.src;
+                mainImg.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-wrapper').forEach(wrapper => {
+                wrapper.style.borderColor = '#eee';
+            });
+            thumbElement.parentElement.style.borderColor = '#ff7aa2';
+        }
     }
-</div>
-<div class="description_prod">
-    <h4>Описание</h4>
-    <hr />
-    <p style="font-family:Vivaldi; font-size:24px; text-align:justify">@Html.DisplayFor(model => model.Description)</p>
-</div>
-<br />
-<br />
-@if (User.IsInRole("Admin"))
-{
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
-    <a asp-action="Index">Връщане назад</a>
+</script>
 
-}
-else
-{
-    <a asp-action="Index">Връщане назад</a>
-}
+<style>
+    .gallery-layout {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
 
+    .thumbnail-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100px;
+        max-height: 550px;
+        overflow-y: auto;
+        padding: 5px;
+    }
+
+    .thumb-wrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid #eee;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+        .thumb-wrapper:hover {
+            border-color: #ff7aa2;
+            transform: scale(1.05);
+        }
+
+    .clickable-thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-display {
+        flex: 1;
+        background: #fff;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 450px;
+    }
+
+    .active-main-img {
+        max-width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+        transition: opacity 0.3s ease;
+    }
+
+    .thumbnail-column::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .thumbnail-column::-webkit-scrollbar-thumb {
+        background: #ddd;
+        border-radius: 10px;
+    }
+
+    .product-title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .latin-name {
+        font-style: italic;
+        color: #888;
+        font-size: 1.3rem;
+    }
+
+    .price_size {
+        font-style: italic;
+        color: black;
+        font-size: 20px;
+    }
+
+    .buy-box {
+        background: #fafafa;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .buy-form {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+        .buy-form input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+    .btn-buy {
+        background: #4d2539;
+        color: white;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 30px;
+        transition: 0.3s;
+        white-space: nowrap;
+        border: none;
+    }
+
+        .btn-buy:hover {
+            background: #f1f1f1;
+            color: #4d2539;
+            transform: scale(1.05);
+        }
+
+    .description-section {
+        border-top: 1px solid #eee;
+        padding-top: 30px;
+    }
+
+    .description-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #444;
+        white-space: pre-line;
+    }
+
+    .btn-admin {
+        background: #ffc107;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: black;
+        margin-right: 10px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-back {
+        color: #555;
+        text-decoration: none;
+    }
+</style>

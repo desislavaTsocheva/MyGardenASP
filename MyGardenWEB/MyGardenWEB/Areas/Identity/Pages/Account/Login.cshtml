@@ -2,81 +2,123 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Вход";
+    ViewData["Title"] = "Вход в системата";
 }
 
-<h1>@ViewData["Title"]</h1>
-    <div class="col-md-4">
-        <section class="login_acc">
-            <form id="account" method="post">
-                <h2>Използвайте вече съществуващ акаунт</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.UserName" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.UserName" class="form-label">Псевдоним</label>
-                    <span asp-validation-for="Input.UserName" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label asp-for="Input.Password" class="form-label">Парола</label>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
-                </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Вход</button>
-                </div>
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Забравена парола?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Нова регистрация</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Нов имейл за потвърждение</a>
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
+<div class="login-container">
+    <div class="login-card shadow-lg">
+        <div class="login-header text-center">
+            <h2 class="fw-bold">Добре дошли отново</h2>
+            <p class="text-muted">Моля, въведете вашите данни за вход</p>
+        </div>
 
-   @*  <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Използвайте друг акаунт за вход</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
+        <form id="account" method="post" class="mt-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.UserName" class="form-control custom-input" autocomplete="username" aria-required="true" placeholder="username" />
+                <label asp-for="Input.UserName">Псевдоним</label>
+                <span asp-validation-for="Input.UserName" class="text-danger small"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" type="password" class="form-control custom-input" autocomplete="current-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Password">Парола</label>
+                <span asp-validation-for="Input.Password" class="text-danger small"></span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                    <input class="form-check-input custom-checkbox" asp-for="Input.RememberMe" />
+                    <label class="form-check-label text-muted" asp-for="Input.RememberMe">Запомни ме</label>
+                </div>
+                <a id="forgot-password" asp-page="./ForgotPassword" class="forgot-link">Забравена парола?</a>
+            </div>
+
+            <button id="login-submit" type="submit" class="w-100 btn-login mb-3">Вход</button>
+
+            <div class="login-footer text-center">
+                <p class="mb-1">Нямате акаунт? <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="register-link fw-bold">Регистрирайте се тук</a></p>
+                <p><a id="resend-confirmation" asp-page="./ResendEmailConfirmation" class="text-muted small">Повторно изпращане на имейл за потвърждение</a></p>
+            </div>
+        </form>
     </div>
-</div> *@
+</div>
+
+<style>
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        padding: 20px;
+    }
+
+    .login-card {
+        background: #fff;
+        width: 100%;
+        max-width: 450px;
+        padding: 40px;
+        border-radius: 24px;
+        border: none;
+    }
+
+    .login-logo {
+        height: 80px;
+        width: auto;
+    }
+
+    .custom-input {
+        border-radius: 12px;
+        border: 1px solid #eee;
+        padding: 12px;
+    }
+
+        .custom-input:focus {
+            border-color: #ff7aa2;
+            box-shadow: 0 0 0 3px rgba(255, 122, 162, 0.1);
+        }
+
+    .btn-login {
+        background: #4d2539;
+        color: white;
+        padding: 12px;
+        border-radius: 12px;
+        border: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: 0.3s;
+    }
+
+        .btn-login:hover {
+            background: #ff7aa2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 122, 162, 0.3);
+        }
+
+    .forgot-link, .register-link {
+        color: #ff7aa2;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: 0.2s;
+    }
+
+        .forgot-link:hover, .register-link:hover {
+            color: #4d2539;
+            text-decoration: underline;
+        }
+
+    .custom-checkbox:checked {
+        background-color: #ff7aa2;
+        border-color: #ff7aa2;
+    }
+
+    .login-footer {
+        margin-top: 20px;
+        border-top: 1px solid #f5f5f5;
+        padding-top: 20px;
+    }
+</style>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

@@ -1,36 +1,28 @@
 ﻿@model IEnumerable<MyGardenWEB.Data.Photo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Индекс";
 }
 
-<h1>Индекс</h1>
+<h1>Снимки</h1>
 
 @if (User.IsInRole("Admin"))
 {
-    <a asp-action="Create">
+    <a asp-action="Create" class="btn-create-admin">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="pink" class="bi bi-file-earmark-plus" viewBox="0 0 16 16">
             <path d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z" />
             <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
         </svg>
+        Нова снимка
     </a>
 }
-<table class="table">
+
+<table class="table-admin">
     <thead>
         <tr>
-            <th>
-              @*   @Html.DisplayNameFor(model => model.Products.BulgarianName) *@
-                <lable>Българско наименование</lable>
-            </th>
-         @*    <th>
-           @*      @Html.DisplayNameFor(model => model.Url) 
-                <lable>Снимка</lable>
-            </th> *@
-            <th>
-              @*   @Html.DisplayNameFor(model => model.RegisterOn) *@
-                <lable>Регистрация</lable>
-            </th>
-            <th></th>
+            <th>Българско наименование</th>
+            <th>Регистрация</th>
+            <th>Действия</th>
         </tr>
     </thead>
     <tbody>
@@ -40,19 +32,97 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Products.BulgarianName)
                 </td>
-            @*     <td>
-                        <img src="@Html.DisplayFor(modelItem => item.Url)" />
-                </td> *@
                 <td>
                     @Html.DisplayFor(modelItem => item.RegisterOn)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Редактиране</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Изтриване</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn-action edit">Редактиране</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn-action details">Детайли</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn-action delete">Изтриване</a>
                 </td>
             </tr>
         }
-        
     </tbody>
 </table>
+
+<style>
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #4d2539;
+        margin-bottom: 20px;
+    }
+
+    .btn-create-admin {
+        background-color: #ff7aa2;
+        color: white;
+        text-decoration: none;
+        padding: 10px 22px;
+        border-radius: 30px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        transition: 0.3s;
+        margin-bottom: 15px;
+    }
+
+    .btn-create-admin:hover {
+        background-color: #4d2539;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 122, 162, 0.3);
+        color: white;
+    }
+
+    .table-admin {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+    }
+
+    .table-admin th, .table-admin td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .table-admin th {
+        background-color: #f8f9fa;
+        color: #888;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .table-admin tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    .btn-action {
+        padding: 4px 8px;
+        border-radius: 6px;
+        color: white;
+        text-decoration: none;
+        margin-right: 3px;
+        transition: 0.2s;
+    }
+
+        .btn-action.edit {
+            background-color: #1976d2;
+        }
+
+        .btn-action.details {
+            background-color: #7b1fa2;
+        }
+
+        .btn-action.delete {
+            background-color: #d32f2f;
+        }
+
+        .btn-action:hover {
+            opacity: 0.8;
+        }
+
+    .btn-action:hover {
+        opacity: 0.8;
+    }
+</style>

@@ -1,136 +1,89 @@
 ﻿@{
-    ViewData["Title"] = "ForUs";
+    ViewData["Title"] = "За нас";
 }
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<h1 class="title-art">За нас </h1>
-<br />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-
-<section class="about-section">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>Разсадник за цветя " Моята градина "</h2>
-            <hr />
-            <p>
-                Разсадник " Моята градина" е малък разсадник <br />
-                за производството на декоративна растителност, <br />
-                <br />
-                Собствената ни продукция включва над 100 вида растения.<br />
-                През последните години разсадникът се налага <br />
-                като един от лидерите на пазара за <br />
-                декоративна растителност в България.<br />
-
-            </p>
-        </div>
-        <div class="about-image">
-                <img src="~/images/forus_1.jpg" alt="Растения" /> 
-        </div>
-    </div>
-</section>
-
-
-<section class="about-section-1">
-    <div class="about-container">
-        <div class="about-image">
-                <img src="~/images/forus_2.jpg" alt="Растения" /> 
-        </div>
-
-        <div class="about-text" style="padding-left:300px;">
-            <b>
-                <i>
-                    Във всяко едно растение влагаме много време, <br />
-                    грижи и любов, за да може нашите клиенти <br />
-                    да получават най – доброто.<br />
-                    Вярваме, че красотата е в детайла –<br />
-                    затова подбираме всяко изделие с внимание<br />
-                    и стремеж към съвършенство.<br />
-                </i>
-            </b>
-            </p>
-        </div>
-    </div>
-</section>
-
-
-
-@* 
-<center>
-    <div class="forus">
-        <center>
-            <h1>Разсадник за цветя " Моята градина"</h1></center>
-        <img src="~/images/forus.jpg" />
-        <p>
-            Разсадник " Моята градина" е малък разсадник <br />
-            за производството на декоративна растителност, <br />
-            <br />
-            Собствената ни продукция включва над 100 вида растения.<br />
-            През последните години разсадникът се налага <br />
-            като един от лидерите на пазара за <br />
-            декоративна растителност в България.<br />
-            <br />
-            <b>
-                <i>
-                    Във всяко едно растение влагаме много време, <br />
-                    грижи и любов, за да може нашите клиенти <br />
-                    да получават най – доброто.<br />
-                </i>
-            </b>
-        </p>
-    </div>
-</center> *@
-<br />
-<br />
-
-<div class="quote">
-    <img width="100px" height="auto" src="~/images/kavichki.png">
-    <p>
-        <b>
-            Нашата мисия е света около <br /> нас да бъде по зелен!
-        </b>
-    </p>
-</div>
-<br />
-<hr />
-<div class="contactUs">
-    <img src="~/images/garden.jpg">
-    <p>Имате нужда от професионален съвет <br />за вашата градина, свържете се с нас!</p>
-    <div class="button_cont">
-        <a asp-controller="Home" asp-action="Contacts"><p>СВЪРЖЕТЕ СЕ С НАС </p></a>
-    </div>
-
+<div class="about-hero text-center">
+    <h1 class="main-title">Нашата История</h1>
+    <p class="subtitle">От малко семенце до цъфтяща градина</p>
+    <div class="custom-hr"></div>
 </div>
 
-<div class="service">
-    <div class="serv">
-        <img src="/images/shipped.png" />
-        <p>
-            Безплатна доставка в цялата страна при поръчка над 50 лв.
-        </p>
-    </div>
-    <div class="serv">
-        <img src="/images/plant.png" />
-        <p>
-            Гарантирано качество и българско производство
-        </p>
-    </div>
-    <div class="serv">
-        <img src="/images/conversation.png" />
-        <p>
-            Постоянно 24-часово обслужване
-        </p>
-    </div>
-    @* 
-    <div class="forus_info_overlay">
-        <img src="/images/snimkaa.jpg">
-        <div class="forus_overlay">
-            <div class="text_forus">
-                <h2> Ние, екипът на разсадник Манчеви, вярваме, че растенията правят света около нас по – красив, а живота ни по – спокоен.</h2>
+<div class="container my-5">
+    <div class="row align-items-center mb-5 gx-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-image-wrapper">
+                <img src="~/images/forus_1.jpg" width="500" height="400" class="img-fluid rounded-custom shadow-lg" alt="Разсадник" />
             </div>
         </div>
-    </div> *@
+
+        <div class="col-lg-6">
+            <div class="about-content bg-light-soft rounded-custom" width="450" height="800">
+                <h2 class="title-art text-start" style="padding:0px 60px" >Разсадник "Моята градина"</h2>
+                <p class="description italic-text">
+                    Ние сме малък, семеен разсадник, специализиран в производството на висококачествена декоративна растителност.
+                    През последните години успяхме да се наложим като един от лидерите на пазара в България, благодарение на личното ни отношение към всеки клиент.
+                </p>
+                <p class="description italic-text">
+                    Собствената ни продукция включва <strong>над 100 вида</strong> внимателно селектирани растения.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center flex-column-reverse flex-lg-row gx-5">
+        <div class="col-lg-6">
+            <div class="about-content bg-light-soft p-4 rounded-custom">
+                <h2 class="title-art text-start" style="padding:0px 85px">С любов към детайла</h2>
+                <p class="description italic-text">
+                    "Във всяко едно растение влагаме много време, грижи и любов, за да може нашите клиенти да получават най-доброто.
+                    Вярваме, че красотата е в детайла – затова подбираме всяко изделие с внимание и стремеж към съвършенство."
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-image-wrapper">
+                <img src="~/images/forus_2.jpg" class="img-fluid rounded-custom shadow-lg" width="500" height="400" alt="Нашите грижи" />
+            </div>
+        </div>
+    </div>
 </div>
 
+<div class="bg-white" style="background-color:white">
+    <div class="container" style="background-color:white">
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="service-card h-100" >
+                    <img src="/images/shipped.png" alt="Доставка" width="50" class="mb-3" />
+                    <h5>Безплатна доставка</h5>
+                    <p>За всички поръчки над 50 лв. до всяка точка на страната.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card h-100">
+                    <img src="/images/plant.png" alt="Качество" width="50" class="mb-3" />
+                    <h5>Българско качество</h5>
+                    <p>Гарантирано качество и устойчивост на климата.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card h-100">
+                    <img src="/images/conversation.png" alt="Обслужване" width="50" class="mb-3" />
+                    <h5>Личен съвет</h5>
+                    <p>Ние сме тук за вас 24/7, за да помогнем в избора.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+<div class="container my-5 py-4">
+    <div class="cta-banner d-flex align-items-center justify-content-between p-5 rounded-custom shadow">
+        <div class="cta-text">
+            <h3>Имате нужда от професионален съвет?</h3>
+            <p>Свържете се с нас още сега и превърнете градината си в мечта!</p>
+        </div>
+        <a asp-controller="Home" asp-action="Contacts" class="btn btn-cta">СВЪРЖЕТЕ СЕ С НАС</a>
+    </div>
+</div>

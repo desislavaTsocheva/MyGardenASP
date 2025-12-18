@@ -30,14 +30,11 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*  background-color: #743f90;*/
-    /* opacity:0.7;*/
     color: black;
     padding: 10px 20px;
     font-size: 80px;
     text-align: center;
-    /*    font-family:'Comic Sans MS';
-*/ font-family: Vivaldi;
+    font-family: Vivaldi;
 }
 
 .main-img {
@@ -72,10 +69,6 @@ footer {
     width: 95%;
     margin: 0px 20px;
 }
-/* .article .image:hover {
-        transform: translateY(-10px);
-    }*/
-
 #article1, #article2, #article3 {
     background-color: #fbeaea;
     margin: 20px;
@@ -99,20 +92,14 @@ footer {
 
 #article3:hover {
     transform: scale(1.1);
-    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
-*/
 }
 
 #article1:hover {
     transform: scale(1.1);
-    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
-*/
 }
 
 #article2:hover {
     transform: scale(1.1);
-    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
-*/
 }
 
 .txt {
@@ -160,12 +147,6 @@ legend, label {
     font-family: 'Times New Roman';
 }
 
-/*h1 {
-    font-family: Vivaldi;
-    font-style: italic;
-    text-align: center;
-}*/
-
 .forus {
     background-color: #fbeaea;
     border-radius: 5px 5px;
@@ -193,19 +174,6 @@ legend, label {
         font-size: 20px;
         text-align: justify;
     }
-
-/*.about-section {
-    width: 100%;
-    background-image: url('../images/forus_1.jpg');
-    background-size: cover;
-    background-position: center right;
-    background-attachment: fixed;*/ /* ключът към ефекта */
-/*background-repeat: no-repeat;
-    padding: 80px 20px;
-    font-family: Vivaldi;
-    color: #222;
-}*/
-
 
 .about-section, .about-section-1 {
     background-color: white;
@@ -421,11 +389,6 @@ h1 {
 .order_links {
     margin-top: 150px;
 }
-/*.order_links a img{
-    width:10px;
-    height:10px;
-    display:inline-flex;
-}*/
 
 .overlay_product {
     position: absolute;
@@ -596,35 +559,6 @@ span {
         font-size: 24px;
     }
 
-/*
-.forus_info_overlay {
-    position: relative;
-    width: 80%;
-    float:left;
-    height:300px;
-}
-
-    .forus_info_overlay img {
-        box-shadow: 2px 2px 2px black;
-        position: relative;
-        width: 80%;
-        float: left;
-        height: 300px;
-    }
-
-.forus_overlay {
-    position: absolute;
-    top: 40px;
-    bottom: 0;
-    left: 300px;
-    right: 0;
-    height: 400px;
-    width: 60%;
-    opacity: 0;
-    transition: .5s;
-    background-color: #f2d6fe;
-}*/
-
 .forus_info_overlay:hover .overlay {
     opacity: 0.9;
 }
@@ -637,6 +571,4 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    /*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y) font-family: 'Comic Sans MS';
-*/
 }

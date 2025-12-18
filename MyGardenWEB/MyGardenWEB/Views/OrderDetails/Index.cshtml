@@ -1,100 +1,152 @@
 ﻿@model IEnumerable<MyGardenWEB.Data.OrderDetail>
 
 @{
-    ViewData["Title"] = "Index";
-    //var dateSave = ViewData["Date"];
+    ViewData["Title"] = "Кошница";
 }
+
 <h1>Кошница</h1>
 
-<form asp-action="ShowOrdersByDate" method="get">
+<form asp-action="ShowOrdersByDate" method="get" class="form-filter">
     <div class="form-group">
         <label for="date">Изберете дата:</label>
-        <input type="date" id="date" name="date" class="form-control" width="30" />
+        <input type="date" id="date" name="date" class="form-control" />
     </div>
-    
-    <button type="submit" class="btn btn-primary" asp-action="FilterByDate" asp-route-date="ViewBag.date">Филтриране</button>
-    
+    <button type="submit" class="btn-create-admin">Филтриране</button>
 </form>
 
 @if (User.IsInRole("Admin"))
 {
-    <table class="table">
+    <table class="table-admin">
         <thead>
             <tr>
-                <th>
-                    Продукт
-                </th>
-                <th>
-                    Клиент
-                </th>
-                <th>
-                    Количество
-                </th>
-                <th>
-                    Снимка
-                </th>
-                <th>
-                    Цена
-                </th>
-
-                <th></th>
+                <th>Продукт</th>
+                <th>Клиент</th>
+                <th>Количество</th>
+                <th>Снимка</th>
+                <th>Цена</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Products.BulgarianName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Clients.UserName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Quantity)
-                    </td>
-                    <td>
-                        <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="120" height="auto" />
-                    </td>
-                    <td>
-                        <b>@Html.DisplayFor(modelItem => item.Products.Price)</b>
-
-                    </td>
+                    <td>@item.Products.BulgarianName</td>
+                    <td>@item.Clients.UserName</td>
+                    <td>@item.Quantity</td>
+                    <td><img src="@item.Products.PhotoURL" width="120" height="auto" /></td>
+                    <td><b>@item.Products.Price</b></td>
                 </tr>
             }
         </tbody>
     </table>
 }
-
 else
 {
     <div class="self-grid">
         @foreach (var item in Model)
         {
-            <div class="card" style="width:30%; height:25%; ">
+            <div class="card">
+                <img src="@item.Products.PhotoURL" class="card-img" />
                 <div class="card-body">
-                    <div class="card-img">
-                        <img src="@Html.DisplayFor(modelItem=>item.Products.PhotoURL)" width="350" height="230" />
-                    </div>
-                    <br />
-                    <h5 class="card-title">
-                        <b> @Html.DisplayFor(modelItem => item.Products.BulgarianName)</b>
-                    </h5>
-                    <h5 class="card-title">
-                        / @Html.DisplayFor(modelItem => item.Products.LatinName)/
-                    </h5> 
-                    <h5 class="card-title">
-                        / @Html.DisplayFor(modelItem => item.OrderedOn)/
-                    </h5>
-@*                     <p class="card-subtitle">
-                        Количество:  @Html.DisplayFor(modelItem => item.Quantity)<br />
-                    </p>
-                    <p class="card-subtitle">
-                        Цена: <b>@Html.DisplayFor(modelItem => item.Products.Price)</b>
-
-                    </p> *@
+                    <h5 class="card-title"><b>@item.Products.BulgarianName</b></h5>
+                    <h6 class="card-subtitle text-muted">/@item.Products.LatinName/</h6>
+                    <p class="card-subtitle text-muted">Дата на поръчка: @item.OrderedOn.ToString("dd.MM.yyyy")</p>
                 </div>
             </div>
         }
     </div>
 }
+
+<style>
+    .form-filter {
+        margin-bottom: 20px;
+    }
+
+        .form-filter .form-control {
+            width: 200px;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+    .btn-create-admin {
+        background-color: #ff7aa2;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .btn-create-admin:hover {
+            background-color: #4d2539;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,122,162,0.3);
+            color: white;
+        }
+
+    .table-admin {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+    }
+
+        .table-admin th, .table-admin td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .table-admin th {
+            background-color: #f8f9fa;
+            color: #888;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .table-admin tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+    .self-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 30%;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .card-img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        color: #4d2539;
+        margin-bottom: 5px;
+    }
+
+    .card-subtitle {
+        font-size: 0.9rem;
+        color: #666;
+    }
+</style>

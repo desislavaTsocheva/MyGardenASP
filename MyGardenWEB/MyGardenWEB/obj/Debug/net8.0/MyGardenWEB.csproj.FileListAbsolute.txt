@@ -575,11 +575,6 @@ C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGarden
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGardenWEB.sourcelink.json
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.build.MyGardenWEB.props
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyGardenWEB.props
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyGardenWEB.props
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\bundle\MyGardenWEB.styles.css
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\scopedcss\projectbundle\MyGardenWEB.bundle.scp.css
@@ -1209,6 +1204,10 @@ C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\M
 C:\Users\viole\OneDrive\Работен плот\proekt\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\ref\MyGardenWEB.dll
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\bin\Debug\net8.0\MyGardenWEB.staticwebassets.endpoints.json
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets\msbuild.MyGardenWEB.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\MyGarden.87837663.Up2Date
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\viole\OneDrive\Работен плот\MyGardenASP\MyGardenWEB\MyGardenWEB\obj\Debug\net8.0\staticwebassets.build.json.cache

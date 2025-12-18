@@ -149,7 +149,7 @@ namespace MyGardenWEB.Controllers
             int shoppingCardId = (int)GetOrdertId();
             var orderItem = await _context.OrderDetail
                 .SingleOrDefaultAsync(x => (x.ProductsId == product.Id));
-            if (orderItem == null) //Ако поръчва друг/нов продукт се записва в OrderDetails
+            if (orderItem == null) 
             {
                 orderItem = new OrderDetail()
                 {

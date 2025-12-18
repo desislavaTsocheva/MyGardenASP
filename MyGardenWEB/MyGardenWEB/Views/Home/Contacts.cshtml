@@ -1,61 +1,94 @@
 ﻿@{
-    ViewData["Title"] = "Contacts";
+    ViewData["Title"] = "Контакти";
 }
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-<h1 class="title-art">Контакти</h1>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
-</script>
 
-<div class="cont">
-    <form class="form_cont">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        <fieldset>
-            <legend>Свържете се с нас</legend>
-            <label>Име</label>
-            <br />
-            <input type="text" placeholder="Въведете име" id="name" name="name">
-            <br />
-            <br />
-            <label>Телефон за контакт</label>
-            <br />
-            <input type="text" placeholder="Въведете телефон">
-            <br />
-            <br />
-            <label>Имейл адрес</label>
-            <br />
-            <input type="email" placeholder="Въведете имейл">
-            <br />
-            <br />
-            <label>Съобщение</label>
-            <br />
-            <textarea placeholder="Вашето съобщение ..." id="text" name="text">
-    </textarea>
-            <br />
-            <br />
-            <input type="submit" class="btn btn-primary" value="Изпрати" onclick="showAlert(name,text)">
-        </fieldset>
-    </form>
-    <script>
-        //Функция, която се извиква при натискане на бутона за изпращане
-        function showAlert() {
-            // Показване на съобщението
-            var name = document.getElementById("name").value;
-            var text = document.getElementById("text").value;
-           
-            alert('Благодарим за обратната връзка!\n\Име: ' + name + '\n\Съобщение: ' + text);
-        }
-        
-    </script>
-    <div class="info_cont">
-        <p><b><img draggable="false" src="/images/location-icon.png" width="30" />&#160 Град Сопот, улица Иван Вазов 12 </b></p>
-        <br/>
-        <p><b><img draggable="false" src="/images/envelope-icon.png" width="30" />&#160 my_garden@gmail.com</b></p>
-        <br />
-        <p><b><img draggable="false" src="/images/phone-icon.png" width="30" />&#160 0885538123  </b></p>
-    </div> 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.229832536047!2d24.768529442854508!3d42.647420351929945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a990c52cb15c7f%3A0xc2dd6f2c7c4bc02d!2zNDMzMCDQodC-0L_QvtGC!5e0!3m2!1sbg!2sbg!4v1708006878997!5m2!1sbg!2sbg" width="350" height="250"></iframe>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="main-title">Контакти</h1>
+        <div class="custom-hr"></div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-lg-7">
+            <div class="contact-card p-4">
+                <form id="contactForm">
+                    <h3 class="title-art mb-4">Пишете ни</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Име</label>
+                            <input type="text" class="form-control" id="name" placeholder="Вашето име" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Телефон</label>
+                            <input type="text" class="form-control" id="phone" placeholder="0888 000 000">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Имейл адрес</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Съобщение</label>
+                        <textarea class="form-control" id="text" rows="5" placeholder="Как можем да Ви помогнем?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit w-100">Изпрати съобщение</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="info-sidebar">
+                <div class="info-item mb-4">
+                    <div class="icon-box"><img src="/images/location-icon.png" width="24" /></div>
+                    <div>
+                        <h5>Адрес</h5>
+                        <p>Град Сопот, улица Иван Вазов 12</p>
+                    </div>
+                </div>
+
+                <div class="info-item mb-4">
+                    <div class="icon-box"><img src="/images/envelope-icon.png" width="24" /></div>
+                    <div>
+                        <h5>Имейл</h5>
+                        <p>my_garden@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item mb-5">
+                    <div class="icon-box"><img src="/images/phone-icon.png" width="24" /></div>
+                    <div>
+                        <h5>Телефон</h5>
+                        <p>0885 538 123</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.5!2d24.75!3d42.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM5JzAwLjAiTiAyNMKwNDUnMDAuMCJF!5e0!3m2!1sbg!2sbg!4v1620000000000"
+                            width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+
+        Swal.fire({
+            title: 'Благодарим Ви, ' + name + '!',
+            text: 'Вашето съобщение беше изпратено успешно. Ще се свържем с Вас скоро.',
+            icon: 'success',
+            confirmButtonColor: '#69324d',
+            confirmButtonText: 'Добре'
+        });
+
+        this.reset();
+    });
+</script>

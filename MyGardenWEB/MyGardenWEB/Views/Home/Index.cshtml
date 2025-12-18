@@ -1,98 +1,98 @@
 ﻿@model IEnumerable<MyGardenWEB.Data.Product>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Начало - Моята градина";
 }
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-<div class="text-center">
-    <div class="bc-ground">
-        <h1 class="display-4">Добре дошли!</h1>
-        <div class="content">
-            <div class="swiffy-slider">
-                <ul class="slider-container">
-                    <li>
-                        <img src="./images/snimka3.jpg" width="100%" height="650" class="main-img">
-                        <div class="overlay">
-                            <h1>Rазсадник за цветя- <br /> " Моята градина! "</h1>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/snimka1.jpg" width="100%" height="650" class="main-img">
-                        <div class="overlay">
-                            <h1> Малък разсадник за производство на декоративна разстителност </h1>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/snimka5.jpg" width="100%" height="650" class="main-img">
-                        <div class="overlay">
-                            <h1>
-                                При нас можете да откриете голямо разнообразие от <br />
-                                цветя, луковици и разсади
-                            </h1>
-                        </div>
-                    </li>
 
-                    <li>
-                        <img src="./images/snimka4.jpg" width="100%" height="650" class="main-img">
-                        <div class="overlay">
-                            <h1> Всяко едно растение е отгледано от нас с много внимание и грижа</h1>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/snimka2.jpg" width="100%" height="650" class="main-img">
-                        <div class="overlay">
-                            <h1>За въпроси и поръчки не се колебайте да се свържете с нас </h1>
-                        </div>
-                    </li>
-                </ul>
-                <button type="button" class="slider-nav"></button>
-                <button type="button" class="slider-nav slider-nav-next"></button>
+<div class="hero-wrapper">
+    <div class="swiffy-slider slider-item-ratio slider-item-ratio-21x9 slider-nav-round slider-nav-visible slider-indicators-outside" id="main-slider">
+        <ul class="slider-container">
+            <li>
+                <div class="slide-content">
+                    <img src="./images/snimka3.jpg" loading="lazy" alt="Разсадник">
+                    <div class="slide-overlay">
+                        <h1 class="animate-up">Разсадник за цветя <br /> <span>"Моята градина"</span></h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide-content">
+                    <img src="./images/snimka5.jpg" loading="lazy" alt="Цветя">
+                    <div class="slide-overlay">
+                        <h2>Голямо разнообразие от цветя, луковици и разсади</h2>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide-content">
+                    <img src="./images/snimka2.jpg" loading="lazy" alt="Разнообразие">
+                    <div class="slide-overlay">
+                        <h2>Всяко едно растение е отгледано от нас с много внимание и грижа</h2>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+        </div>
+    </div>
+</div>
 
-                <div class="slider-indicators">
-                    <button class="active"></button>
-                    <button></button>
-                    <button></button>
+<section class="welcome-section text-center">
+    <h1 class="main-title">Добре дошли!</h1>
+    <p class="subtitle">При нас можете да откриете голямо разнообразие от цветя, разсади и луковици, отгледани с любов.</p>
+    <div class="custom-hr"></div>
+</section>
+
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="category-card">
+                <div class="card-img-wrapper">
+                    <img src="./images/tsvete1.jpg" alt="Цветя">
+                    <div class="card-action">
+                        <a asp-controller="Products" asp-action="Index" class="btn-explore">Виж още</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="title-art">Цветя</h3>
+                    <p class="description">Цветята са идеалният начин да накарате някой да се почувства обичан и ценен.</p>
                 </div>
             </div>
         </div>
-
-        <hr />
-        <p class="txt">При нас можете да откриете голямо разнообразие от цветя, разсади и луковици</p>
-        <div class="article">
-            <div id="article1">
-                <h1 class="title-art">Цветя</h1>
-                <a asp-area="" asp-controller="Products" asp-action="Index">
-                    <img src="./images/tsvete1.jpg" class="image">
-                </a>
-                <p class="description">
-                    Цветята са незаменим подарък за всеки повод и идеалният начин<br />
-                    да накараш някой да се почувства обичан и ценен.
-                </p>
-            </div>
-            <div id="article2">
-                <h1 class="title-art">Разсади</h1>
-                <a asp-area="" asp-controller="Products" asp-action="IndexProduct">
-
-                    <img src="./images/razsad.jpg" class="image">
-                </a>
-                <p class="description">
-                    Разсад са млади растения от зеленчукови и полски култури, <br />
-                    произведени в култивационни съоръжения или в градини
-
-                </p>
-            </div>
-            <div id="article3">
-                <h1 class="title-art">Луковици</h1>
-                <a asp-area="" asp-controller="Products" asp-action="IndexProduct">
-
-                    <img src="./images/lukovitsa.jpg" class="image">
-                </a>
-                <p class="description">
-                    Луковицата е видоизменено стъбло, подземен орган,<br />
-                    който се наблюдава при някои от растенията.
-                </p>
-
+        <div class="col-md-4">
+            <div class="category-card">
+                <div class="card-img-wrapper">
+                    <img src="./images/razsad.jpg" alt="Разсади">
+                    <div class="card-action">
+                        <a asp-controller="Products" asp-action="IndexProduct" class="btn-explore">Виж още</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="title-art">Разсади</h3>
+                    <p class="description">Млади растения, отгледани в нашите оранжерии с професионална грижа.</p>
+                </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="category-card">
+                <div class="card-img-wrapper">
+                    <img src="./images/lukovitsa.jpg" alt="Луковици">
+                    <div class="card-action">
+                        <a asp-controller="Products" asp-action="IndexProduct" class="btn-explore">Виж още</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="title-art">Луковици</h3>
+                    <p class="description">Висококачествени луковици за вашата прекрасна пролетна градина.</p>
+                </div>
+            </div>
         </div>
     </div>
+</div>

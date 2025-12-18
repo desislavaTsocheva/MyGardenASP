@@ -4,14 +4,44 @@
     ViewData["Title"] = "Index";
 }
 
-<div class="product_present">
-    <img class="back_img" src="~/images/Неозаглавен дизайн (1).png"/>
-    <div class="img_text">
-        <h1>Цветя</h1>
+<div class="product-hero">
+    <img class="hero-bg-img" src="~/images/Неозаглавен дизайн (1).png" alt="Flowers Background" />
+    <div class="hero-caption">
+        <h1 class="display-3">Нашите Цветя</h1>
+        <p>Красота, отгледана с внимание и грижа</p>
     </div>
 </div>
 
+<style>
+    .product-hero {
+        position: relative;
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
 
+    .hero-bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.65);
+    }
+
+    .hero-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+        .hero-caption h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+</style>
 
 @if (User.IsInRole("Admin"))
 {
