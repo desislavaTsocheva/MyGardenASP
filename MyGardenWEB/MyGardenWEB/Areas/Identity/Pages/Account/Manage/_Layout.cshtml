@@ -1,0 +1,115 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<div class="container manage-container">
+    <h1 class="manage-title">Моят Профил</h1>
+    <p class="manage-subtitle">Управлявайте вашите настройки и лични данни</p>
+
+    <div class="manage-card">
+        <div class="row">
+            <div class="col-md-3 manage-sidebar">
+                <partial name="_ManageNav" />
+            </div>
+            <div class="col-md-9 manage-content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .manage-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .manage-title {
+        font-family: 'Playfair Display', serif;
+        color: #2d3436;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .manage-subtitle {
+        text-align: center;
+        color: #636e72;
+        margin-bottom: 30px;
+    }
+    .manage-card {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .manage-sidebar {
+        border-right: 1px solid #f1f1f1;
+        padding-right: 20px;
+    }
+        .manage-sidebar .nav-pills .nav-link {
+            color: #555;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+        }
+
+            .manage-sidebar .nav-pills .nav-link.active {
+                background-color: #ffb6c1 !important; 
+                color: white !important;
+            }
+
+            .manage-sidebar .nav-pills .nav-link:hover:not(.active) {
+                background-color: #fff0f3;
+                color: #ffb6c1;
+            }
+    .manage-content {
+        padding-left: 30px;
+    }
+
+        .manage-content h4 {
+            font-size: 1.4rem;
+            color: #2d3436;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffb6c1;
+            display: inline-block;
+        }
+        .manage-content .btn-primary {
+            background-color: #ffb6c1;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            transition: 0.3s;
+        }
+
+            .manage-content .btn-primary:hover {
+                background-color: #ff9aa2;
+                transform: translateY(-2px);
+            }
+
+    .form-floating input {
+        border-radius: 10px;
+    }
+
+
+    {
+        border-right: none;
+        border-bottom: 1px solid #f1f1f1;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    }
+</style>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
